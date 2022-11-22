@@ -6,26 +6,28 @@
 		<property name="$metaclass" value="ActivityDiagram20"/>
 		<property name="$name" value="workflow"/>
 		<reference referencedUin="design:node:::-46k66rkuv1egth-yezd2c">
-			<property name="bounds" value="40,20,300,206"/>
+			<property name="bounds" value="40,20,1181,801"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="row_children" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="design:node:::a6k48rkuv1esk2-g8w9x:-46k66rkuv1egth-yezd2c">
-				<property name="bounds" value="142,0,100,178"/>
+				<property name="bounds" value="237,0,921,772"/>
 				<property name="location_set_by_user" value="true"/>
 				<property name="$orientation" value="vertical"/>
 				<property name="row_children" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
 			<reference referencedUin="design:node:::a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c">
-				<property name="bounds" value="24,0,100,178"/>
+				<property name="bounds" value="24,0,194,772"/>
 				<property name="location_set_by_user" value="true"/>
 				<property name="$orientation" value="vertical"/>
 				<property name="row_children" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::1g64ykuv1fxrt-kmlbh1">
-			<property name="bounds" value="380,20,246,106"/>
+			<property name="bounds" value="1240,20,246,106"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
