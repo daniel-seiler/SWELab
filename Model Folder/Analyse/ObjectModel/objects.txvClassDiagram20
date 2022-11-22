@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkmtaxw3p3es7mc">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="objects"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Class1">
+			<property name="bounds" value="75,35,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+	</view>
+</nodeSet>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="ba089nkuv24g8i-v5h0b7">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="comp1"/>
+		<node uin="-vedwtdkuv2s884pppw21">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="PortA"/>
+			<link uin="ieje0rkuv30g9nvt50qe">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdkuv2s884pppw21:ba089nkuv24g8i-v5h0b7" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:iwwwdnw.comp1.port.I1" role="Supplier"></participant>
+			</link>
+		</node>
+	</node>
+</nodeSet>

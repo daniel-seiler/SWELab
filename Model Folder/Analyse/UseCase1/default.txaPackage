@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="-yrgd8ekmtaz9hj-hz4nbn">
+		<property name="$metaclass" value="SD20_Interaction"/>
+		<property name="$name" value="Interaction"/>
+		<node uin="-y8nsowkuv1l3qip7rd7s">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline2"/>
+			<property name="connectableElementName" value="sys"/>
+			<link uin="ieje0rkuv1qr20-cwdbm9">
+				<property name="$metaclass" value="SD20_Lifeline_LinkToConnectableElement"/>
+				<participant referencedUin="design:node:::-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
+				<participant referencedUin="design:node:::8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="-y8nsowkuv1l1j65x0dmm">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value="actor"/>
+			<node uin="c87hzvkuv1qu2a65tasv">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification1"/>
+			</node>
+			<link uin="ieje0rkuv1qo7f-1lxzao">
+				<property name="$metaclass" value="SD20_Lifeline_LinkToConnectableElement"/>
+				<participant referencedUin="design:node:::-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="l2gqtvkuv1qu2b-f64mv7">
+			<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+			<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+			<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn"/>
+			<property name="call_cachedSequenceNumber" value="1"/>
+		</node>
+	</node>
+	<node uin="-46k66rkuv1egth-yezd2c">
+		<property name="$metaclass" value="Activity20"/>
+		<property name="$name" value="Spielbeginn"/>
+		<node uin="a6k48rkuv1esk2-g8w9x">
+			<property name="$metaclass" value="ActivityPartition"/>
+			<property name="$name" value="System"/>
+		</node>
+		<node uin="a6k48rkuv1f1qx-1ztlqp">
+			<property name="$metaclass" value="ActivityPartition"/>
+			<property name="$name" value="Actor"/>
+		</node>
+	</node>
+	<node uin="1g64ykuv1fxrt-kmlbh1">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Falls Sie weitere Akteure benötigen, fügen Sie bitte entsprechende Swimlanes (Activity Partition) hinzu."/>
+	</node>
+	<node uin="1g64ykuv1xa8a-s61wpz">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Falls weitere Akteure an diesem Use Case beteiligt sind, fügen Sie bitte entsprechende Lifelines hinzu."/>
+	</node>
+</nodeSet>

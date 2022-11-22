@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="j8ctxykuv27uznyzfuoh">
+		<property name="$metaclass" value="StateMachine"/>
+		<property name="$name" value="iwwwdnw"/>
+		<node uin="-acitv2kuv27uzo-yj46u">
+			<property name="$metaclass" value="Region20"/>
+			<property name="$name" value="Region20"/>
+			<node uin="-3uf15dkuv2844i6xj3ai">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="InitGame"/>
+				<node uin="-acitv2kuv2844k-skm7b5">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+				<link uin="ieje0rkuv2990a-7ok6rv">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::-3uf15dkuv2844i6xj3ai:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dkuv28cj7ibp0zj">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="MakeATurn"/>
+				<node uin="-acitv2kuv28cj8xnokyk">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+					<node uin="k9ofrlkuv29p4iodf10o">
+						<property name="$metaclass" value="PseudoState20"/>
+						<property name="$name" value="Initial1"/>
+						<property name="$kind" value="initial"/>
+					</node>
+				</node>
+				<link uin="ieje0rkuv29bnuy1tmz9">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<node uin="ttifwdkuv2abw4747rxn">
+						<property name="$metaclass" value="Constraint"/>
+						<property name="$name" value="guard"/>
+						<node uin="ul14qakuv2abw5-y2qx7r">
+							<property name="$metaclass" value="ValueSpecification"/>
+							<property name="$name" value="ValueSpecification1"/>
+							<property name="language" value="ocl"/>
+							<property name="body" value="there is a winner"/>
+						</node>
+					</node>
+					<participant referencedUin="design:node:::-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dkuv28lc36ajvln:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-3uf15dkuv28lc36ajvln">
+				<property name="$metaclass" value="State20"/>
+				<property name="$name" value="AwardCeremony"/>
+				<node uin="-acitv2kuv28lc4-75cc8k">
+					<property name="$metaclass" value="Region20"/>
+					<property name="$name" value="Region20"/>
+				</node>
+			</node>
+			<node uin="k9ofrlkuv2927f-seo4nd">
+				<property name="$metaclass" value="PseudoState20"/>
+				<property name="$name" value="Initial1"/>
+				<property name="$kind" value="initial"/>
+				<link uin="ieje0rkuv296gqb35j61">
+					<property name="$metaclass" value="TransitionLink20"/>
+					<participant referencedUin="design:node:::k9ofrlkuv2927f-seo4nd:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+					<participant referencedUin="design:node:::-3uf15dkuv2844i6xj3ai:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+				</link>
+			</node>
+		</node>
+	</node>
+	<node uin="1g64ykuv2al0bh6o1oz">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Zustandsmaschine für den Use Case &quot;Spielzug durchführen&quot;"/>
+		<link uin="ieje0rkuv2burv-knir7l">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ykuv2al0bh6o1oz" role="Client"></participant>
+			<participant referencedUin="design:node:::-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

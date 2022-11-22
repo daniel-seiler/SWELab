@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vam8ynkkmtazyqv-yosvzo">
+		<property name="$metaclass" value="SequenceDiagram20"/>
+		<property name="$referencedInteractionUin" value="design:node:::-yrgd8ekmtazyqwoi8vg0"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<property name="$name" value="sysops"/>
+		<reference referencedUin="design:node:::-yrgd8ekmtazyqwoi8vg0">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="5,5,266,337"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::-y8nsowkuv1paqp-cqcfkv:-yrgd8ekmtazyqwoi8vg0">
+				<property name="bounds" value="145,5,66,300"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowkuv1oo41-jdtz8e:-yrgd8ekmtazyqwoi8vg0">
+				<property name="bounds" value="45,5,68,300"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::c87hzvkuv1p58slewes5:-y8nsowkuv1oo41-jdtz8e:-yrgd8ekmtazyqwoi8vg0">
+					<property name="bounds" value="24,23,20,61"/>
+					<property name="location_set_by_user" value="true"/>
+					<property name="bounds_setted_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::l2gqtvkuv1p58tggz7sw:-yrgd8ekmtazyqwoi8vg0">
+				<property name="bounds" value="1,80,16,16"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::1g64ykuv1vl22-48g394">
+			<property name="bounds" value="335,35,241,121"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+	</view>
+	<link uin="ieje0rkmtazyqx-bq5jr2">
+		<property name="$metaclass" value="SequenceDiagram20_LinkToInteraction"/>
+		<participant referencedUin="design:view:::Vam8ynkkmtazyqv-yosvzo" role="Client"></participant>
+		<participant referencedUin="design:node:::-yrgd8ekmtazyqwoi8vg0" role="Supplier"></participant>
+	</link>
+</nodeSet>

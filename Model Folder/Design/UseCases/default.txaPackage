@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="8krugmkuv2ffrn-masrr5">
+		<property name="$metaclass" value="UseCaseClassifier20"/>
+		<property name="$name" value="Subject1"/>
+		<node uin="gj7tthkuv2fmorqbev6b">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="UseCase1"/>
+		</node>
+	</node>
+	<node uin="8bho0jkuv2fhtn2udndy">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Actor1"/>
+		<link uin="ieje0rkuv2fppg-go1dpy">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkuv2fhtn2udndy" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv2fmorqbev6b:8krugmkuv2ffrn-masrr5" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

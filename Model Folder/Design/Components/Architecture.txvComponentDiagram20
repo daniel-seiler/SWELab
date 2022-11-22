@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V-oyrl70kuv21ga7-ing4t2">
+		<property name="$metaclass" value="ComponentDiagram20"/>
+		<property name="$name" value="Architecture"/>
+		<property name="__options" value="Show Simple Interfaces=true"/>
+		<reference referencedUin="design:node:::ba089nkuv24g8i-v5h0b7">
+			<property name="bounds" value="35,75,161,81"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::-vedwtdkuv2s884pppw21:ba089nkuv24g8i-v5h0b7">
+				<property name="bounds" value="104,-7,14,14"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:link:::ieje0rkuv30g9nvt50qe:-vedwtdkuv2s884pppw21:ba089nkuv24g8i-v5h0b7">
+					<property name="sourceAnchor" value="150,73"/>
+					<property name="targetAnchor" value="150,40"/>
+				</reference>
+				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdkuv2s884pppw21:ba089nkuv24g8i-v5h0b7">
+					<property name="bounds" value="16,-14,30,15"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.port.I1">
+			<property name="bounds" value="135,15,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.comp1.port.I1">
+				<property name="bounds" value="-20,2,10,15"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

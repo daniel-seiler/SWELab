@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="8krugmkuv1lrxu-3khhvd">
+		<property name="$metaclass" value="UseCaseClassifier20"/>
+		<property name="$name" value="Spiel"/>
+		<node uin="gj7tthkuv1mbmqfib2ge">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Spiel vorbereiten indem Anzahl und Reihenfolge der Spieler und Wissenskategorien bestimmt und Fragen gemsicht werden."/>
+		</node>
+		<node uin="gj7tthkuv1mms1-g3cyur">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="mod__extends" value="Kommt ein Wissensteiter"/>
+			<property name="mod__extends" value="während er auf dem Pfad des Wissens unterwegs ist"/>
+			<property name="mod__extends" value="auf ein Feld"/>
+			<property name="mod__extends" value="auf dem sich bereits ein Wissensstreiter eines anderen Spielers befindet"/>
+			<property name="mod__extends" value="kommt es zwischen den beiden Parteien zum Wissensduell"/>
+			<property name="$name" value="Spielzug mit Würfeln und ziehen der Figuren"/>
+			<node uin="-24q98xlai9q9yina4oo0">
+				<property name="$metaclass" value="ExtensionPoint20"/>
+				<property name="$name" value="Kollision zweier Figuren"/>
+			</node>
+		</node>
+		<node uin="gj7tthkuv1uvfe-p19shu">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Zwei Spieler führen ein Wissensduell durch indem Fragen einer Wissenskategorie beantwortet werden"/>
+			<link uin="ieje0rlai8rze99wrs4e">
+				<property name="$metaclass" value="Extend20"/>
+				<node uin="ttifwdlai94e5f-m59lxc">
+					<property name="$metaclass" value="Constraint"/>
+					<property name="$name" value="condition"/>
+					<node uin="ul14qalai94e5hxj0m5o">
+						<property name="$metaclass" value="ValueSpecification"/>
+						<property name="$name" value="ValueSpecification1"/>
+						<property name="language" value="ocl"/>
+						<property name="body" value="Kommt ein Wissensteiter, während er auf dem Pfad des Wissens unterwegs ist, auf ein Feld, auf dem sich bereits ein Wissensstreiter eines anderen Spielers befindet, kommt es zwischen den beiden Parteien zum Wissensduell"/>
+					</node>
+				</node>
+				<participant referencedUin="design:node:::gj7tthkuv1uvfe-p19shu:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="gj7tthlai9othn-57or0e">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Setzen der Handicaps nach Spielende"/>
+		</node>
+	</node>
+	<node uin="8bho0jkuv1lwvmclidtz">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Spieler"/>
+		<link uin="ieje0rkuv1mf4xnnm8n5">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="2..6"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mbmqfib2ge:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rlaiawl3v-dy8x">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="2..6"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthlai9othn-57or0e:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jlai8yevf-wchv85">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Herausforderer"/>
+		<property name="mod__extends" value="Spieler"/>
+		<link uin="ieje0rlai8zi83nfplmj">
+			<property name="$metaclass" value="Generalization20"/>
+			<property name="mod__cachedBaseName" value="Spieler"/>
+			<participant referencedUin="design:node:::8bho0jlai8yevf-wchv85" role="Client"></participant>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rlai90cbf-9pdpv2">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jlai8yevf-wchv85" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rlai92sa3-nz9lq5">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jlai8yevf-wchv85" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1uvfe-p19shu:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jlai8yr7w-j9ney8">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Herausgeforderter"/>
+		<property name="mod__extends" value="Spieler"/>
+		<link uin="ieje0rlai8zpxvqbe5ch">
+			<property name="$metaclass" value="Generalization20"/>
+			<property name="mod__cachedBaseName" value="Spieler"/>
+			<participant referencedUin="design:node:::8bho0jlai8yr7w-j9ney8" role="Client"></participant>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rlai90hpw-jldoaq">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jlai8yr7w-j9ney8" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1uvfe-p19shu:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="1g64ylai9u5mcnnxajn">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Kommt ein Wissensteiter, während er auf dem Pfad des Wissens unterwegs ist, auf ein Feld, auf dem sich bereits ein Wissensstreiter eines anderen Spielers befindet, kommt es zwischen den beiden Parteien zum Wissensduell&#10;"/>
+		<link uin="ieje0rlai9vede-j9nag2">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ylai9u5mcnnxajn" role="Client"></participant>
+			<participant referencedUin="design:link:::ieje0rlai8rze99wrs4e:gj7tthkuv1uvfe-p19shu:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

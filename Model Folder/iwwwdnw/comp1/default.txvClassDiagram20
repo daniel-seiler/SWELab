@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhkuv22v5c-onvyq6">
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V1hexuhkuv23fas-godxhn">
+			<property name="bounds" value="5,105,80,91"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkuv23kpu-sb36dw">
+			<property name="bounds" value="5,5,80,75"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Factory">
+			<property name="bounds" value="195,55,194,110"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.comp1.Factory:FACTORY">
+				<property name="sourceAnchor" value="394,166"/>
+				<property name="targetAnchor" value="390,170"/>
+				<property name="bendpoints" value="423,166,423,199,390,199"/>
+				<property name="smooth_bendpoints" value="423,166,423,199,390,199"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Facade">
+			<property name="bounds" value="335,55,104,137"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.comp1.Facade:Factory">
+				<property name="sourceAnchor" value="340,100"/>
+				<property name="targetAnchor" value="340,60"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
