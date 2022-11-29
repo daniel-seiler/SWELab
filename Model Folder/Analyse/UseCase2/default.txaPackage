@@ -157,6 +157,26 @@
 				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
+			<link uin="ieje0rlb29z7job38tr3">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4lb29z7jn-nwmyqd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2a4enb9zayjt">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4lb2a4enarkzmez:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2amxqwohszdi">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2amxquiwjz6u:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2aseqh-xzdhq9">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2aseqe8k2lqr:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
 		</node>
 		<node uin="a6k48rkuv1jdx59e1ici">
 			<property name="$metaclass" value="ActivityPartition"/>
@@ -190,11 +210,6 @@
 				<property name="$metaclass" value="containedNode"/>
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-5vj00plasc0sj7-tnstju:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
-			<link uin="ieje0rlasc23ry-9eu6sk">
-				<property name="$metaclass" value="containedNode"/>
-				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::lkt9ralasc23rx-lmde9i:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 			<link uin="ieje0rlasd2fqe-v6qesa">
 				<property name="$metaclass" value="containedNode"/>
@@ -231,7 +246,7 @@
 		</node>
 		<node uin="-qbjze4lasau9mg-6po9uq">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Zufällig gewürfelte Zahl erstellen"/>
+			<property name="$name" value="Würfeln duchrführen und Augenzahl prüfen auf 7"/>
 			<link uin="ieje0rlasb7ymz-d4z3hb">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasau9mg-6po9uq:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -240,7 +255,7 @@
 		</node>
 		<node uin="-qbjze4lasaylso-c5c2jh">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Aussuchen welches unbelegte Startfeld durch eine Figur aus dem Heimatfeld besetzt wird"/>
+			<property name="$name" value="Aussuchen welches unbelegte Startfeld seiner Farbe durch eine Figur aus dem Heimatfeld besetzt wird"/>
 			<link uin="ieje0rlaseppqlyzbl7m">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasaylso-c5c2jh:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -250,33 +265,33 @@
 		<node uin="l7v8clasb7rypntvnux">
 			<property name="$metaclass" value="DecisionNode20"/>
 			<property name="$name" value="DecisionNode20"/>
-			<link uin="ieje0rlasbadhp5zc8tc">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="7 gewürfelt"/>
-				<participant referencedUin="design:node:::l7v8clasb7rypntvnux:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::l7v8clasb9z4d-hx1do2:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
 			<link uin="ieje0rlasdq65og0asap">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="keine 7 gewürfelt"/>
+				<property name="label" value="keine [7]"/>
 				<participant referencedUin="design:node:::l7v8clasb7rypntvnux:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lasdo40u-unsm1o:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2a0oxjprmui5">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<property name="label" value="[7] - Augenzahl"/>
+				<participant referencedUin="design:node:::l7v8clasb7rypntvnux:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4lb29z7jn-nwmyqd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="l7v8clasb9z4d-hx1do2">
 			<property name="$metaclass" value="DecisionNode20"/>
 			<property name="$name" value="DecisionNode21"/>
-			<link uin="ieje0rlasbdu8b-gtevsa">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="Mindestens eines der Startfelder nicht durch eigene Figuren belegt"/>
-				<participant referencedUin="design:node:::l7v8clasb9z4d-hx1do2:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::l7v8clasbdkko2he377:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
 			<link uin="ieje0rlasbml0jr8odyc">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="Alle Startfelder durch eigene Figuren belegt"/>
+				<property name="label" value="[ja] - alle belegt"/>
 				<participant referencedUin="design:node:::l7v8clasb9z4d-hx1do2:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lasbjjqkbd55or:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2a6g1u-qn2et8">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<property name="label" value="[nein] - mind. ein Startfeld nicht belegt"/>
+				<participant referencedUin="design:node:::l7v8clasb9z4d-hx1do2:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4lb2a4enarkzmez:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="l7v8clasbdkko2he377">
@@ -284,33 +299,33 @@
 			<property name="$name" value="DecisionNode22"/>
 			<link uin="ieje0rlasbknv5jy0pwa">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="Keine Figur befindet sich im Heimatfeld"/>
+				<property name="label" value="[nein] - Heimatfelder leer"/>
 				<participant referencedUin="design:node:::l7v8clasbdkko2he377:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lasbjjqkbd55or:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 			<link uin="ieje0rlasdt30t-m99x6c">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="Min. eine Figur im Heimatfeld"/>
+				<property name="label" value="[ja] - mind. eine Figur"/>
 				<participant referencedUin="design:node:::l7v8clasbdkko2he377:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lasaylso-c5c2jh:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4lasbg9rljua9f">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Figuren auf dem Spiefeld bewegen"/>
-			<link uin="ieje0rlasc38dwh7tody">
+			<property name="$name" value="Figur auf dem Spiefeld bewegen"/>
+			<link uin="ieje0rlb2aw7ou-creg2b">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasbg9rljua9f:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::lkt9ralasc23rx-lmde9i:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::-qbjze4lasc3paw-3vreuv:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="sbhn20lasbjjqkbd55or">
 			<property name="$metaclass" value="MergeNode20"/>
 			<property name="$name" value="MergeNode20"/>
-			<link uin="ieje0rlasenp3z-j4zcr6">
+			<link uin="ieje0rlb2anxh9-5vp8vp">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::sbhn20lasbjjqkbd55or:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4lascb9cs-igo1tc:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20lascibkap6i0hs:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4lasc0kmnayfe9b">
@@ -326,18 +341,9 @@
 			<property name="$metaclass" value="ActivityFinalNode20"/>
 			<property name="$name" value="ActivityFinalNode20"/>
 		</node>
-		<node uin="lkt9ralasc23rx-lmde9i">
-			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Abfragen welche Figur welche Felder betritt"/>
-			<link uin="ieje0rlasc7b0u687d9o">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<participant referencedUin="design:node:::lkt9ralasc23rx-lmde9i:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4lasc3paw-3vreuv:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
-		</node>
 		<node uin="-qbjze4lasc3paw-3vreuv">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Prüfen, ob eine Figur ein Feld zweimal betritt und keine eigene Figur ünbersprungen wird oder die Anzahl bewegter Felder aller Figuren kleiner gleich der Augensumme der Würfel"/>
+			<property name="$name" value="Prüfen, ob eine Figur ein Feld nicht zweimal betritt und keine eigene Figur ünbersprungen wird oder die Anzahl bewegter Felder aller Figuren kleiner gleich der Augensumme der Würfel"/>
 			<link uin="ieje0rlascahr87vqofb">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasc3paw-3vreuv:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -349,13 +355,13 @@
 			<property name="$name" value="DecisionNode23"/>
 			<link uin="ieje0rlascis2q-gefunj">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="ja"/>
+				<property name="label" value="nein"/>
 				<participant referencedUin="design:node:::l7v8clasca2wfj5d651:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lascibkap6i0hs:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 			<link uin="ieje0rlascomip-gjihdi">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="nein"/>
+				<property name="label" value="ja"/>
 				<participant referencedUin="design:node:::l7v8clasca2wfj5d651:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lascj2yy-jy350:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
@@ -390,17 +396,17 @@
 		<node uin="l7v8clascoxtadum3op">
 			<property name="$metaclass" value="DecisionNode20"/>
 			<property name="$name" value="DecisionNode24"/>
-			<link uin="ieje0rlascp7xs-xf1ti3">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="nein"/>
-				<participant referencedUin="design:node:::l7v8clascoxtadum3op:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::sbhn20lasbjjqkbd55or:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
 			<link uin="ieje0rlascs6hyh69pyo">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<property name="label" value="ja"/>
 				<participant referencedUin="design:node:::l7v8clascoxtadum3op:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lascrtei-hawxiy:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb2anbud1hdk3o">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<property name="label" value="[nein]"/>
+				<participant referencedUin="design:node:::l7v8clascoxtadum3op:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2amxquiwjz6u:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-3cuw6lascqzhc-q2p5nw">
@@ -410,18 +416,17 @@
 		<node uin="-qbjze4lascrtei-hawxiy">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Wissenduell ausführen"/>
-			<link uin="ieje0rlascsexu-6591gw">
+			<link uin="ieje0rlb2an58e8lpbw8">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lascrtei-hawxiy:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::sbhn20lasbjjqkbd55or:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2amxquiwjz6u:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4lasd1m2r-yggsr">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Anzahl Würfelversuche dieses Zugs hochzählen und prüfen"/>
+			<property name="$name" value="Anzahl Würfelversuche dieses Zugs hochzählen und Anzahl prüfen"/>
 			<link uin="ieje0rlasdhekjuqcmz5">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="1,2"/>
 				<participant referencedUin="design:node:::-qbjze4lasd1m2r-yggsr:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::l7v8clasd9atd-whocko:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
@@ -440,9 +445,15 @@
 			<property name="$name" value="DecisionNode25"/>
 			<link uin="ieje0rlasdj9xu-c73jm5">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="3"/>
+				<property name="label" value="[1,2]"/>
 				<participant referencedUin="design:node:::l7v8clasd9atd-whocko:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lasdj22ruw8xoy:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlb29uudu-ebvn47">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<property name="label" value="[3]"/>
+				<participant referencedUin="design:node:::l7v8clasd9atd-whocko:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="sbhn20lasdj22ruw8xoy">
@@ -456,7 +467,7 @@
 		</node>
 		<node uin="-qbjze4lasdo40u-unsm1o">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Prüfen ob alle Figuren im Heimatfeld"/>
+			<property name="$name" value="Prüfen ob alle eigenen Figuren im Heimatfeld"/>
 			<link uin="ieje0rlasdr56u-jaj0kj">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasdo40u-unsm1o:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -481,7 +492,7 @@
 		</node>
 		<node uin="-qbjze4lasdw262550kh7">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Prüfen ob die Anzahl bewegter Felder aller Figuren im akt. Zug gleich der Augensumme der Würfel ist"/>
+			<property name="$name" value="Prüfen ob die Anzahl bewegter Felder aller Figuren gleich der Augensumme der Würfel ist"/>
 			<link uin="ieje0rlase6vuub6xd8u">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasdw262550kh7:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -497,11 +508,11 @@
 				<participant referencedUin="design:node:::l7v8clase6esl-ypem7b:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lascibkap6i0hs:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
-			<link uin="ieje0rlasegor6-e2hjl8">
+			<link uin="ieje0rlb2asm6m-ldokan">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="ja"/>
+				<property name="guard" value="ja"/>
 				<participant referencedUin="design:node:::l7v8clase6esl-ypem7b:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2aseqe8k2lqr:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="dpq96alasech1q5mrx70">
@@ -511,10 +522,10 @@
 		<node uin="-qbjze4lasen5rlfxjrjy">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Figurposition updaten und speicher"/>
-			<link uin="ieje0rlasep9mw-z3b1lw">
+			<link uin="ieje0rlb2asjninndtdt">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lasen5rlfxjrjy:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20lb2aseqe8k2lqr:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="sbhn20laseozs810mgm">
@@ -524,6 +535,42 @@
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lasc0kmnayfe9b:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="-qbjze4lb29z7jn-nwmyqd">
+			<property name="$metaclass" value="Action20"/>
+			<property name="$name" value="Prüfen ob alle Startfelder durch eigene Figuren belegt"/>
+			<link uin="ieje0rlb2a137wo0tlyr">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::-qbjze4lb29z7jn-nwmyqd:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::l7v8clasb9z4d-hx1do2:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="-qbjze4lb2a4enarkzmez">
+			<property name="$metaclass" value="Action20"/>
+			<property name="$name" value="Prüfen ob sich eigene Figuren im Heimatfeld befinden"/>
+			<link uin="ieje0rlb2a6obc-garf8">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::-qbjze4lb2a4enarkzmez:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::l7v8clasbdkko2he377:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="sbhn20lb2amxquiwjz6u">
+			<property name="$metaclass" value="MergeNode20"/>
+			<property name="$name" value="MergeNode24"/>
+			<link uin="ieje0rlb2an954-n8wq63">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::sbhn20lb2amxquiwjz6u:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4lascb9cs-igo1tc:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="sbhn20lb2aseqe8k2lqr">
+			<property name="$metaclass" value="MergeNode20"/>
+			<property name="$name" value="MergeNode25"/>
+			<link uin="ieje0rlb2aspra-b375l5">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::sbhn20lb2aseqe8k2lqr:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::sbhn20laseozs810mgm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 	</node>
