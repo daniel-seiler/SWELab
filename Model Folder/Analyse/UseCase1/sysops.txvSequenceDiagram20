@@ -12,7 +12,7 @@
 			<property name="bounds" value="5,5,234,337"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="design:node:::-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="25,5,68,300"/>
+				<property name="bounds" value="25,5,92,300"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:node:::c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
 					<property name="bounds" value="24,23,20,141"/>
