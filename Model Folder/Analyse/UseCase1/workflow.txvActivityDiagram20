@@ -69,7 +69,7 @@
 						<property name="targetAnchor" value="1029,1480"/>
 						<property name="bendpoints" value=""/>
 						<reference referencedUin="label:guard:design:link:::ieje0rlb86ayrx-tawi0k:-qbjze4lb853nbwsvgze2:-46k66rkuv1egth-yezd2c">
-							<property name="bounds" value="840,1600,181,61"/>
+							<property name="bounds" value="855,1615,180,61"/>
 							<property name="weight" value="0.949999988079071"/>
 							<property name="location_set_by_user" value="true"/>
 							<property name="bounds_setted_by_user" value="true"/>
@@ -497,7 +497,7 @@
 					</reference>
 				</reference>
 				<reference referencedUin="design:node:::sk25q7lb84v49r-vvxmgc:a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c">
-					<property name="bounds" value="30,831,141,61"/>
+					<property name="bounds" value="30,831,161,61"/>
 					<property name="location_set_by_user" value="true"/>
 					<property name="bounds_setted_by_user" value="true"/>
 					<reference referencedUin="design:link:::8oqttflb84v49r199jii:sk25q7lb84v49r-vvxmgc:a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c">
