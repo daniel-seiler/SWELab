@@ -489,7 +489,7 @@
 		</node>
 		<node uin="-qbjze4lb846kc4-z78ofj">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Kategorien abfragen"/>
+			<property name="$name" value="Wissenskategorien abfragen"/>
 			<link uin="ieje0rlb84by90-9lls8q">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lb846kc4-z78ofj:-46k66rkuv1egth-yezd2c" role="Client"></participant>

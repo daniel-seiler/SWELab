@@ -11,13 +11,13 @@
 			<property name="$shortcutReference" value="true"/>
 			<property name="row_children" value="true"/>
 			<reference referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1">
-				<property name="bounds" value="142,0,100,122"/>
+				<property name="bounds" value="142,0,100,121"/>
 				<property name="location_set_by_user" value="true"/>
 				<property name="$orientation" value="vertical"/>
 				<property name="row_children" value="true"/>
 			</reference>
 			<reference referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1">
-				<property name="bounds" value="4,0,100,122"/>
+				<property name="bounds" value="4,0,100,121"/>
 				<property name="location_set_by_user" value="true"/>
 				<property name="$orientation" value="vertical"/>
 				<property name="row_children" value="true"/>
