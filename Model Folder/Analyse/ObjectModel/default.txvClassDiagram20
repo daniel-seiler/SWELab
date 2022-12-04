@@ -7,11 +7,92 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhkmtaxw3p3es7mc">
-			<property name="bounds" value="105,5,129,87"/>
+			<property name="bounds" value="26,375,128,71"/>
 			<property name="location_set_by_user" value="true"/>
+			<property name="collapsedCompartments" value="subelements"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Herausforderer">
-			<property name="bounds" value="5,5,80,80"/>
+			<property name="bounds" value="195,515,135,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.Herausforderer:Spieler">
+				<property name="sourceAnchor" value="329,520"/>
+				<property name="targetAnchor" value="329,456"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenskategorie">
+			<property name="bounds" value="695,133,151,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+				<property name="sourceAnchor" value="851,192"/>
+				<property name="targetAnchor" value="962,192"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+					<property name="bounds" value="861,165,12,24"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+					<property name="bounds" value="928,165,24,24"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
+			<property name="bounds" value="815,301,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+				<property name="sourceAnchor" value="900,332"/>
+				<property name="targetAnchor" value="1000,332"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+					<property name="bounds" value="978,305,12,24"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+					<property name="bounds" value="910,305,12,24"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfeld">
+			<property name="bounds" value="995,315,88,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spielfeld:lnkHeimatfeld">
+				<property name="sourceAnchor" value="1064,400"/>
+				<property name="targetAnchor" value="1064,520"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="318,371,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkHandicap">
+				<property name="sourceAnchor" value="358,376"/>
+				<property name="targetAnchor" value="358,297"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
+				<property name="sourceAnchor" value="403,438"/>
+				<property name="targetAnchor" value="620,438"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Herausgeforderter">
+			<property name="bounds" value="395,495,158,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.Herausgeforderter:Spieler">
+				<property name="sourceAnchor" value="401,500"/>
+				<property name="targetAnchor" value="401,456"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissensfrage">
+			<property name="bounds" value="957,133,122,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Handicap">
+			<property name="bounds" value="295,212,93,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenstandsanzeiger">
+			<property name="bounds" value="615,415,183,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Heimatfeld">
+			<property name="bounds" value="1035,515,106,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfiguren">
+			<property name="bounds" value="207,95,112,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
