@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="ttifwdlb9f6sl3-h06bl3">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="constraint1"/>
+		<node uin="ul14qalb9f6sl9-476439">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="ocl"/>
+		</node>
+	</node>
+	<node uin="ttifwdlb9fq6pb94hwbb">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint1"/>
+		<node uin="ul14qalb9fq6pcqxxkym">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="text"/>
+			<property name="body" value="Schwierigkeitsgrad der Fragen muss unterschiedlich sein"/>
+		</node>
+		<link uin="ieje0rlb9fs9zb-nqs2s">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdlb9fq6pb94hwbb" role="Client"></participant>
+			<participant referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Fragekarte:lnkKarte" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

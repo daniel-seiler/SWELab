@@ -19,6 +19,16 @@
 				<property name="sourceAnchor" value="987,640"/>
 				<property name="targetAnchor" value="987,480"/>
 			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Herausforderer:lnkSpielzug">
+				<property name="sourceAnchor" value="986,720"/>
+				<property name="targetAnchor" value="986,800"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Herausforderer:lnkSpielzug">
+					<property name="bounds" value="915,757,80,24"/>
+					<property name="weight" value="0.4625"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenskategorie">
 			<property name="bounds" value="575,175,152,80"/>
@@ -115,6 +125,16 @@
 				<property name="sourceAnchor" value="1115,640"/>
 				<property name="targetAnchor" value="1023,480"/>
 			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Herausgeforderter:lnkSpielzug">
+				<property name="sourceAnchor" value="1063,720"/>
+				<property name="targetAnchor" value="1063,800"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Herausgeforderter:lnkSpielzug">
+					<property name="bounds" value="1032,764,80,24"/>
+					<property name="weight" value="0.55"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenstandsanzeiger">
 			<property name="bounds" value="565,395,217,80"/>
@@ -142,15 +162,15 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielzug">
-			<property name="bounds" value="195,15,86,80"/>
+			<property name="bounds" value="975,795,86,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissensduell">
-			<property name="bounds" value="37,15,119,80"/>
+			<property name="bounds" value="1215,795,119,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Feld">
-			<property name="bounds" value="1615,212,80,80"/>
+			<property name="bounds" value="1615,215,80,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Startfeld">
@@ -159,7 +179,7 @@
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.Startfeld:Feld">
 				<property name="sourceAnchor" value="1571,440"/>
-				<property name="targetAnchor" value="1640,297"/>
+				<property name="targetAnchor" value="1640,300"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Datenbank">
@@ -173,7 +193,7 @@
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spielfigur:lnkFeld">
 				<property name="sourceAnchor" value="1301,413"/>
-				<property name="targetAnchor" value="1620,273"/>
+				<property name="targetAnchor" value="1620,276"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spielfigur:lnkFeld">
 					<property name="bounds" value="1301,375,26,24"/>
@@ -184,7 +204,7 @@
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spielfigur:lnkFeld">
-					<property name="bounds" value="1403,371,114,24"/>
+					<property name="bounds" value="1403,372,114,24"/>
 				</reference>
 			</reference>
 		</reference>
