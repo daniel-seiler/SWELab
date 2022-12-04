@@ -20,16 +20,6 @@
 			<property name="bounds" value="1315,75,80,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkHandicap">
-				<property name="sourceAnchor" value="1400,113"/>
-				<property name="targetAnchor" value="1700,113"/>
-				<property name="bendpoints" value=""/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
-				<property name="sourceAnchor" value="1320,120"/>
-				<property name="targetAnchor" value="1203,120"/>
-				<property name="bendpoints" value=""/>
-			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
 			<property name="bounds" value="395,495,80,80"/>
@@ -56,19 +46,9 @@
 			<property name="bounds" value="755,495,88,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spielfeld:lnkHeimatfeld">
-				<property name="sourceAnchor" value="801,580"/>
-				<property name="targetAnchor" value="801,700"/>
-				<property name="bendpoints" value=""/>
-			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Heimatfeld">
 			<property name="bounds" value="746,695,106,80"/>
-			<property name="location_set_by_user" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Handicap">
-			<property name="bounds" value="1695,75,93,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
@@ -108,13 +88,13 @@
 				</reference>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissensfrage">
-			<property name="bounds" value="1495,495,122,80"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfigur">
+			<property name="bounds" value="1138,655,112,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfiguren">
-			<property name="bounds" value="1138,655,112,80"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragekarte">
+			<property name="bounds" value="1495,495,122,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>

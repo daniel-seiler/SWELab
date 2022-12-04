@@ -1,9 +1,14 @@
+
 package Analyse.ObjectModel;
+
 public class Spielfeld {
 
 
 	/**
-	* @link composition
-	*/
-	private Analyse.ObjectModel.Heimatfeld lnkHeimatfeld;
+	 * @clientCardinality 1 
+	 * @link composition
+	 * @supplierCardinality *
+	 */
+	private Analyse.ObjectModel.Feld lnkFeld;
+
 }
