@@ -1,11 +1,16 @@
+
 package Analyse.ObjectModel;
+
 public class Herausgeforderter extends Spieler {
 
 
 	
 	/**
-	 * @label beteiligt an
+	 * @clientNavigability NAVIGABLE
+	 * @label nimmt Teil an
+	 * @supplierNavigability NAVIGABLE_EXPLICITLY
 	 */
 	
-	private Analyse.ObjectModel.Spielzug lnkSpielzug;
+	private Analyse.ObjectModel.Wissensduell lnkWissensduell;
+
 }

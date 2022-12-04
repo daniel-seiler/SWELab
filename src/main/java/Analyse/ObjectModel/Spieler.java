@@ -4,10 +4,24 @@ package Analyse.ObjectModel;
 public class Spieler {
 
 
+	
+
+
+
 	/**
-	 * @clientCardinality 1
+	 * @clientCardinality 1 
+	 * @label führt aus
 	 * @link aggregation
-	 * @supplierCardinality 4 
+	 * @supplierCardinality 0..N
+	 * @supplierNavigability NAVIGABLE_EXPLICITLY
+	 */
+	private Analyse.ObjectModel.Spielzug lnkSpielzug;
+/**
+	 * @clientCardinality 1
+	 * @label besitzt
+	 * @link aggregation
+	 * @supplierCardinality 4
+	 * @supplierNavigability NAVIGABLE_EXPLICITLY
 	 */
 	private Analyse.ObjectModel.Wissenstandsanzeiger lnkWissenstandsanzeiger;
 	/**
