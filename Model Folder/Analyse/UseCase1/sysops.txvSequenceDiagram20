@@ -9,23 +9,29 @@
 		<property name="$name" value="sysops"/>
 		<reference referencedUin="design:node:::-yrgd8ekmtaz9hj-hz4nbn">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="5,5,234,337"/>
+			<property name="bounds" value="5,5,256,342"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="design:node:::-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
 				<property name="bounds" value="25,5,92,300"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:node:::c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="24,23,20,141"/>
+					<property name="bounds" value="36,23,20,141"/>
 					<property name="location_set_by_user" value="true"/>
 					<property name="bounds_setted_by_user" value="true"/>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="113,5,66,300"/>
+				<property name="bounds" value="137,5,64,300"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 			<reference referencedUin="design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="0,80,16,16"/>
+				<property name="bounds" value="0,85,16,16"/>
+				<reference referencedUin="sd20_message_container:design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn">
+					<reference referencedUin="sd20_message|1|call|60(design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn)">
+						<property name="sourceAnchor" value="23,130"/>
+						<property name="targetAnchor" value="76,130"/>
+					</reference>
+				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::1g64ykuv1xa8a-s61wpz">

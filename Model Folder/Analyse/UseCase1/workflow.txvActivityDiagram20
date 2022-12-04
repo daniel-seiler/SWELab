@@ -497,12 +497,12 @@
 					</reference>
 				</reference>
 				<reference referencedUin="design:node:::sk25q7lb84v49r-vvxmgc:a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c">
-					<property name="bounds" value="30,831,161,61"/>
+					<property name="bounds" value="30,831,221,81"/>
 					<property name="location_set_by_user" value="true"/>
 					<property name="bounds_setted_by_user" value="true"/>
 					<reference referencedUin="design:link:::8oqttflb84v49r199jii:sk25q7lb84v49r-vvxmgc:a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c">
-						<property name="sourceAnchor" value="224,941"/>
-						<property name="targetAnchor" value="328,1000"/>
+						<property name="sourceAnchor" value="254,961"/>
+						<property name="targetAnchor" value="326,1000"/>
 						<property name="bendpoints" value=""/>
 					</reference>
 				</reference>

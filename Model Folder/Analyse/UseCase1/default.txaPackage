@@ -229,7 +229,7 @@
 			<node uin="sk25q7lb84v49r-vvxmgc">
 				<property name="$metaclass" value="Note"/>
 				<property name="$name" value="Note1"/>
-				<property name="$note_text" value="Würfelreihenfolge ist beliebig"/>
+				<property name="$note_text" value="Würfelreihenfolge ist beliebig, pro Runde muss jeder Spieler einmal würfeln"/>
 				<link uin="8oqttflb84v49r199jii">
 					<property name="$metaclass" value="Note Link"/>
 					<participant referencedUin="design:node:::sk25q7lb84v49r-vvxmgc:a6k48rkuv1f1qx-1ztlqp:-46k66rkuv1egth-yezd2c" role="Client"></participant>
@@ -636,13 +636,13 @@
 			</link>
 			<link uin="um4l1xlb86etbu-vxr6e4">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="guard" value="mehrere Spieler mit nächsthöherer Augenzahl + nicht-höchste Augenzahl"/>
+				<property name="guard" value="mehrere Spieler mit nächsthöherer Augenzahl &amp;&amp; nicht-höchste Augenzahl"/>
 				<participant referencedUin="design:node:::l7v8clb86aotzzevf40:-46k66rkuv1egth-yezd2c" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lb85aevv-q0mcr1:-46k66rkuv1egth-yezd2c" role="Supplier"></participant>
 			</link>
 			<link uin="i7rziclb86fga0-9yh2b5">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="guard" value="mehrere Spieler mit nächsthöherer Augenzahl + höchste Augenzahl"/>
+				<property name="guard" value="mehrere Spieler mit nächsthöherer Augenzahl &amp;&amp; höchste Augenzahl"/>
 				<participant referencedUin="design:node:::l7v8clb86aotzzevf40:-46k66rkuv1egth-yezd2c" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lb857ea9dnnwmj:-46k66rkuv1egth-yezd2c" role="Supplier"></participant>
 			</link>
