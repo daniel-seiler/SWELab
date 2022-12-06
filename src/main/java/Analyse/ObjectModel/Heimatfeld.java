@@ -1,3 +1,3 @@
 package Analyse.ObjectModel;
-public class Heimatfeld {
+public class Heimatfeld extends Feld {
 }
