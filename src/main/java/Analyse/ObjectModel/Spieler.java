@@ -9,20 +9,21 @@ public class Spieler {
 
 
 	/**
-	 * @clientCardinality 1 
+	 * @clientCardinality 1
 	 * @label führt aus
 	 * @link aggregation
 	 * @supplierCardinality 0..N
-	 * @supplierNavigability NAVIGABLE_EXPLICITLY
+	 * @supplierNavigability NAVIGABLE
 	 */
 	private Analyse.ObjectModel.Spielzug lnkSpielzug;
 /**
-	 * @clientCardinality 1
-	 * @label besitzt
-	 * @link aggregation
-	 * @supplierCardinality 4
-	 * @supplierNavigability NAVIGABLE_EXPLICITLY
-	 */
+ * @clientCardinality 1
+ * @clientNavigability NAVIGABLE
+ * @label besitzt >
+ * @link aggregation
+ * @supplierCardinality 4
+ * @supplierNavigability NAVIGABLE
+ */
 	private Analyse.ObjectModel.Wissenstandsanzeiger lnkWissenstandsanzeiger;
 	/**
 	* @clientCardinality 1

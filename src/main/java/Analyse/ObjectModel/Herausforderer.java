@@ -3,14 +3,14 @@ package Analyse.ObjectModel;
 
 public class Herausforderer extends Spieler {
 
-
-	
 	/**
-	 * @clientNavigability NAVIGABLE
-	 * @label nimmt Teil an
-	 * @supplierNavigability NAVIGABLE_EXPLICITLY
-	 */
-	
+	* @clientCardinality 1
+	* @clientNavigability NAVIGABLE
+	* @label nimmt Teil an
+	* @supplierCardinality 1
+	* @supplierNavigability NAVIGABLE
+	*/
+
 	private Analyse.ObjectModel.Wissensduell lnkWissensduell;
 
 }

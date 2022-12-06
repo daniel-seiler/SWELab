@@ -6,9 +6,11 @@ public class Herausgeforderter extends Spieler {
 
 	
 	/**
+	 * @clientCardinality 1
 	 * @clientNavigability NAVIGABLE
 	 * @label nimmt Teil an
-	 * @supplierNavigability NAVIGABLE_EXPLICITLY
+	 * @supplierCardinality 1 
+	 * @supplierNavigability NAVIGABLE
 	 */
 	
 	private Analyse.ObjectModel.Wissensduell lnkWissensduell;
