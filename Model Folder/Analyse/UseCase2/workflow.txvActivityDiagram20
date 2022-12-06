@@ -528,7 +528,7 @@
 						<property name="bendpoints" value="960,1160,326,1160"/>
 						<property name="smooth_bendpoints" value="960,1160,326,1160"/>
 						<reference referencedUin="label:guard:design:link:::ieje0rlascis2q-gefunj:l7v8clasca2wfj5d651:-46k66rkuv1j3pd3c08w1">
-							<property name="bounds" value="913,1175,42,24"/>
+							<property name="bounds" value="913,1175,40,24"/>
 							<property name="weight" value="0.11672308793699993"/>
 							<property name="location_set_by_user" value="true"/>
 						</reference>
@@ -537,7 +537,9 @@
 						<property name="sourceAnchor" value="977,1241"/>
 						<property name="targetAnchor" value="1049,1241"/>
 						<reference referencedUin="label:guard:design:link:::ieje0rlascomip-gjihdi:l7v8clasca2wfj5d651:-46k66rkuv1j3pd3c08w1">
-							<property name="bounds" value="987,1244,26,24"/>
+							<property name="bounds" value="960,1240,90,24"/>
+							<property name="weight" value="0.05000000074505806"/>
+							<property name="location_set_by_user" value="true"/>
 						</reference>
 					</reference>
 				</reference>
