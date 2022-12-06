@@ -7,7 +7,21 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhkmtaxw3p3es7mc">
-			<property name="bounds" value="105,5,129,87"/>
+			<property name="bounds" value="75,35,128,131"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
+			<property name="bounds" value="675,54,200,234"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.wuerfelnSpielzug:wuerfelnSpielzug">
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Datenbank">
+			<property name="bounds" value="415,54,190,94"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="275,61,80,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

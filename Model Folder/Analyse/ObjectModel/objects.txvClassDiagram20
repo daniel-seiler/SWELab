@@ -5,5 +5,20 @@
 	<view uin="V1hexuhkmtaxw3p3es7mc">
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="objects"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
+			<property name="bounds" value="55,36,200,234"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Datenbank">
+			<property name="bounds" value="235,35,190,94"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="115,175,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

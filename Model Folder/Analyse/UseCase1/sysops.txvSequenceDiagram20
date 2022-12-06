@@ -5,250 +5,115 @@
 	<view uin="Vam8ynkkmtaz9hjt74w8t">
 		<property name="$metaclass" value="SequenceDiagram20"/>
 		<property name="$referencedInteractionUin" value="design:node:::-yrgd8ekmtaz9hj-hz4nbn"/>
-		<property name="__options" value="option.nlayout.recursive=true"/>
 		<property name="$name" value="sysops"/>
+		<property name="__options" value="Diagram Detail Level=Implementation&#10;option.nlayout.recursive=true"/>
 		<reference referencedUin="design:node:::-yrgd8ekmtaz9hj-hz4nbn">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="5,5,1231,945"/>
+			<property name="bounds" value="-5,15,1231,1342"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="design:node:::-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="885,5,82,903"/>
+				<property name="bounds" value="885,5,156,1290"/>
 				<property name="location_set_by_user" value="true"/>
-				<reference referencedUin="design:node:::c87hzvlbc8v8ppb66hqt:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="31,381,20,24"/>
-					<property name="location_set_by_user" value="true"/>
-				</reference>
 				<reference referencedUin="design:node:::7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="31,46,20,287"/>
+					<property name="bounds" value="31,46,20,863"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="design:link:::ieje0rlb9fohgt5btalh:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="sourceAnchor" value="941,148"/>
-						<property name="targetAnchor" value="941,148"/>
+						<property name="sourceAnchor" value="931,158"/>
+						<property name="targetAnchor" value="931,158"/>
 					</reference>
 					<reference referencedUin="design:node:::7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,0,20,287"/>
+						<property name="bounds" value="0,0,20,863"/>
 						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::7x5rzxlb9fp6ayb4h62l:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,139,20,114"/>
+						<reference referencedUin="design:link:::ieje0rlb9fohguza5dsa:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="sourceAnchor" value="-18,17"/>
+							<property name="targetAnchor" value="-18,17"/>
+						</reference>
+						<reference referencedUin="design:node:::7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,82,20,760"/>
 							<property name="location_set_by_user" value="true"/>
-							<reference referencedUin="design:link:::ieje0rlb9fp6az52h4d0:7x5rzxlb9fp6ayb4h62l:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="sourceAnchor" value="941,287"/>
-								<property name="targetAnchor" value="941,287"/>
-							</reference>
-							<reference referencedUin="design:node:::7x5rzxlb9fp6b0-g6ezls:7x5rzxlb9fp6ayb4h62l:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="0,0,20,114"/>
+							<reference referencedUin="design:node:::7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,440,20,320"/>
 								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="design:node:::c87hzvlb9fpc39-2lph4t:7x5rzxlb9fp6b0-g6ezls:7x5rzxlb9fp6ayb4h62l:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
-									<property name="bounds" value="0,58,20,24"/>
+								<reference referencedUin="design:node:::7x5rzxlbcacf66ebw8rw:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,66,20,98"/>
 									<property name="location_set_by_user" value="true"/>
-								</reference>
-							</reference>
-						</reference>
-					</reference>
-				</reference>
-			</reference>
-			<reference referencedUin="design:node:::-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="554,5,158,903"/>
-				<property name="location_set_by_user" value="true"/>
-				<reference referencedUin="design:node:::c87hzvlbc8uno6syzsw4:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="69,355,20,24"/>
-					<property name="location_set_by_user" value="true"/>
-					<reference referencedUin="design:node:::l2gqtvlbc8v8po9lvejc:c87hzvlbc8uno6syzsw4:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,26,20,24"/>
-						<property name="location_set_by_user" value="true"/>
-						<property name="background_color" value="240,240,240"/>
-						<reference referencedUin="sd20_message_container:design:node:::l2gqtvlbc8v8po9lvejc:c87hzvlbc8uno6syzsw4:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-							<reference referencedUin="sd20_message|1|call|102(design:node:::l2gqtvlbc8v8po9lvejc:c87hzvlbc8uno6syzsw4:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
-								<property name="sourceAnchor" value="940,470"/>
-								<property name="targetAnchor" value="940,470"/>
-								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="label:label:sd20_message|1|call|102(design:node:::l2gqtvlbc8v8po9lvejc:c87hzvlbc8uno6syzsw4:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
-									<property name="bounds" value="878,470,125,24"/>
-								</reference>
-							</reference>
-						</reference>
-					</reference>
-				</reference>
-				<reference referencedUin="design:node:::7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="69,46,20,287"/>
-					<property name="location_set_by_user" value="true"/>
-					<reference referencedUin="design:node:::7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,0,20,287"/>
-						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::c87hzvlb9f9neacd7vdo:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,75,20,24"/>
-							<property name="location_set_by_user" value="true"/>
-						</reference>
-						<reference referencedUin="design:node:::p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,121,20,150"/>
-							<reference referencedUin="design:node:::7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="0,18,20,114"/>
-								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="design:link:::ieje0rlb9fp31e-ww7uem:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-									<property name="sourceAnchor" value="648,287"/>
-									<property name="targetAnchor" value="648,287"/>
-								</reference>
-								<reference referencedUin="design:node:::7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-									<property name="bounds" value="0,0,20,114"/>
-									<property name="location_set_by_user" value="true"/>
-									<reference referencedUin="design:node:::-myz91dlb9fqpemsg9op1:7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-										<property name="bounds" value="-69,22,158,20"/>
+									<reference referencedUin="design:link:::ieje0rlbcacf6724eoko:7x5rzxlbcacf66ebw8rw:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="931,746"/>
+										<property name="targetAnchor" value="931,746"/>
 									</reference>
-									<reference referencedUin="design:node:::l2gqtvlb9fpc38-owdk9z:7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-										<property name="bounds" value="0,58,20,24"/>
+									<reference referencedUin="design:node:::7x5rzxlbcacf68-yqwxqx:7x5rzxlbcacf66ebw8rw:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,98"/>
 										<property name="location_set_by_user" value="true"/>
-										<property name="background_color" value="240,240,240"/>
-										<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9fpc38-owdk9z:7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-											<reference referencedUin="sd20_message|1|call|190(design:node:::l2gqtvlb9fpc38-owdk9z:7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
-												<property name="sourceAnchor" value="658,345"/>
-												<property name="targetAnchor" value="931,345"/>
-												<property name="location_set_by_user" value="true"/>
-												<reference referencedUin="label:label:sd20_message|1|call|190(design:node:::l2gqtvlb9fpc38-owdk9z:7x5rzxlb9fp31g-smn5tx:7x5rzxlb9fp31dyvnmni:p0doktlb9fl0bhele94o:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
-													<property name="bounds" value="704,345,181,24"/>
-												</reference>
+										<reference referencedUin="design:node:::q6qawelbcacnuu7ev65k:7x5rzxlbcacf68-yqwxqx:7x5rzxlbcacf66ebw8rw:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,58,20,24"/>
+										</reference>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::7x5rzxlbcaizj1-dh0jem:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,194,20,106"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::7x5rzxlbcaizj3-zhlded:7x5rzxlbcaizj1-dh0jem:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,106"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbcajwn9a6t7xd:7x5rzxlbcaizj3-zhlded:7x5rzxlbcaizj1-dh0jem:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,50,20,40"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:link:::ieje0rlbcajwnafdv93z:7x5rzxlbcajwn9a6t7xd:7x5rzxlbcaizj3-zhlded:7x5rzxlbcaizj1-dh0jem:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="sourceAnchor" value="931,924"/>
+												<property name="targetAnchor" value="931,924"/>
+											</reference>
+										</reference>
+									</reference>
+									<reference referencedUin="design:link:::ieje0rlbcaizj23jdhpk:7x5rzxlbcaizj1-dh0jem:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="931,874"/>
+										<property name="targetAnchor" value="931,874"/>
+									</reference>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,0,20,440"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::7x5rzxlbca7f1p-v3vi14:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,204,20,156"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:link:::ieje0rlbca7f1q-k4i4gs:7x5rzxlbca7f1p-v3vi14:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="931,444"/>
+										<property name="targetAnchor" value="931,444"/>
+									</reference>
+									<reference referencedUin="design:node:::7x5rzxlbca7f1r-gqt6ke:7x5rzxlbca7f1p-v3vi14:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,156"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbcagj9qz411tm:7x5rzxlbca7f1r-gqt6ke:7x5rzxlbca7f1p-v3vi14:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,76,20,40"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:link:::ieje0rlbcagj9r7j7gug:7x5rzxlbcagj9qz411tm:7x5rzxlbca7f1r-gqt6ke:7x5rzxlbca7f1p-v3vi14:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="sourceAnchor" value="931,520"/>
+												<property name="targetAnchor" value="931,520"/>
 											</reference>
 										</reference>
 									</reference>
 								</reference>
-							</reference>
-						</reference>
-					</reference>
-					<reference referencedUin="design:link:::ieje0rlb9f55pj4xpj0s:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="sourceAnchor" value="648,148"/>
-						<property name="targetAnchor" value="648,148"/>
-					</reference>
-				</reference>
-				<reference referencedUin="design:node:::c87hzvlb9ftogk-r0tl9b:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="69,406,20,24"/>
-					<property name="location_set_by_user" value="true"/>
-				</reference>
-				<reference referencedUin="design:node:::7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="69,478,20,121"/>
-					<property name="location_set_by_user" value="true"/>
-					<reference referencedUin="design:link:::ieje0rlb9fwjecyf9pt3:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="sourceAnchor" value="648,580"/>
-						<property name="targetAnchor" value="648,580"/>
-					</reference>
-					<reference referencedUin="design:node:::7x5rzxlb9fwjed-gvid16:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,0,20,121"/>
-						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::c87hzvlb9fyhwc-slqvk5:7x5rzxlb9fwjed-gvid16:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,60,20,24"/>
-							<property name="location_set_by_user" value="true"/>
-						</reference>
-					</reference>
-				</reference>
-			</reference>
-			<reference referencedUin="design:node:::-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-				<property name="bounds" value="38,5,446,903"/>
-				<property name="location_set_by_user" value="true"/>
-				<property name="bounds_setted_by_user" value="true"/>
-				<reference referencedUin="design:node:::c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="213,23,20,789"/>
-					<property name="location_set_by_user" value="true"/>
-					<property name="bounds_setted_by_user" value="true"/>
-					<reference referencedUin="design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,378,20,24"/>
-						<property name="location_set_by_user" value="true"/>
-						<property name="background_color" value="240,240,240"/>
-						<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<reference referencedUin="sd20_message|1|call|102(design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-								<property name="sourceAnchor" value="286,508"/>
-								<property name="targetAnchor" value="638,508"/>
-								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="label:label:sd20_message|1|call|102(design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-									<property name="bounds" value="337,508,250,44"/>
-								</reference>
-							</reference>
-						</reference>
-					</reference>
-					<reference referencedUin="design:node:::7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,450,20,121"/>
-						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,0,20,121"/>
-							<property name="location_set_by_user" value="true"/>
-							<reference referencedUin="design:node:::-myz91dlb9fx8uegpfw6a:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="-99,22,219,20"/>
-							</reference>
-							<reference referencedUin="design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="0,60,20,24"/>
-								<property name="location_set_by_user" value="true"/>
-								<property name="background_color" value="240,240,240"/>
-								<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-									<reference referencedUin="sd20_message|1|call|147(design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-										<property name="sourceAnchor" value="286,640"/>
-										<property name="targetAnchor" value="638,640"/>
+								<reference referencedUin="design:node:::7x5rzxlbca9qm5-vv67xz:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,76,20,98"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::7x5rzxlbca9qm8-yep1w7:7x5rzxlbca9qm5-vv67xz:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,98"/>
 										<property name="location_set_by_user" value="true"/>
-										<reference referencedUin="label:label:sd20_message|1|call|147(design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-											<property name="bounds" value="405,640,115,24"/>
+										<reference referencedUin="design:node:::c87hzvlbca9xsj-pt2mlo:7x5rzxlbca9qm8-yep1w7:7x5rzxlbca9qm5-vv67xz:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,58,20,24"/>
+											<property name="location_set_by_user" value="true"/>
 										</reference>
+									</reference>
+									<reference referencedUin="design:link:::ieje0rlbca9qm7coce7b:7x5rzxlbca9qm5-vv67xz:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="931,316"/>
+										<property name="targetAnchor" value="931,316"/>
 									</reference>
 								</reference>
 							</reference>
-						</reference>
-						<reference referencedUin="design:link:::ieje0rlb9fwh2k4055o2:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="sourceAnchor" value="276,580"/>
-							<property name="targetAnchor" value="276,580"/>
-						</reference>
-					</reference>
-					<reference referencedUin="design:node:::7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,18,20,287"/>
-						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,0,20,287"/>
-							<property name="location_set_by_user" value="true"/>
-							<reference referencedUin="design:node:::-myz91dlb9fhzp9-pg132l:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="-213,22,446,20"/>
-							</reference>
-							<reference referencedUin="design:node:::l2gqtvlb9f9neah9fati:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="0,75,20,24"/>
-								<property name="location_set_by_user" value="true"/>
-								<property name="background_color" value="240,240,240"/>
-								<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9f9neah9fati:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-									<reference referencedUin="sd20_message|1|call|146(design:node:::l2gqtvlb9f9neah9fati:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-										<property name="sourceAnchor" value="286,223"/>
-										<property name="targetAnchor" value="638,223"/>
-										<property name="location_set_by_user" value="true"/>
-										<reference referencedUin="label:label:sd20_message|1|call|146(design:node:::l2gqtvlb9f9neah9fati:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-											<property name="bounds" value="406,223,113,24"/>
-										</reference>
-									</reference>
-								</reference>
-							</reference>
-							<reference referencedUin="design:node:::rq40njlb9fl0bh-sbzjx6:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-								<property name="bounds" value="0,121,20,150"/>
-								<property name="location_set_by_user" value="true"/>
-								<property name="background_color" value="240,240,240"/>
-								<reference referencedUin="sd20_message_container:design:node:::rq40njlb9fl0bh-sbzjx6:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-									<reference referencedUin="sd20_message|1|call|147(design:node:::rq40njlb9fl0bh-sbzjx6:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-										<property name="sourceAnchor" value="286,269"/>
-										<property name="targetAnchor" value="638,269"/>
-										<reference referencedUin="label:label:sd20_message|1|call|147(design:node:::rq40njlb9fl0bh-sbzjx6:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-											<property name="bounds" value="337,269,250,44"/>
-										</reference>
-									</reference>
-								</reference>
-							</reference>
-						</reference>
-						<reference referencedUin="design:link:::ieje0rlb9f53ty-e1knq0:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="sourceAnchor" value="276,148"/>
-							<property name="targetAnchor" value="276,148"/>
-						</reference>
-					</reference>
-					<reference referencedUin="design:node:::l2gqtvlbc8uno5qlofp9:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="bounds" value="0,327,20,24"/>
-						<property name="location_set_by_user" value="true"/>
-						<property name="background_color" value="240,240,240"/>
-						<reference referencedUin="sd20_message_container:design:node:::l2gqtvlbc8uno5qlofp9:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
-							<reference referencedUin="sd20_message|1|call|102(design:node:::l2gqtvlbc8uno5qlofp9:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-								<property name="sourceAnchor" value="642,450"/>
-								<property name="targetAnchor" value="642,450"/>
-								<property name="location_set_by_user" value="true"/>
-								<reference referencedUin="label:label:sd20_message|1|call|102(design:node:::l2gqtvlbc8uno5qlofp9:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
-									<property name="bounds" value="615,450,55,24"/>
-								</reference>
+							<reference referencedUin="design:link:::ieje0rlbca1hgdaadg7m:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="sourceAnchor" value="931,240"/>
+								<property name="targetAnchor" value="931,240"/>
 							</reference>
 						</reference>
 					</reference>
@@ -257,41 +122,598 @@
 			<reference referencedUin="design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn">
 				<property name="bounds" value="183,85,16,16"/>
 				<reference referencedUin="sd20_message_container:design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="0,0,0,0"/>
 					<reference referencedUin="sd20_message|1|call|60(design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn)">
-						<property name="sourceAnchor" value="206,130"/>
-						<property name="targetAnchor" value="266,130"/>
+						<property name="sourceAnchor" value="196,140"/>
+						<property name="targetAnchor" value="229,140"/>
+						<reference referencedUin="sd20_message_label:sd20_message|1|call|60(design:node:::l2gqtvkuv1qu2b-f64mv7:-yrgd8ekmtaz9hj-hz4nbn)">
+							<property name="bounds" value="196,120,25,20"/>
+						</reference>
 					</reference>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
 				<property name="background_color" value="249,249,245"/>
-				<property name="bounds" value="28,111,931,287"/>
+				<property name="bounds" value="28,111,957,863"/>
 				<property name="bounds_setted_by_user" value="true"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:node:::-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="0,20,931,267"/>
+					<property name="bounds" value="0,20,957,843"/>
 					<property name="bounds_setted_by_user" value="true"/>
 					<property name="location_set_by_user" value="true"/>
-					<reference referencedUin="design:node:::7chx8llb9fp31a-bcjghs:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
-						<property name="background_color" value="244,230,238"/>
-						<property name="bounds" value="516,119,402,114"/>
+					<reference referencedUin="design:node:::7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="background_color" value="245,238,245"/>
+						<property name="bounds" value="75,62,869,760"/>
 						<property name="bounds_setted_by_user" value="true"/>
 						<property name="location_set_by_user" value="true"/>
-						<reference referencedUin="design:node:::-yp8yhlb9fp31g-kf915x:7chx8llb9fp31a-bcjghs:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
-							<property name="bounds" value="0,20,402,94"/>
+						<reference referencedUin="design:node:::-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,20,869,420"/>
+							<property name="bounds_setted_by_user" value="true"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::7chx8llbca7cf1vh1jy4:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="background_color" value="245,248,242"/>
+								<property name="bounds" value="13,184,843,156"/>
+								<property name="bounds_setted_by_user" value="true"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::-yp8yhlbca7cf5gmk9ul:7chx8llbca7cf1vh1jy4:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,20,843,136"/>
+									<property name="bounds_setted_by_user" value="true"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::h4n4thlbcag3x2-p6fr3o:-yp8yhlbca7cf5gmk9ul:7chx8llbca7cf1vh1jy4:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="98,56,732,40"/>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::-yydlhslbca7cf4-pqgbd6:7chx8llbca7cf1vh1jy4:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,0,0,0"/>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::7chx8llbca9owmuz71do:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="background_color" value="231,233,231"/>
+								<property name="bounds" value="441,56,402,98"/>
+								<property name="bounds_setted_by_user" value="true"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::-yp8yhlbca9owp-25gc40:7chx8llbca9owmuz71do:-yp8yhlbc9yj0d-7aog8g:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,20,402,78"/>
+								</reference>
+							</reference>
+						</reference>
+						<reference referencedUin="design:node:::-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,440,869,320"/>
+							<property name="bounds_setted_by_user" value="true"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::7chx8llbcacduemr6cmu:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="background_color" value="247,244,242"/>
+								<property name="bounds" value="484,66,359,98"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::-yp8yhlbcacduh-8c0xno:7chx8llbcacduemr6cmu:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,20,359,78"/>
+									<property name="bounds_setted_by_user" value="true"/>
+									<property name="location_set_by_user" value="true"/>
+								</reference>
+								<reference referencedUin="design:node:::-yydlhslbcacdug-4ovnvx:7chx8llbcacduemr6cmu:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,-6,0,0"/>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::7chx8llbcaiwa1hmrzxj:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="background_color" value="233,240,239"/>
+								<property name="bounds" value="56,194,800,106"/>
+								<property name="bounds_setted_by_user" value="true"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::-yp8yhlbcaiwa4-vzeme1:7chx8llbcaiwa1hmrzxj:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,20,800,86"/>
+									<property name="bounds_setted_by_user" value="true"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::h4n4thlbcajojialmmp7:-yp8yhlbcaiwa4-vzeme1:7chx8llbcaiwa1hmrzxj:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="55,30,732,40"/>
+										<property name="location_set_by_user" value="true"/>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::-yydlhslbcaiwa3-69n56h:7chx8llbcaiwa1hmrzxj:-yp8yhlbc9yj0g-3s0gp5:7chx8llbc9yj0aqpwf5q:-yp8yhlb9f53tzdajeb3:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="9,-12,0,0"/>
+								</reference>
+							</reference>
+						</reference>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::-yydlhslb9f53tz-1glipw:7chx8llb9f53tw-n7ffaf:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="0,0,0,0"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+				<property name="bounds" value="554,5,252,1290"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::7x5rzxlbchttu7ydv6u:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="116,988,20,80"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:node:::7x5rzxlbchttu9-u00ayz:7x5rzxlbchttu7ydv6u:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,0,20,80"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::c87hzvlbchv5io-fwazpr:7x5rzxlbchttu9-u00ayz:7x5rzxlbchttu7ydv6u:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,41,20,24"/>
+							<property name="location_set_by_user" value="true"/>
+						</reference>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="116,46,20,863"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:node:::7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,0,20,863"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:link:::ieje0rlb9f55pm-n361ox:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="sourceAnchor" value="-18,17"/>
+							<property name="targetAnchor" value="-18,17"/>
+						</reference>
+						<reference referencedUin="design:node:::7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,82,20,760"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,440,20,320"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::7x5rzxlbcaiy5hc6nzqu:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,194,20,106"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:link:::ieje0rlbcaiy5ipsa9du:7x5rzxlbcaiy5hc6nzqu:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="685,874"/>
+										<property name="targetAnchor" value="685,874"/>
+									</reference>
+									<reference referencedUin="design:node:::7x5rzxlbcaiy5j-xn6s1l:7x5rzxlbcaiy5hc6nzqu:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,106"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbcajvcu-y92req:7x5rzxlbcaiy5j-xn6s1l:7x5rzxlbcaiy5hc6nzqu:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,50,20,40"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:link:::ieje0rlbcajvcv-n7u29w:7x5rzxlbcajvcu-y92req:7x5rzxlbcaiy5j-xn6s1l:7x5rzxlbcaiy5hc6nzqu:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="sourceAnchor" value="685,924"/>
+												<property name="targetAnchor" value="685,924"/>
+											</reference>
+										</reference>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,48,20,134"/>
+									<property name="bounds_setted_by_user" value="true"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,18,20,98"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,0,20,98"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:node:::jhdqrylbcacnuu-90g0ag:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="0,58,20,24"/>
+												<property name="location_set_by_user" value="true"/>
+												<property name="background_color" value="240,240,240"/>
+												<reference referencedUin="sd20_message_container:design:node:::jhdqrylbcacnuu-90g0ag:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+													<property name="bounds" value="-5,-2,0,0"/>
+													<reference referencedUin="sd20_message|1|call|234(design:node:::jhdqrylbcacnuu-90g0ag:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
+														<property name="sourceAnchor" value="695,804"/>
+														<property name="targetAnchor" value="921,804"/>
+														<reference referencedUin="sd20_message_label:sd20_message|1|call|234(design:node:::jhdqrylbcacnuu-90g0ag:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
+														</reference>
+													</reference>
+												</reference>
+											</reference>
+											<reference referencedUin="design:node:::-myz91dlbcannhv-5vtbro:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="-73,22,166,20"/>
+											</reference>
+										</reference>
+										<reference referencedUin="design:link:::ieje0rlbcacdug3okjr0:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="sourceAnchor" value="685,746"/>
+											<property name="targetAnchor" value="685,746"/>
+										</reference>
+									</reference>
+								</reference>
+							</reference>
+							<reference referencedUin="design:link:::ieje0rlbc9ylo7-2hq9zv:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="sourceAnchor" value="685,240"/>
+								<property name="targetAnchor" value="685,240"/>
+							</reference>
+							<reference referencedUin="design:node:::7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,0,20,440"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,58,20,134"/>
+									<reference referencedUin="design:node:::7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,18,20,98"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,0,20,98"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:node:::l2gqtvlbca9xsi79zaub:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="0,58,20,24"/>
+												<property name="location_set_by_user" value="true"/>
+												<property name="background_color" value="240,240,240"/>
+												<reference referencedUin="sd20_message_container:design:node:::l2gqtvlbca9xsi79zaub:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+													<reference referencedUin="sd20_message|1|call|232(design:node:::l2gqtvlbca9xsi79zaub:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
+														<property name="sourceAnchor" value="695,374"/>
+														<property name="targetAnchor" value="921,374"/>
+														<property name="location_set_by_user" value="true"/>
+														<reference referencedUin="sd20_message_label:sd20_message|1|call|232(design:node:::l2gqtvlbca9xsi79zaub:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn)">
+														</reference>
+													</reference>
+												</reference>
+											</reference>
+											<reference referencedUin="design:node:::-myz91dlbcabmor-jgfs3k:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="-116,22,253,20"/>
+											</reference>
+										</reference>
+										<reference referencedUin="design:link:::ieje0rlbca9owo-b6seyr:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="sourceAnchor" value="685,316"/>
+											<property name="targetAnchor" value="685,316"/>
+										</reference>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::7x5rzxlbca7dslqqkk1c:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,204,20,156"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::7x5rzxlbca7dsn-d0gu0h:7x5rzxlbca7dslqqkk1c:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,0,20,156"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:node:::7x5rzxlbcagfrq3qmhkp:7x5rzxlbca7dsn-d0gu0h:7x5rzxlbca7dslqqkk1c:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,76,20,40"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:link:::ieje0rlbcagfrrk74j7e:7x5rzxlbcagfrq3qmhkp:7x5rzxlbca7dsn-d0gu0h:7x5rzxlbca7dslqqkk1c:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="sourceAnchor" value="685,520"/>
+												<property name="targetAnchor" value="685,520"/>
+											</reference>
+										</reference>
+									</reference>
+									<reference referencedUin="design:link:::ieje0rlbca7dsn-wr9e84:7x5rzxlbca7dslqqkk1c:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="sourceAnchor" value="685,444"/>
+										<property name="targetAnchor" value="685,444"/>
+									</reference>
+								</reference>
+							</reference>
+						</reference>
+					</reference>
+					<reference referencedUin="design:link:::ieje0rlb9f55pj4xpj0s:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="sourceAnchor" value="685,158"/>
+						<property name="targetAnchor" value="685,158"/>
+					</reference>
+				</reference>
+				<reference referencedUin="design:node:::c87hzvlb9ftogk-r0tl9b:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="116,946,20,24"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="design:node:::7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="116,1088,20,98"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:link:::ieje0rlb9fwjecyf9pt3:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="sourceAnchor" value="685,1200"/>
+						<property name="targetAnchor" value="685,1200"/>
+					</reference>
+					<reference referencedUin="design:node:::7x5rzxlb9fwjed-gvid16:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,0,20,98"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::c87hzvlb9fyhwc-slqvk5:7x5rzxlb9fwjed-gvid16:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,58,20,24"/>
+							<property name="location_set_by_user" value="true"/>
+						</reference>
+						<reference referencedUin="design:link:::ieje0rlb9fwjed-6ziaoz:7x5rzxlb9fwjed-gvid16:7x5rzxlb9fwjeb-4t9jg7:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="sourceAnchor" value="-18,17"/>
+							<property name="targetAnchor" value="-18,17"/>
+						</reference>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::7chx8llbchtrhj-hotsal:-yrgd8ekmtaz9hj-hz4nbn">
+				<property name="background_color" value="231,231,242"/>
+				<property name="bounds" value="214,1053,486,80"/>
+				<reference referencedUin="design:node:::-yp8yhlbchtrhn5wj6mo:7chx8llbchtrhj-hotsal:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="0,20,486,60"/>
+					<property name="bounds_setted_by_user" value="true"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+				<property name="bounds" value="38,5,392,1290"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<reference referencedUin="design:node:::c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="186,23,20,1181"/>
+					<property name="location_set_by_user" value="true"/>
+					<property name="bounds_setted_by_user" value="true"/>
+					<reference referencedUin="design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,918,20,24"/>
+						<property name="location_set_by_user" value="true"/>
+						<property name="background_color" value="240,240,240"/>
+						<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="-1,0,0,0"/>
+							<reference referencedUin="sd20_message|1|call|102(design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+								<property name="sourceAnchor" value="249,1058"/>
+								<property name="targetAnchor" value="675,1058"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="sd20_message_label:sd20_message|1|call|102(design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+									<property name="bounds" value="276,535,36,20"/>
+								</reference>
+							</reference>
+						</reference>
+					</reference>
+					<reference referencedUin="design:node:::7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,965,20,80"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,0,20,80"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,41,20,24"/>
+								<property name="location_set_by_user" value="true"/>
+								<property name="background_color" value="240,240,240"/>
+								<reference referencedUin="sd20_message_container:design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+									<reference referencedUin="sd20_message|1|call|146(design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+										<property name="sourceAnchor" value="684,1141"/>
+										<property name="targetAnchor" value="684,1141"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="sd20_message_label:sd20_message|1|call|146(design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+										</reference>
+									</reference>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::-myz91dlbchxkj2kypn52:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="-94,22,208,20"/>
+							</reference>
+						</reference>
+					</reference>
+					<reference referencedUin="design:node:::7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,1065,20,98"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,0,20,98"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::-myz91dlb9fx8uegpfw6a:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="-157,22,335,20"/>
+							</reference>
+							<reference referencedUin="design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,58,20,24"/>
+								<property name="location_set_by_user" value="true"/>
+								<property name="background_color" value="240,240,240"/>
+								<reference referencedUin="sd20_message_container:design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="13,0,0,0"/>
+									<reference referencedUin="sd20_message|1|call|147(design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+										<property name="sourceAnchor" value="249,1258"/>
+										<property name="targetAnchor" value="675,1258"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="sd20_message_label:sd20_message|1|call|147(design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+											<property name="bounds" value="276,630,36,20"/>
+										</reference>
+									</reference>
+								</reference>
+							</reference>
+							<reference referencedUin="design:link:::ieje0rlb9fwh2n2ijwt2:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="sourceAnchor" value="-18,17"/>
+								<property name="targetAnchor" value="-18,17"/>
+							</reference>
+						</reference>
+						<reference referencedUin="design:link:::ieje0rlb9fwh2k4055o2:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="sourceAnchor" value="239,1200"/>
+							<property name="targetAnchor" value="239,1200"/>
+						</reference>
+					</reference>
+					<reference referencedUin="design:node:::7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+						<property name="bounds" value="0,18,20,863"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="bounds" value="0,0,20,863"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:link:::ieje0rlb9f53u27tvyyc:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="sourceAnchor" value="-18,17"/>
+								<property name="targetAnchor" value="-18,17"/>
+							</reference>
+							<reference referencedUin="design:node:::7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="0,82,20,760"/>
+								<property name="location_set_by_user" value="true"/>
+								<reference referencedUin="design:node:::7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,440,20,320"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::-myz91dlbc9zhakv1q5yq:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="-60,12,140,20"/>
+									</reference>
+									<reference referencedUin="design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,48,20,134"/>
+										<property name="location_set_by_user" value="true"/>
+										<property name="background_color" value="240,240,240"/>
+										<reference referencedUin="sd20_message_container:design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<reference referencedUin="sd20_message|1|call|190(design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+												<property name="sourceAnchor" value="249,728"/>
+												<property name="targetAnchor" value="675,728"/>
+												<reference referencedUin="sd20_message_label:sd20_message|1|call|190(design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+												</reference>
+											</reference>
+										</reference>
+									</reference>
+									<reference referencedUin="design:node:::7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,194,20,106"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:link:::ieje0rlbcaiwa2-1kkjsa:7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="sourceAnchor" value="239,874"/>
+											<property name="targetAnchor" value="239,874"/>
+										</reference>
+										<reference referencedUin="design:node:::7x5rzxlbcaiwa5-34upc:7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,0,20,106"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:node:::-myz91dlbcajdv73v5ry7:7x5rzxlbcaiwa5-34upc:7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="-55,22,131,20"/>
+												<property name="location_set_by_user" value="true"/>
+											</reference>
+											<reference referencedUin="design:node:::7x5rzxlbcajojj-khitk7:7x5rzxlbcaiwa5-34upc:7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="0,50,20,40"/>
+												<property name="location_set_by_user" value="true"/>
+												<reference referencedUin="design:link:::ieje0rlbcajojj-9r3e35:7x5rzxlbcajojj-khitk7:7x5rzxlbcaiwa5-34upc:7x5rzxlbcaiwa2tj7x65:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+													<property name="sourceAnchor" value="239,924"/>
+													<property name="targetAnchor" value="239,924"/>
+												</reference>
+											</reference>
+										</reference>
+									</reference>
+								</reference>
+								<reference referencedUin="design:node:::7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="bounds" value="0,0,20,440"/>
+									<property name="location_set_by_user" value="true"/>
+									<reference referencedUin="design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,58,20,134"/>
+										<property name="location_set_by_user" value="true"/>
+										<property name="background_color" value="240,240,240"/>
+										<reference referencedUin="sd20_message_container:design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<reference referencedUin="sd20_message|1|call|190(design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+												<property name="sourceAnchor" value="249,298"/>
+												<property name="targetAnchor" value="675,298"/>
+												<reference referencedUin="sd20_message_label:sd20_message|1|call|190(design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn)">
+												</reference>
+											</reference>
+										</reference>
+									</reference>
+									<reference referencedUin="design:node:::7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="0,204,20,156"/>
+										<property name="location_set_by_user" value="true"/>
+										<reference referencedUin="design:link:::ieje0rlbca7cf3-x6kso:7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="sourceAnchor" value="239,444"/>
+											<property name="targetAnchor" value="239,444"/>
+										</reference>
+										<reference referencedUin="design:node:::7x5rzxlbca7cf6hz4qba:7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+											<property name="bounds" value="0,0,20,156"/>
+											<property name="location_set_by_user" value="true"/>
+											<reference referencedUin="design:node:::7x5rzxlbcag3x3sz4w11:7x5rzxlbca7cf6hz4qba:7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="0,76,20,40"/>
+												<property name="location_set_by_user" value="true"/>
+												<reference referencedUin="design:link:::ieje0rlbcag3x3co1k27:7x5rzxlbcag3x3sz4w11:7x5rzxlbca7cf6hz4qba:7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+													<property name="sourceAnchor" value="239,520"/>
+													<property name="targetAnchor" value="239,520"/>
+												</reference>
+											</reference>
+											<reference referencedUin="design:node:::-myz91dlbcaaz9z-9962ie:7x5rzxlbca7cf6hz4qba:7x5rzxlbca7cf2-2y5yqg:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+												<property name="bounds" value="-98,22,217,20"/>
+											</reference>
+										</reference>
+									</reference>
+									<reference referencedUin="design:node:::-myz91dlbc9zhae5xa5pb:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+										<property name="bounds" value="-91,22,202,20"/>
+									</reference>
+								</reference>
+								<reference referencedUin="design:link:::ieje0rlbc9yj0c-omrymg:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+									<property name="sourceAnchor" value="239,240"/>
+									<property name="targetAnchor" value="239,240"/>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::-myz91dlb9fhzp9-pg132l:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+								<property name="bounds" value="-186,22,392,20"/>
+							</reference>
+						</reference>
+						<reference referencedUin="design:link:::ieje0rlb9f53ty-e1knq0:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn">
+							<property name="sourceAnchor" value="239,158"/>
+							<property name="targetAnchor" value="239,158"/>
 						</reference>
 					</reference>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::7chx8llb9fwh2h-4jm8ft:-yrgd8ekmtaz9hj-hz4nbn">
 				<property name="background_color" value="232,242,237"/>
-				<property name="bounds" value="142,543,511,121"/>
+				<property name="bounds" value="115,1153,585,98"/>
 				<property name="bounds_setted_by_user" value="true"/>
 				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::-yydlhslb9fwh2laxth0w:7chx8llb9fwh2h-4jm8ft:-yrgd8ekmtaz9hj-hz4nbn">
+					<property name="bounds" value="13,0,0,0"/>
+				</reference>
 				<reference referencedUin="design:node:::-yp8yhlb9fwh2m-rbqsq1:7chx8llb9fwh2h-4jm8ft:-yrgd8ekmtaz9hj-hz4nbn">
-					<property name="bounds" value="0,20,511,101"/>
+					<property name="bounds" value="0,20,585,78"/>
 					<property name="bounds_setted_by_user" value="true"/>
 					<property name="location_set_by_user" value="true"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::-yrgd8elbcaencg-jqpfhy">
+			<property name="bounds" value="1475,155,826,556"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy">
+				<property name="bounds" value="25,5,92,514"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<reference referencedUin="design:node:::vymii2lbcahkc0-djyh93:eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy">
+					<property name="bounds" value="36,43,20,256"/>
+					<property name="location_set_by_user" value="true"/>
+					<property name="foreground_color" value="250,250,250"/>
+					<property name="background_color" value="240,240,240"/>
+					<reference referencedUin="sd20_message_container:design:node:::vymii2lbcahkc0-djyh93:eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy">
+						<property name="bounds" value="-6,0,0,0"/>
+						<reference referencedUin="sd20_message|1|call|81(design:node:::vymii2lbcahkc0-djyh93:eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy)">
+							<property name="sourceAnchor" value="1566,300"/>
+							<property name="targetAnchor" value="1849,300"/>
+							<reference referencedUin="sd20_message_label:sd20_message|1|call|81(design:node:::vymii2lbcahkc0-djyh93:eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy)">
+							</reference>
+						</reference>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy">
+				<property name="bounds" value="615,5,156,514"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::ud1q5lbcahkc0i35fp6:-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy">
+					<property name="bounds" value="31,108,20,120"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:node:::3oru5jlbcahkc1f09cr2:ud1q5lbcahkc0i35fp6:-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy">
+						<property name="bounds" value="0,0,20,120"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::sll2q0lbcai0wnh34prw:3oru5jlbcahkc1f09cr2:ud1q5lbcahkc0i35fp6:-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy">
+							<property name="bounds" value="0,36,20,24"/>
+						</reference>
+					</reference>
+					<reference referencedUin="design:link:::g4mkxjlbcahkc08fhp0c:ud1q5lbcahkc0i35fp6:-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy">
+						<property name="sourceAnchor" value="2141,360"/>
+						<property name="targetAnchor" value="2141,360"/>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+				<property name="bounds" value="295,5,158,514"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+				<reference referencedUin="design:node:::r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+					<property name="bounds" value="69,48,20,256"/>
+					<property name="bounds_setted_by_user" value="true"/>
+					<property name="location_set_by_user" value="true"/>
+					<reference referencedUin="design:node:::6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+						<property name="bounds" value="0,60,20,120"/>
+						<property name="location_set_by_user" value="true"/>
+						<reference referencedUin="design:node:::84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+							<property name="bounds" value="0,0,20,120"/>
+							<property name="location_set_by_user" value="true"/>
+							<reference referencedUin="design:node:::fgfx27lbcai0wm-ajph73:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+								<property name="background_color" value="240,240,240"/>
+								<property name="bounds" value="0,36,20,24"/>
+								<reference referencedUin="sd20_message_container:design:node:::fgfx27lbcai0wm-ajph73:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+									<reference referencedUin="sd20_message|1|call|145(design:node:::fgfx27lbcai0wm-ajph73:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy)">
+										<property name="sourceAnchor" value="1869,396"/>
+										<property name="targetAnchor" value="2131,396"/>
+										<reference referencedUin="sd20_message_label:sd20_message|1|call|145(design:node:::fgfx27lbcai0wm-ajph73:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy)">
+										</reference>
+									</reference>
+								</reference>
+							</reference>
+							<reference referencedUin="design:node:::yrfy0lbcahkc0-5o9jkf:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+								<property name="bounds" value="-69,80,158,20"/>
+								<property name="location_set_by_user" value="true"/>
+							</reference>
+						</reference>
+						<reference referencedUin="design:link:::84948slbcahkc09nossw:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy">
+							<property name="sourceAnchor" value="1859,360"/>
+							<property name="targetAnchor" value="1859,360"/>
+						</reference>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::b68qcplbcahkc1smb2xk:-yrgd8elbcaencg-jqpfhy">
+				<property name="background_color" value="239,249,234"/>
+				<property name="bounds" value="275,173,401,120"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::86j52mlbcahkc1gvzos1:b68qcplbcahkc1smb2xk:-yrgd8elbcaencg-jqpfhy">
+					<property name="bounds" value="0,20,401,100"/>
+					<property name="bounds_setted_by_user" value="true"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
+				<reference referencedUin="design:node:::w6nl63lbcahkc1-jxon2n:b68qcplbcahkc1smb2xk:-yrgd8elbcaencg-jqpfhy">
+					<property name="bounds" value="0,0,0,0"/>
 				</reference>
 			</reference>
 		</reference>
