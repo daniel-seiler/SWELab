@@ -131,7 +131,7 @@
 							<link uin="ieje0rlbci243pk16g7j">
 								<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 								<participant referencedUin="design:node:::l2gqtvlb9dtjz1-3bdcgy:7x5rzxlb9dtbjw-wuxax:7x5rzxlb9dtbjt-cnjaxj:c87hzvkuv1p58slewes5:-y8nsowkuv1oo41-jdtz8e:-yrgd8ekmtazyqwoi8vg0" role="Client"></participant>
-								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.wuerfelnSpielzug:wuerfelnSpielzug" role="Supplier"></participant>
+								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielzugWuerfel:spielzugWuerfel" role="Supplier"></participant>
 							</link>
 						</node>
 						<node uin="7x5rzxlb9e8qkr-f0cwjh">
@@ -167,7 +167,7 @@
 									<link uin="ieje0rlbci7fq9-knoly4">
 										<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 										<participant referencedUin="design:node:::l2gqtvlb9eaydy-kcxitj:7x5rzxlb9e8qku-dwo4y3:7x5rzxlb9e8qkr-f0cwjh:7x5rzxlb9dtbjw-wuxax:7x5rzxlb9dtbjt-cnjaxj:c87hzvkuv1p58slewes5:-y8nsowkuv1oo41-jdtz8e:-yrgd8ekmtazyqwoi8vg0" role="Client"></participant>
-										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.figurAufStartfeldBewegen:figurAufStartfeldBewegen" role="Supplier"></participant>
+										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielzugFigurAufStartfeld:spielzugFigurAufStartfeld" role="Supplier"></participant>
 									</link>
 									<node uin="rf4xatlbci7kkq73qjt5">
 										<property name="$metaclass" value="SD20_Int_Message_Argument"/>
@@ -231,7 +231,7 @@
 											<link uin="ieje0rlbci8is5-dyeqzj">
 												<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 												<participant referencedUin="design:node:::l2gqtvlbc963te-e5f7wk:7x5rzxlbc95urpgnfign:7x5rzxlbc95urht5j45b:7x5rzxlb9e8qkx-xf09ct:7x5rzxlb9e8qkr-f0cwjh:7x5rzxlb9dtbjw-wuxax:7x5rzxlb9dtbjt-cnjaxj:c87hzvkuv1p58slewes5:-y8nsowkuv1oo41-jdtz8e:-yrgd8ekmtazyqwoi8vg0" role="Client"></participant>
-												<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.figurBewegen:figurBewegen" role="Supplier"></participant>
+												<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielzugFigurBewegen:spielzugFigurBewegen" role="Supplier"></participant>
 											</link>
 											<node uin="rf4xatlbci8s5rk8pyf7">
 												<property name="$metaclass" value="SD20_Int_Message_Argument"/>

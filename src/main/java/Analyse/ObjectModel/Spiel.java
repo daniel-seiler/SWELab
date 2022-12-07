@@ -1,64 +1,48 @@
+
 package Analyse.ObjectModel;
+
 public class Spiel {
 
-
 	/**
-	 * @clientCardinality 1
-	 * @link composition
-	 * @supplierCardinality 1 
-	 */
+	* @clientCardinality 1
+	* @link composition
+	* @supplierCardinality 1
+	*/
 	private Analyse.ObjectModel.Spielfeld lnkSpielfeld;
 
-
-
-
-
-
-
-
-
-
-	public void figurBewegen() {
+	public void spielzugFigurBewegen() {
 		return;
 	}
 
+	public void spielzugWuerfel() {
+			return;
+		}
 
-	public void figurAufStartfeldBewegen() {
+	public void spielzugFigurAufStartfeld() {
 		return;
 	}
 
-
-	public void wuerfelnSpielzug() {
+	public void spielbeginnWuerfeln() {
 		return;
 	}
 
-
-	public void wuefeln() {
+	public void spielbeginnSpielerErstellen() {
 		return;
 	}
 
-
-	public void spielerErstellen() {
+	public void spielbeginnErneutWuerfeln() {
 		return;
 	}
 
-
-	public void erneutWuerfeln() {
+	public void spielbeginnKategorienAuswaehlen() {
 		return;
 	}
 
-
-	public void kategorienAuswaehlen() {
+	public void spielbeginnWeiter() {
 		return;
 	}
 
-
-	public void weiter() {
-		return;
-	}
-
-
-	public void spielerAnlegen() {
+	public void spielbeginnSpielerAnlegen() {
 		return;
 	}
 }

@@ -11,10 +11,9 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
-			<property name="bounds" value="675,54,200,234"/>
+			<property name="bounds" value="675,54,381,234"/>
 			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.wuerfelnSpielzug:wuerfelnSpielzug">
-			</reference>
+			<property name="bounds_setted_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Datenbank">
 			<property name="bounds" value="415,54,190,94"/>

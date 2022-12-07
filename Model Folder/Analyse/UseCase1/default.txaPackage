@@ -480,7 +480,7 @@
 									<link uin="ieje0rlbcb63uktcttvw">
 										<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 										<participant referencedUin="design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielerAnlegen:spielerAnlegen" role="Supplier"></participant>
+										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnSpielerAnlegen:spielbeginnSpielerAnlegen" role="Supplier"></participant>
 									</link>
 								</node>
 								<node uin="7x5rzxlbca7cf2-2y5yqg">
@@ -555,7 +555,7 @@
 									<link uin="ieje0rlbchhu3t-2y9fq0">
 										<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 										<participant referencedUin="design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.weiter:weiter" role="Supplier"></participant>
+										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnWeiter:spielbeginnWeiter" role="Supplier"></participant>
 									</link>
 								</node>
 								<node uin="7x5rzxlbcaiwa2tj7x65">
@@ -621,7 +621,7 @@
 					<link uin="ieje0rlbchihf7n7mw42">
 						<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 						<participant referencedUin="design:node:::l2gqtvlb9ftogkiondd5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-						<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.kategorienAuswaehlen:kategorienAuswaehlen" role="Supplier"></participant>
+						<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnKategorienAuswaehlen:spielbeginnKategorienAuswaehlen" role="Supplier"></participant>
 					</link>
 					<node uin="rf4xatlbchj5rx-34uw70">
 						<property name="$metaclass" value="SD20_Int_Message_Argument"/>
@@ -677,7 +677,7 @@
 							<link uin="ieje0rlbchvpcx-72zqkw">
 								<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 								<participant referencedUin="design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.wuefeln:wuefeln" role="Supplier"></participant>
+								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnWuerfeln:spielbeginnWuerfeln" role="Supplier"></participant>
 							</link>
 							<node uin="rf4xatlbchwv96-17r8mb">
 								<property name="$metaclass" value="SD20_Int_Message_Argument"/>
@@ -725,7 +725,7 @@
 							<link uin="ieje0rlbchw4h1-lu6fvy">
 								<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 								<participant referencedUin="design:node:::l2gqtvlb9fyhwb-4nahiz:7x5rzxlb9fwh2n-jgoqh0:7x5rzxlb9fwh2i-jz8jz5:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.erneutWuerfeln:erneutWuerfeln" role="Supplier"></participant>
+								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnErneutWuerfeln:spielbeginnErneutWuerfeln" role="Supplier"></participant>
 							</link>
 							<node uin="rf4xatlbchwer8-z1gysf">
 								<property name="$metaclass" value="SD20_Int_Message_Argument"/>
@@ -1652,7 +1652,7 @@
 				<link uin="ieje0rlbchogm123i8ow">
 					<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
 					<participant referencedUin="design:node:::vymii2lbcahkc0-djyh93:eq6m4mlbcahfb33a7qod:-yrgd8elbcaencg-jqpfhy" role="Client"></participant>
-					<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielerErstellen:spielerErstellen" role="Supplier"></participant>
+					<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnSpielerErstellen:spielbeginnSpielerErstellen" role="Supplier"></participant>
 				</link>
 				<node uin="rf4xatlbchpt4hrtrpk9">
 					<property name="$metaclass" value="SD20_Int_Message_Argument"/>
