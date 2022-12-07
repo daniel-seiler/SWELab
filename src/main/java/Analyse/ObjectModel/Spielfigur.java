@@ -8,7 +8,7 @@ public class Spielfigur {
 	 * @clientNavigability NAVIGABLE
 	 * @directed true
 	 * @label befindet sich auf
-	 * @supplierCardinality 0..1
+	 * @supplierCardinality 1
 	 * @supplierNavigability NOT_NAVIGABLE
 	 */
 	

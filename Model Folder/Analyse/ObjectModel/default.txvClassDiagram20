@@ -20,8 +20,8 @@
 				<property name="targetAnchor" value="959,782"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Herausforderer:lnkWissensduell">
-					<property name="bounds" value="770,741,95,24"/>
-					<property name="weight" value="0.066522473522476"/>
+					<property name="bounds" value="815,739,95,24"/>
+					<property name="weight" value="0.2563743780898186"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Herausforderer:lnkWissensduell">
@@ -95,11 +95,13 @@
 					<property name="bounds" value="1278,233,12,24"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spielfeld:lnkFeld">
-					<property name="bounds" value="1615,263,79,24"/>
+					<property name="bounds" value="1460,263,79,24"/>
+					<property name="weight" value="0.375"/>
+					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spielfeld:lnkFeld">
-					<property name="bounds" value="1600,240,10,24"/>
-					<property name="weight" value="0.9431818181818182"/>
+					<property name="bounds" value="1760,240,10,24"/>
+					<property name="weight" value="0.949999988079071"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 			</reference>
@@ -144,7 +146,7 @@
 				<property name="targetAnchor" value="617,362"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
-					<property name="bounds" value="757,405,62,24"/>
+					<property name="bounds" value="755,405,67,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
 					<property name="bounds" value="627,337,12,24"/>
@@ -180,8 +182,8 @@
 					<property name="bounds" value="1076,745,12,24"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Herausgeforderter:lnkWissensduell">
-					<property name="bounds" value="1101,762,95,24"/>
-					<property name="weight" value="0.8258010135920074"/>
+					<property name="bounds" value="1162,729,95,24"/>
+					<property name="weight" value="0.4333853142164746"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 			</reference>
@@ -267,8 +269,8 @@
 					<property name="bounds" value="1421,406,26,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spielfigur:lnkFeld">
-					<property name="bounds" value="1540,280,26,24"/>
-					<property name="weight" value="0.782226978637997"/>
+					<property name="bounds" value="1740,280,12,24"/>
+					<property name="weight" value="0.8912609845241997"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spielfigur:lnkFeld">

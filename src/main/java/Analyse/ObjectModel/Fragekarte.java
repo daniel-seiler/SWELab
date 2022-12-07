@@ -6,11 +6,11 @@ public class Fragekarte {
 
 	/**
 	 * @clientCardinality 1
-	 * @clientNavigability NOT_NAVIGABLE
+	 * @clientNavigability NAVIGABLE
 	 * @label beinhaltet
 	 * @link composition
 	 * @supplierCardinality 3
-	 * @supplierNavigability NAVIGABLE_EXPLICITLY
+	 * @supplierNavigability NAVIGABLE
 	 */
 	private Analyse.ObjectModel.Frage lnkKarte;
 

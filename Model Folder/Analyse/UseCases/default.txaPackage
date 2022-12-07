@@ -7,7 +7,7 @@
 		<property name="$name" value="Spiel"/>
 		<node uin="gj7tthkuv1mbmqfib2ge">
 			<property name="$metaclass" value="UseCase20"/>
-			<property name="$name" value="Spiel vorbereiten indem Anzahl und Reihenfolge der Spieler und Wissenskategorien bestimmt und Fragen gemsicht werden."/>
+			<property name="$name" value="Spielvorbereitung"/>
 		</node>
 		<node uin="gj7tthkuv1mms1-g3cyur">
 			<property name="$metaclass" value="UseCase20"/>
@@ -16,7 +16,7 @@
 			<property name="mod__extends" value="auf ein Feld"/>
 			<property name="mod__extends" value="auf dem sich bereits ein Wissensstreiter eines anderen Spielers befindet"/>
 			<property name="mod__extends" value="kommt es zwischen den beiden Parteien zum Wissensduell"/>
-			<property name="$name" value="Spielzug mit Würfeln und ziehen der Figuren"/>
+			<property name="$name" value="Spielzug"/>
 			<node uin="-24q98xlai9q9yina4oo0">
 				<property name="$metaclass" value="ExtensionPoint20"/>
 				<property name="$name" value="Kollision zweier Figuren"/>
@@ -24,7 +24,7 @@
 		</node>
 		<node uin="gj7tthkuv1uvfe-p19shu">
 			<property name="$metaclass" value="UseCase20"/>
-			<property name="$name" value="Zwei Spieler führen ein Wissensduell durch indem Fragen einer Wissenskategorie beantwortet werden"/>
+			<property name="$name" value="Wissensduell"/>
 			<link uin="ieje0rlai8rze99wrs4e">
 				<property name="$metaclass" value="Extend20"/>
 				<node uin="ttifwdlai94e5f-m59lxc">
@@ -43,7 +43,7 @@
 		</node>
 		<node uin="gj7tthlai9othn-57or0e">
 			<property name="$metaclass" value="UseCase20"/>
-			<property name="$name" value="Setzen der Handicaps nach Spielende"/>
+			<property name="$name" value="Spielende"/>
 		</node>
 	</node>
 	<node uin="8bho0jkuv1lwvmclidtz">
@@ -61,6 +61,11 @@
 			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
 			<participant referencedUin="design:node:::gj7tthlai9othn-57or0e:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
 		</link>
+		<link uin="e0m7jzlbdyxdsv-z9g504">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
 	</node>
 	<node uin="8bho0jlai8yevf-wchv85">
 		<property name="$metaclass" value="Actor20"/>
@@ -71,11 +76,6 @@
 			<property name="mod__cachedBaseName" value="Spieler"/>
 			<participant referencedUin="design:node:::8bho0jlai8yevf-wchv85" role="Client"></participant>
 			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Supplier"></participant>
-		</link>
-		<link uin="ieje0rlai90cbf-9pdpv2">
-			<property name="$metaclass" value="KernelAssociation20"/>
-			<participant referencedUin="design:node:::8bho0jlai8yevf-wchv85" role="Client"></participant>
-			<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
 		</link>
 		<link uin="ieje0rlai92sa3-nz9lq5">
 			<property name="$metaclass" value="KernelAssociation20"/>

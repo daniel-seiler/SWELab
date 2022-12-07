@@ -19,7 +19,7 @@ public class Spieler {
 /**
  * @clientCardinality 1
  * @clientNavigability NAVIGABLE
- * @label besitzt >
+ * @label gehört zu
  * @link aggregation
  * @supplierCardinality 4
  * @supplierNavigability NAVIGABLE
