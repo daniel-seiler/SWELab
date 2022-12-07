@@ -1,3 +1,6 @@
+
 package Analyse.ObjectModel;
-public class Class1 {
+
+public class Wissensduell {
+
 }

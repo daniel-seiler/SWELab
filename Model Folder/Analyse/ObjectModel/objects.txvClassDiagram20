@@ -5,8 +5,96 @@
 	<view uin="V1hexuhkmtaxw3p3es7mc">
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="objects"/>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Class1">
-			<property name="bounds" value="75,35,80,80"/>
+		<node uin="156bx8lb88zxqqon89h8">
+			<property name="$metaclass" value="Guide"/>
+			<property name="$name" value="Guide1"/>
+			<property name="position" value="45"/>
+			<property name="horizontal" value="true"/>
+			<node uin="-j1khk1lb890t8j4xdj5y">
+				<property name="$metaclass" value="GuideAttachment"/>
+				<property name="$name" value="GuideAttachment1"/>
+				<property name="alignment" value="-1"/>
+			</node>
+		</node>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="1315,75,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
+			<property name="bounds" value="395,495,80,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+				<property name="sourceAnchor" value="480,537"/>
+				<property name="targetAnchor" value="760,537"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+					<property name="bounds" value="738,510,12,24"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
+					<property name="bounds" value="490,510,12,24"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenstandsanzeiger">
+			<property name="bounds" value="1015,75,183,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfeld">
+			<property name="bounds" value="755,495,88,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Heimatfeld">
+			<property name="bounds" value="746,695,106,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Herausforderer">
+			<property name="bounds" value="1115,275,135,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.Herausforderer:Spieler">
+				<property name="sourceAnchor" value="1222,280"/>
+				<property name="targetAnchor" value="1324,160"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Herausgeforderter">
+			<property name="bounds" value="1435,274,158,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.Herausgeforderter:Spieler">
+				<property name="sourceAnchor" value="1486,279"/>
+				<property name="targetAnchor" value="1392,160"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenskategorie">
+			<property name="bounds" value="1103,495,151,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+				<property name="sourceAnchor" value="1259,543"/>
+				<property name="targetAnchor" value="1500,543"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+					<property name="bounds" value="1269,516,12,24"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+					<property name="bounds" value="1466,516,24,24"/>
+				</reference>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfigur">
+			<property name="bounds" value="1138,655,112,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragekarte">
+			<property name="bounds" value="1495,495,122,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
