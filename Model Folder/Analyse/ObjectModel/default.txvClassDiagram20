@@ -115,7 +115,7 @@
 				<property name="bendpoints" value=""/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkSpielzug">
-					<property name="bounds" value="946,528,61,24"/>
+					<property name="bounds" value="930,528,77,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkSpielzug">
 					<property name="bounds" value="1013,566,29,24"/>
@@ -146,7 +146,7 @@
 				<property name="targetAnchor" value="617,362"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
-					<property name="bounds" value="755,405,67,24"/>
+					<property name="bounds" value="751,406,75,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spieler:lnkWissenstandsanzeiger">
 					<property name="bounds" value="627,337,12,24"/>
@@ -203,7 +203,7 @@
 					<property name="bounds" value="499,266,26,24"/>
 				</reference>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Wissenstandsanzeiger:lnkWissenskategorie">
-					<property name="bounds" value="426,198,67,24"/>
+					<property name="bounds" value="418,198,75,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -359,6 +359,10 @@
 				<property name="targetAnchor" value="516,600"/>
 				<property name="bendpoints" value=""/>
 			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfiguren">
+			<property name="bounds" value="182,21,112,80"/>
+			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
 </nodeSet>

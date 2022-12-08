@@ -41,6 +41,19 @@
 			<property name="bounds" value="1015,75,183,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Wissenstandsanzeiger:lnkWissenskategorie">
+				<property name="sourceAnchor" value="1155,160"/>
+				<property name="targetAnchor" value="1155,500"/>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenstandsanzeiger:lnkWissenskategorie">
+					<property name="bounds" value="1158,466,12,24"/>
+				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Wissenstandsanzeiger:lnkWissenskategorie">
+					<property name="bounds" value="1077,368,75,24"/>
+				</reference>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenstandsanzeiger:lnkWissenskategorie">
+					<property name="bounds" value="1158,166,26,24"/>
+				</reference>
+			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfeld">
 			<property name="bounds" value="755,495,88,80"/>
@@ -86,15 +99,18 @@
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
 					<property name="bounds" value="1466,516,24,24"/>
 				</reference>
+				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkWissensfragen">
+					<property name="bounds" value="1344,546,71,24"/>
+				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfigur">
-			<property name="bounds" value="1138,655,112,80"/>
+			<property name="bounds" value="1138,655,95,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragekarte">
-			<property name="bounds" value="1495,495,122,80"/>
+			<property name="bounds" value="1495,495,103,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>

@@ -222,11 +222,6 @@
 											<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 											<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvlbca9xsj-pt2mlo:7x5rzxlbca9qm8-yep1w7:7x5rzxlbca9qm5-vv67xz:7x5rzxlbca1hgepnr1gh:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn"/>
 											<property name="call_cachedSequenceNumber" value="1.1.1"/>
-											<link uin="ieje0rlbchhhom-ngu9j">
-												<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-												<participant referencedUin="design:node:::l2gqtvlbca9xsi79zaub:7x5rzxlbca9owq408qtp:7x5rzxlbca9ownrpe20l:l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-												<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Datenbank.kategorienLaden:kategorienLaden" role="Supplier"></participant>
-											</link>
 										</node>
 										<link uin="ieje0rlbca9owr-x3semw">
 											<property name="$metaclass" value="SD20_Int_MountingLink"/>
@@ -306,11 +301,6 @@
 											<property name="receiveExecutionSpecificationPuin" value="design:node:::q6qawelbcacnuu7ev65k:7x5rzxlbcacf68-yqwxqx:7x5rzxlbcacf66ebw8rw:7x5rzxlbca1hgg53g7kb:7x5rzxlbca1hgc-4n6qnl:7x5rzxlb9fohgu-dbf69r:7x5rzxlb9fohgrkpgchx:-y8nsowlb9f1sl1-auucyc:-yrgd8ekmtaz9hj-hz4nbn"/>
 											<property name="returnValue" value="List&lt;Kategorien&gt;"/>
 											<property name="call_cachedSequenceNumber" value="1.2.1"/>
-											<link uin="ieje0rlbchi2qv-w8tdeq">
-												<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-												<participant referencedUin="design:node:::jhdqrylbcacnuu-90g0ag:7x5rzxlbcacdui5cusat:7x5rzxlbcacduf-cdkc40:nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-												<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Datenbank.kategorienLaden:kategorienLaden" role="Supplier"></participant>
-											</link>
 										</node>
 										<link uin="ieje0rlbcacduj8b55ma">
 											<property name="$metaclass" value="SD20_Int_MountingLink"/>
@@ -1569,11 +1559,6 @@
 							<property name="receiveExecutionSpecificationPuin" value="design:node:::sll2q0lbcai0wnh34prw:3oru5jlbcahkc1f09cr2:ud1q5lbcahkc0i35fp6:-y8nsowlbcafi0kf1a6yp:-yrgd8elbcaencg-jqpfhy"/>
 							<property name="call_cachedSequenceNumber" value="1.1"/>
 							<property name="returnValue" value="handicap"/>
-							<link uin="ieje0rlbchq7jki9gqar">
-								<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-								<participant referencedUin="design:node:::fgfx27lbcai0wm-ajph73:84t6rylbcahkc0-wnv6f:6ujz3hlbcahkc0h9b0hf:r00zgblbcahkc0m7oydp:-y8nsowlbcafi0g8he95v:-yrgd8elbcaencg-jqpfhy" role="Client"></participant>
-								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Datenbank.handicapAbfragen:handicapAbfragen" role="Supplier"></participant>
-							</link>
 							<node uin="rf4xatlbchqio9-v1cow7">
 								<property name="$metaclass" value="SD20_Int_Message_Argument"/>
 								<property name="$name" value="SD20_Int_Message_Argument1"/>
