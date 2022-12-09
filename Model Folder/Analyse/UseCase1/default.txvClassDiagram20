@@ -12,7 +12,7 @@
 			<property name="collapsedCompartments" value="subelements"/>
 		</reference>
 		<reference referencedUin="design:view:::Vam8ynkkmtaz9hjt74w8t">
-			<property name="bounds" value="5,5,156,91"/>
+			<property name="bounds" value="5,5,350,151"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

@@ -8,6 +8,16 @@ public class Spieler {
 
 
 
+
+	
+	/**
+	 * @clientCardinality 2..6
+	 * @clientNavigability NAVIGABLE
+	 * @label würfelt mit
+	 * @supplierCardinality 2
+	 */
+	
+	private Analyse.ObjectModel.Würfel lnkWürfel;
 	/**
 	 * @clientCardinality 1
 	 * @label führt aus
