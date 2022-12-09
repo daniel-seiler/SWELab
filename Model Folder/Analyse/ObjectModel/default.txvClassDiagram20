@@ -353,6 +353,11 @@
 			<reference referencedUin="association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkWissensduell">
 				<property name="sourceAnchor" value="505,864"/>
 				<property name="targetAnchor" value="960,859"/>
+				<reference referencedUin="label:label:association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkWissensduell">
+					<property name="bounds" value="936,860,12,24"/>
+					<property name="weight" value="0.9451188324942646"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
 			</reference>
 			<reference referencedUin="association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkWissenskategorie">
 				<property name="sourceAnchor" value="495,860"/>
@@ -360,10 +365,21 @@
 				<property name="bendpoints" value="280,860,280,80"/>
 				<property name="smooth_bendpoints" value="280,860,280,80"/>
 				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:label:association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkWissenskategorie">
+					<property name="bounds" value="396,98,15,24"/>
+					<property name="weight" value="0.949999988079071"/>
+					<property name="location_set_by_user" value="true"/>
+					<property name="bounds_setted_by_user" value="true"/>
+				</reference>
 			</reference>
 			<reference referencedUin="association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkHerausforderer">
 				<property name="sourceAnchor" value="505,864"/>
 				<property name="targetAnchor" value="687,680"/>
+				<reference referencedUin="label:label:association-end:l_ast:src:Analyse.ObjectModel.Kategoriewahl:lnkHerausforderer">
+					<property name="bounds" value="678,685,12,24"/>
+					<property name="weight" value="0.949999988079071"/>
+					<property name="location_set_by_user" value="true"/>
+				</reference>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::1g64ylbcamml49515rp">
