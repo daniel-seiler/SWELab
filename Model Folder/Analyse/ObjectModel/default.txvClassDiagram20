@@ -58,28 +58,28 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
-			<property name="bounds" value="1175,35,80,80"/>
+			<property name="bounds" value="1174,-46,200,214"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
-				<property name="sourceAnchor" value="1220,120"/>
+				<property name="sourceAnchor" value="1220,173"/>
 				<property name="targetAnchor" value="1220,217"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:label:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
-					<property name="bounds" value="1180,156,37,24"/>
+					<property name="bounds" value="1180,183,37,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
 					<property name="bounds" value="1223,183,12,24"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Spiel:lnkSpielfeld">
-					<property name="bounds" value="1223,126,12,24"/>
+					<property name="bounds" value="1223,117,12,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_dpn:src:Analyse.ObjectModel.Spiel:lnkDatenbank">
-				<property name="sourceAnchor" value="1260,83"/>
+				<property name="sourceAnchor" value="1379,83"/>
 				<property name="targetAnchor" value="1760,83"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:$stereotypesInplace:jdt:l_dpn:src:Analyse.ObjectModel.Spiel:lnkDatenbank">
-					<property name="bounds" value="1486,56,48,24"/>
+					<property name="bounds" value="1545,56,48,24"/>
 				</reference>
 			</reference>
 		</reference>
