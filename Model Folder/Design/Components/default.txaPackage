@@ -17,4 +17,108 @@
 			</link>
 		</node>
 	</node>
+	<node uin="ba089nlbmev6np-8bf6g4">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="GUI"/>
+		<link uin="ieje0rlbmf2bu9wuw44a">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::ba089nlbmev6np-8bf6g4" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:Design.Components.Interface1" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rlbmf34il-piipe7">
+			<property name="$metaclass" value="Dependency20"/>
+			<participant referencedUin="design:node:::ba089nlbmev6np-8bf6g4" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:Design.Components.Interface2" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ba089nlbmew4h0-m55yis">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Logic"/>
+		<node uin="-vedwtdlbmexc8a-ej54k9">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="Port1"/>
+			<link uin="ieje0rlbmf23q932dta0">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Interface1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlbmf30cp-gjg6fv">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Interface2" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlbmf3h2mfqj60z">
+				<property name="kind" value="delegation"/>
+				<property name="$metaclass" value="Connector20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis" role="Client"></participant>
+				<participant referencedUin="design:node:::-vedwtdlbmf0jlctja637:ba089nlbmewkit-3le0xu:ba089nlbmew4h0-m55yis" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlbmf3kmrbkten0">
+				<property name="kind" value="delegation"/>
+				<property name="$metaclass" value="Connector20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis" role="Client"></participant>
+				<participant referencedUin="design:node:::-vedwtdlbmf0eo5s1h53k:ba089nlbmewm7qlxvvmr:ba089nlbmew4h0-m55yis" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="ba089nlbmewkit-3le0xu">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="Spielvorbereitung"/>
+			<node uin="-vedwtdlbmf0jlctja637">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value="Port1"/>
+			</node>
+			<node uin="-vedwtdlbmf413p-xtm0m1">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value="Port2"/>
+			</node>
+		</node>
+		<node uin="ba089nlbmewm7qlxvvmr">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="Spielzug"/>
+			<node uin="-vedwtdlbmf0eo5s1h53k">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value="Port1"/>
+			</node>
+			<node uin="-vedwtdlbmf3taf-i8vk0z">
+				<property name="$metaclass" value="Port20"/>
+				<property name="isService" value="true"/>
+				<property name="visibility" value="public"/>
+				<property name="$name" value="Port2"/>
+				<link uin="ieje0rlbmf5qro-58shmd">
+					<property name="kind" value="delegation"/>
+					<property name="$metaclass" value="Connector20"/>
+					<participant referencedUin="design:node:::-vedwtdlbmf3taf-i8vk0z:ba089nlbmewm7qlxvvmr:ba089nlbmew4h0-m55yis" role="Client"></participant>
+					<participant referencedUin="design:node:::-vedwtdlbmezfkq27jjdn:ba089nlbmew4h0-m55yis" role="Supplier"></participant>
+				</link>
+			</node>
+		</node>
+		<node uin="-vedwtdlbmezfkq27jjdn">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="P2"/>
+			<link uin="ieje0rlbmezwxr-gkltsx">
+				<property name="$metaclass" value="RequiredInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmezfkq27jjdn:ba089nlbmew4h0-m55yis" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.I1" role="Supplier"></participant>
+			</link>
+		</node>
+	</node>
+	<node uin="ba089nlbmext19rg1kil">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="Database Connector"/>
+		<link uin="ieje0rlbmez009x4ilmp">
+			<property name="$metaclass" value="ProvidedInterface20"/>
+			<participant referencedUin="design:node:::ba089nlbmext19rg1kil" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:Design.Components.I1" role="Supplier"></participant>
+		</link>
+	</node>
 </nodeSet>
