@@ -18,16 +18,16 @@
 			<property name="bounds" value="5,5,170,231"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Design.Components.I1">
-			<property name="bounds" value="85,215,82,80"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Interface1">
 			<property name="bounds" value="399,-4,100,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Interface2">
 			<property name="bounds" value="399,95,100,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Store">
+			<property name="bounds" value="85,215,82,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

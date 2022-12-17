@@ -1,3 +1,3 @@
 package Design.Components;
-public interface I1 {
+public interface Spielzug {
 }
