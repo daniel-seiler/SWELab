@@ -5,5 +5,18 @@
 	<view uin="V1hexuhlbuoyerk-tqgxqp">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.SpielzugPort">
+			<property name="bounds" value="275,5,116,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug">
+			<property name="bounds" value="5,5,251,271"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.spielzug.port.Spielzug.wuerfeln:wuerfeln~QSpieler;">
+			</reference>
+		</reference>
 	</view>
 </nodeSet>
