@@ -467,11 +467,6 @@
 									<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 									<property name="receiveExecutionSpecificationPuin" value="design:node:::l797izlbca0ezi-9zzdn9:7x5rzxlbc9ylo9eijbab:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn"/>
 									<property name="call_cachedSequenceNumber" value="1.1"/>
-									<link uin="ieje0rlbcb63uktcttvw">
-										<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-										<participant referencedUin="design:node:::d8i95elbca0ezh-xiicvi:7x5rzxlbc9yj0e9zg7kd:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnSpielerAnlegen:spielbeginnSpielerAnlegen" role="Supplier"></participant>
-									</link>
 								</node>
 								<node uin="7x5rzxlbca7cf2-2y5yqg">
 									<property name="$metaclass" value="SD20_Int_MountingRegion"/>
@@ -542,11 +537,6 @@
 									<property name="$name" value="SD20_Int_InvocationSpecification2"/>
 									<property name="receiveExecutionSpecificationPuin" value="design:node:::nzw167lbcabxxr-wn6k4m:7x5rzxlbc9yloab4hm2p:7x5rzxlbc9ylo6-p6eks6:7x5rzxlb9f55pm-hraymw:7x5rzxlb9f55pj-nno4jh:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn"/>
 									<property name="call_cachedSequenceNumber" value="1.2"/>
-									<link uin="ieje0rlbchhu3t-2y9fq0">
-										<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-										<participant referencedUin="design:node:::cfs4hllbcabxxr-8r9pmp:7x5rzxlbc9yj0gwa1rnx:7x5rzxlbc9yj0b-4r41qq:7x5rzxlb9f53u0-27nsu1:7x5rzxlb9f53tx-w96xqk:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-										<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnWeiter:spielbeginnWeiter" role="Supplier"></participant>
-									</link>
 								</node>
 								<node uin="7x5rzxlbcaiwa2tj7x65">
 									<property name="$metaclass" value="SD20_Int_MountingRegion"/>
@@ -664,11 +654,6 @@
 							<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 							<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvlbchv5io-fwazpr:7x5rzxlbchttu9-u00ayz:7x5rzxlbchttu7ydv6u:-y8nsowkuv1l3qip7rd7s:-yrgd8ekmtaz9hj-hz4nbn"/>
 							<property name="call_cachedSequenceNumber" value="1.4"/>
-							<link uin="ieje0rlbchvpcx-72zqkw">
-								<property name="$metaclass" value="SD20_Message_LinkToSignatureNamedElement"/>
-								<participant referencedUin="design:node:::l2gqtvlbchv5in-zgs5iw:7x5rzxlbchtrhn-j7axns:7x5rzxlbchtrhka4klg1:c87hzvkuv1qu2a65tasv:-y8nsowkuv1l1j65x0dmm:-yrgd8ekmtaz9hj-hz4nbn" role="Client"></participant>
-								<participant referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.spielbeginnWuerfeln:spielbeginnWuerfeln" role="Supplier"></participant>
-							</link>
 							<node uin="rf4xatlbchwv96-17r8mb">
 								<property name="$metaclass" value="SD20_Int_Message_Argument"/>
 								<property name="$name" value="SD20_Int_Message_Argument1"/>

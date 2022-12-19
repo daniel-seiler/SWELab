@@ -682,15 +682,15 @@
 						</reference>
 					</reference>
 					<reference referencedUin="design:node:::dpq96albt91m12ce4031:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj">
-						<property name="bounds" value="160,100,14,14"/>
+						<property name="bounds" value="118,100,14,14"/>
 						<property name="location_set_by_user" value="true"/>
 						<reference referencedUin="design:link:::ieje0rlbt91y151yspd6:dpq96albt91m12ce4031:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj">
-							<property name="sourceAnchor" value="354,709"/>
+							<property name="sourceAnchor" value="312,708"/>
 							<property name="targetAnchor" value="623,790"/>
 							<property name="bendpoints" value=""/>
 						</reference>
 						<reference referencedUin="design:link:::ieje0rlbt95i08ksrkwi:dpq96albt91m12ce4031:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj">
-							<property name="sourceAnchor" value="354,712"/>
+							<property name="sourceAnchor" value="312,710"/>
 							<property name="targetAnchor" value="644,907"/>
 							<property name="bendpoints" value=""/>
 						</reference>
