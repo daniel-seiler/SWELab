@@ -5,6 +5,11 @@
 	<node uin="-yrgd8ekuv2hwbko1875w">
 		<property name="$metaclass" value="SD20_Interaction"/>
 		<property name="$name" value="Interaction"/>
+		<node uin="-y8nsowlbun47t9oicrc7">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="connectableElementName" value="a"/>
+			<property name="$name" value="Lifeline1"/>
+		</node>
 	</node>
 	<node uin="-46k66rlbs3n3err4bgsj">
 		<property name="$metaclass" value="Activity20"/>
