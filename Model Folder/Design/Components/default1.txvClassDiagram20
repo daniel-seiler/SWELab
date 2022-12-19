@@ -11,11 +11,11 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="design:view:::8fmpwgkmt92zex-in4k7r">
-			<property name="bounds" value="194,116,161,228"/>
+			<property name="bounds" value="194,116,176,328"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="design:view:::V-oyrl70kuv21ga7-ing4t2">
-			<property name="bounds" value="5,5,170,231"/>
+			<property name="bounds" value="5,5,170,211"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Interface1">
@@ -28,6 +28,26 @@
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Store">
 			<property name="bounds" value="85,215,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V-oyrl70lbs2y18fsxqwl9">
+			<property name="bounds" value="211,203,196,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Spielzug">
+			<property name="bounds" value="5,5,86,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Subject">
+			<property name="bounds" value="110,-4,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V-oyrl70lbs2ypn1-ocs8xy">
+			<property name="bounds" value="537,-4,196,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Spielvorbereitung">
+			<property name="bounds" value="211,104,152,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
