@@ -103,7 +103,7 @@
 				<property name="bounds" value="138,-7,14,14"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis">
-					<property name="bounds" value="-159,-16,152,20"/>
+					<property name="bounds" value="-159,-16,145,20"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbmf23q932dta0:-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis">
@@ -142,7 +142,7 @@
 					</reference>
 				</reference>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbs4cbpr-hxwjto:ba089nlbmew4h0-m55yis">
-					<property name="bounds" value="-96,-14,91,20"/>
+					<property name="bounds" value="-96,-14,84,20"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbs4fl6z5qlq3j:-vedwtdlbs4cbpr-hxwjto:ba089nlbmew4h0-m55yis">
@@ -159,7 +159,7 @@
 					<property name="bounds" value="36,-7,14,14"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbmf0eo5s1h53k:ba089nlbmewm7qlxvvmr:ba089nlbmew4h0-m55yis">
-						<property name="bounds" value="-96,-19,91,20"/>
+						<property name="bounds" value="-96,-19,84,20"/>
 						<property name="location_set_by_user" value="true"/>
 					</reference>
 				</reference>
@@ -184,7 +184,7 @@
 					<property name="bounds" value="76,-7,14,14"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbmf0jlctja637:ba089nlbmewkit-3le0xu:ba089nlbmew4h0-m55yis">
-						<property name="bounds" value="24,-19,152,20"/>
+						<property name="bounds" value="24,-19,145,20"/>
 						<property name="location_set_by_user" value="true"/>
 					</reference>
 				</reference>
@@ -235,7 +235,7 @@
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbs3qwzo-rvxs1c:ba089nlbmew4h0-m55yis">
-					<property name="bounds" value="24,-19,27,20"/>
+					<property name="bounds" value="24,-19,58,20"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 			</reference>
@@ -249,7 +249,7 @@
 				<property name="bounds" value="76,-7,14,14"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbs33fvho25c0u:ba089nlbmext19rg1kil">
-					<property name="bounds" value="24,-13,42,20"/>
+					<property name="bounds" value="24,-13,71,20"/>
 					<property name="location_set_by_user" value="true"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbs463hf9evmys:-vedwtdlbs33fvho25c0u:ba089nlbmext19rg1kil">

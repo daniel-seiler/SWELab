@@ -7,29 +7,29 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhkuv23fas-godxhn">
-			<property name="bounds" value="5,105,87,104"/>
+			<property name="bounds" value="5,105,84,108"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="design:view:::V1hexuhkuv23kpu-sb36dw">
-			<property name="bounds" value="5,5,87,85"/>
+			<property name="bounds" value="5,5,84,88"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Factory">
-			<property name="bounds" value="195,55,141,131"/>
+			<property name="bounds" value="195,55,135,137"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.comp1.Factory:FACTORY">
-				<property name="sourceAnchor" value="341,187"/>
-				<property name="targetAnchor" value="337,191"/>
-				<property name="bendpoints" value="370,187,370,220,337,220"/>
-				<property name="smooth_bendpoints" value="370,187,370,220,337,220"/>
+				<property name="sourceAnchor" value="335,193"/>
+				<property name="targetAnchor" value="331,197"/>
+				<property name="bendpoints" value="364,193,364,226,331,226"/>
+				<property name="smooth_bendpoints" value="364,193,364,226,331,226"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Facade">
-			<property name="bounds" value="335,55,111,166"/>
+			<property name="bounds" value="335,55,112,174"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="jdt:l_impl:src:iwwwdnw.comp1.Facade:Factory">
 				<property name="sourceAnchor" value="340,100"/>
-				<property name="targetAnchor" value="340,60"/>
+				<property name="targetAnchor" value="335,100"/>
 			</reference>
 		</reference>
 	</view>

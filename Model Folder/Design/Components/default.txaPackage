@@ -71,7 +71,7 @@
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>
 			<property name="visibility" value="public"/>
-			<property name="$name" value="port_Spielzug"/>
+			<property name="$name" value="SpielzugPort"/>
 			<link uin="ieje0rlbs4e4n5-63ntke">
 				<property name="kind" value="delegation"/>
 				<property name="$metaclass" value="Connector20"/>
@@ -88,7 +88,7 @@
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>
 			<property name="visibility" value="public"/>
-			<property name="$name" value="mvc"/>
+			<property name="$name" value="MVCPort"/>
 			<link uin="ieje0rlbs3uacm-4ucj68">
 				<property name="$metaclass" value="ProvidedInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbs3qwzo-rvxs1c:ba089nlbmew4h0-m55yis" role="Client"></participant>
@@ -105,7 +105,7 @@
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>
 			<property name="visibility" value="public"/>
-			<property name="$name" value="port_Spielvorbereitung"/>
+			<property name="$name" value="SpielvorbereitungPort"/>
 			<link uin="ieje0rlbmf23q932dta0">
 				<property name="$metaclass" value="ProvidedInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbmexc8a-ej54k9:ba089nlbmew4h0-m55yis" role="Client"></participant>
@@ -135,7 +135,7 @@
 				<property name="$metaclass" value="Port20"/>
 				<property name="isService" value="true"/>
 				<property name="visibility" value="public"/>
-				<property name="$name" value="port_Spielvorbereitung"/>
+				<property name="$name" value="SpielvorbereitungPort"/>
 			</node>
 			<node uin="-vedwtdlbs41hczyq1pky">
 				<property name="$metaclass" value="Port20"/>
@@ -168,7 +168,7 @@
 				<property name="$metaclass" value="Port20"/>
 				<property name="isService" value="true"/>
 				<property name="visibility" value="public"/>
-				<property name="$name" value="port_Spielzug"/>
+				<property name="$name" value="SpielzugPort"/>
 			</node>
 			<node uin="-vedwtdlbs41njh-3av6dv">
 				<property name="$metaclass" value="Port20"/>
@@ -217,7 +217,7 @@
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>
 			<property name="visibility" value="public"/>
-			<property name="$name" value="access"/>
+			<property name="$name" value="AccessPort"/>
 			<link uin="ieje0rlbs463hf9evmys">
 				<property name="$metaclass" value="RequiredInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbs33fvho25c0u:ba089nlbmext19rg1kil" role="Client"></participant>
