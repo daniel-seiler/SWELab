@@ -9,7 +9,7 @@
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:node:::-yrgd8ekuv2ix1z-vl41k3">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="5,5,102,50"/>
+			<property name="bounds" value="5,5,121,50"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
