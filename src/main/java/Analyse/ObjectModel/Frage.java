@@ -5,4 +5,14 @@ package Analyse.ObjectModel;
  */
 
 public class Frage {
+
+
+	
+	/**
+	 * @clientCardinality 1
+	 * @clientNavigability NAVIGABLE
+	 * @supplierCardinality 1 
+	 */
+	
+	private Analyse.ObjectModel.Antwort lnkAntwort;
 }

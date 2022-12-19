@@ -11,16 +11,19 @@ public class Kategoriewahl {
 
 
 	/**
-	* @metaclass associationEnd
-	*/
+	 * @label 1
+	 * @metaclass associationEnd
+	 */
 	Analyse.ObjectModel.Herausforderer lnkHerausforderer;
 	/**
-	* @metaclass associationEnd
-	*/
+	 * @label 1
+	 * @metaclass associationEnd
+	 */
 	Analyse.ObjectModel.Wissenskategorie lnkWissenskategorie;
 	/**
-	* @metaclass associationEnd
-	*/
+	 * @label 1
+	 * @metaclass associationEnd
+	 */
 	Analyse.ObjectModel.Wissensduell lnkWissensduell;
 
 }
