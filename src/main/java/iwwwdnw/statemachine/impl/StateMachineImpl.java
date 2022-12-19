@@ -2,12 +2,31 @@ package iwwwdnw.statemachine.impl;
 
 import iwwwdnw.statemachine.port.State;
 import iwwwdnw.statemachine.port.StateMachine;
+import iwwwdnw.statemachine.port.Subject;
+import iwwwdnw.statemachine.port.Observer;
 
-public class StateMachineImpl implements StateMachine {
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class StateMachineImpl implements StateMachine, Subject {
 	private State currentState;
+	private List<Observer> observers = new ArrayList<>();
 	
 	public StateMachineImpl() {
 		this.currentState = State.S.TurnStarted;
+	}
+	
+	@Override
+	public void attach(Observer obs) {
+		this.observers.add(obs);
+		obs.update(this.currentState);
+	}
+
+	@Override
+	public void detach(Observer obs) {
+		this.observers.remove(obs);
 	}
 	
 	@Override
