@@ -15,7 +15,7 @@ public class StateMachineImpl implements StateMachine, Subject {
 	private List<Observer> observers = new ArrayList<>();
 	
 	public StateMachineImpl() {
-		this.currentState = State.S.TurnStarted;
+		this.currentState = State.S.DiceAvailable;
 	}
 	
 	@Override
