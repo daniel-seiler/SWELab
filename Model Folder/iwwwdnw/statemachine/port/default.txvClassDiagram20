@@ -6,27 +6,27 @@
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachine">
-			<property name="bounds" value="5,5,127,112"/>
+			<property name="bounds" value="5,5,123,117"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.SubjectPort">
-			<property name="bounds" value="353,-4,133,93"/>
+			<property name="bounds" value="353,-4,129,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.Observer">
-			<property name="bounds" value="15,136,110,93"/>
+			<property name="bounds" value="15,136,110,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachinePort">
-			<property name="bounds" value="134,-4,200,93"/>
+			<property name="bounds" value="134,-4,200,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.State">
-			<property name="bounds" value="134,108,87,93"/>
+			<property name="bounds" value="134,108,84,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.Subject">
-			<property name="bounds" value="372,108,110,112"/>
+			<property name="bounds" value="372,108,110,117"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

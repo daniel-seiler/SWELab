@@ -225,4 +225,8 @@
 			</link>
 		</node>
 	</node>
+	<node uin="1g64ylbw9q79z-e8wh1n">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Komponente &quot;GUI&quot; = Präsentationsschicht&#10;&#10;Komponente &quot;Logic&quot; (+ alle Komponente innerhalb) = Logikschicht&#10;&#10;Komponente &quot;Database Connector&quot; = Persistenzschicht"/>
+	</node>
 </nodeSet>

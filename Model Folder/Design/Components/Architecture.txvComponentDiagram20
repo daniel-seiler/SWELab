@@ -295,5 +295,13 @@
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
+		<reference referencedUin="design:node:::1g64ylbw9q79z-e8wh1n">
+			<property name="bounds" value="1055,55,327,161"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="foreground_color" value="0,0,0"/>
+			<property name="background_color" value="255,255,128"/>
+		</reference>
 	</view>
 </nodeSet>
