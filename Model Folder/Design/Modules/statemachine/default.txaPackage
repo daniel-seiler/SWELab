@@ -31,150 +31,187 @@
 						<property name="$metaclass" value="PseudoState20"/>
 						<property name="$name" value="Initial1"/>
 						<property name="$kind" value="initial"/>
-						<link uin="ieje0rlbs78bgjshn7ky">
+						<link uin="ieje0rlbw0gmjmolgs7u">
 							<property name="$metaclass" value="TransitionLink20"/>
 							<participant referencedUin="design:node:::k9ofrlkuv29p4iodf10o:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs6lyob-k8i99p:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0drx4-1pmq17:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
-					<node uin="-3uf15dlbs6lyob-k8i99p">
+					<node uin="-3uf15dlbw0drx4-1pmq17">
 						<property name="$metaclass" value="State20"/>
-						<property name="$name" value="TurnStarted"/>
-						<node uin="-acitv2lbs6lyocnzh4if">
+						<property name="$name" value="DiceAvailable"/>
+						<node uin="-acitv2lbw0drx6-quaerw">
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
 						</node>
-						<link uin="ieje0rlbs7a5tfy5y7hw">
+						<link uin="ieje0rlbw0h6ln6csm0">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="__trigger" value="spielzugWuerfel() / rand() % 6 + rand() % 6"/>
-							<participant referencedUin="design:node:::-3uf15dlbs6lyob-k8i99p:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<property name="__trigger" value="throwDice() / rand() % 6 + rand() % 6"/>
+							<node uin="ttifwdlbw0waky-audy12">
+								<property name="$metaclass" value="Constraint"/>
+								<property name="$name" value="guard"/>
+								<node uin="ul14qalbw0wakz-r2gfb8">
+									<property name="$metaclass" value="ValueSpecification"/>
+									<property name="$name" value="ValueSpecification1"/>
+									<property name="language" value="ocl"/>
+									<property name="body" value="throw dice"/>
+								</node>
+							</node>
+							<participant referencedUin="design:node:::-3uf15dlbw0drx4-1pmq17:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0f3r83u23yl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
-					<node uin="-3uf15dlbs79hwb2f4kcs">
+					<node uin="-3uf15dlbw0f3r83u23yl">
 						<property name="$metaclass" value="State20"/>
 						<property name="$name" value="DiceResult"/>
-						<node uin="-acitv2lbs79hwc-ld5x1h">
+						<node uin="-acitv2lbw0f3r9-7es4dz">
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
 						</node>
-						<link uin="ieje0rlbs7upsba3lovn">
+						<link uin="ieje0rlbw0hebf-uhdhrx">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="__trigger" value="spielzugWuerfel() /rand() % 6 + rand() % 6"/>
-							<node uin="ttifwdlbs7vsd7-953bg">
+							<property name="__trigger" value="confirmDiceResult()"/>
+							<node uin="ttifwdlbw0ni83-p170jw">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs7vsd9-201i43">
+								<node uin="ul14qalbw0ni86i0pyrd">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Würfeln muss wiederholt werden"/>
+									<property name="body" value="dice need to be thrown again"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0f3r83u23yl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0drx4-1pmq17:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs7xxiz2c8e31">
+						<link uin="ieje0rlbw0hjpu-hyqn0p">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="__trigger" value="spielzugFigurBewegen()"/>
-							<node uin="ttifwdlbs811er-lu40jo">
+							<property name="__trigger" value="confirmDiceResult()"/>
+							<node uin="ttifwdlbw0t1ar-4iutry">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs811et6cer84">
+								<node uin="ul14qalbw0t1as3jvoge">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Figuren auf Spielfeld"/>
+									<property name="body" value="figures can be moved"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs7x7ai-4genox:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0f3r83u23yl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0fj6r-sefpsl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs85e1n-e0d4oh">
+						<link uin="ieje0rlbw0hsz6-t340cc">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="__trigger" value="spielzugFigurAufStartfeld()"/>
-							<node uin="ttifwdlbs87olv-rhyf7f">
+							<property name="__trigger" value="confirmDiceResult()"/>
+							<node uin="ttifwdlbw0oj9f-72no81">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs87olxxgyput">
+								<node uin="ul14qalbw0oj9hkwuq72">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Figur darf/muss aus Heimatfeld auf Startfeld gestellt werden"/>
+									<property name="body" value="figure has to be moved from home to start"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs83joqgx8gr4:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0f3r83u23yl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0ft7v-xq67w5:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs885kz-rcxdeu">
+						<link uin="ieje0rlbw0hwu3-1xldhc">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<node uin="ttifwdlbs88l0i-ehwvyx">
+							<property name="__trigger" value="confirmDiceResult()"/>
+							<node uin="ttifwdlbw0pjiz-st767q">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs88l0j-jb3o76">
+								<node uin="ul14qalbw0pjj1-7k0hfs">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Keine Figur darf bewegt werden"/>
+									<property name="body" value="no figure was allowed to be moved"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs79hwb2f4kcs:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs83joqgx8gr4:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0f3r83u23yl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0g8nfa89g2x:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
-					<node uin="-3uf15dlbs7x7ai-4genox">
+					<node uin="-3uf15dlbw0fj6r-sefpsl">
 						<property name="$metaclass" value="State20"/>
-						<property name="$name" value="FurtherMoves"/>
-						<node uin="-acitv2lbs7x7akko0b76">
+						<property name="$name" value="SelectFigureToMove"/>
+						<node uin="-acitv2lbw0fj6t-8157hh">
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
 						</node>
-						<link uin="ieje0rlbs822g3cw6ys3">
+						<link uin="ieje0rlbw0hnkrx09edu">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="__trigger" value="spielzugFigurBewegen()"/>
-							<node uin="ttifwdlbs82y2z-tm4s6">
+							<property name="__trigger" value="moveFig()"/>
+							<node uin="ttifwdlbw0s2krnuhqjb">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs82y31-s2e23p">
+								<node uin="ul14qalbw0s2ksqqhogj">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Gewürfelte Augenzahl nicht verbraucht"/>
+									<property name="body" value="more moves can be made"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs7x7ai-4genox:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs7x7ai-4genox:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0fj6r-sefpsl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0fj6r-sefpsl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs84ds3-rexq5s">
+						<link uin="ieje0rlbw0i28jqo5czz">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<node uin="ttifwdlbs854sbbt3d8v">
+							<property name="__trigger" value="moveFig()"/>
+							<node uin="ttifwdlbw0sner-h0gppp">
 								<property name="$metaclass" value="Constraint"/>
 								<property name="$name" value="guard"/>
-								<node uin="ul14qalbs854sd-dgt2je">
+								<node uin="ul14qalbw0snesu56lvt">
 									<property name="$metaclass" value="ValueSpecification"/>
 									<property name="$name" value="ValueSpecification1"/>
 									<property name="language" value="ocl"/>
-									<property name="body" value="Augenzahl aufgebraucht"/>
+									<property name="body" value="no more moves can be made"/>
 								</node>
 							</node>
-							<participant referencedUin="design:node:::-3uf15dlbs7x7ai-4genox:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs83joqgx8gr4:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0fj6r-sefpsl:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0g8nfa89g2x:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
-					<node uin="-3uf15dlbs83joqgx8gr4">
+					<node uin="-3uf15dlbw0ft7v-xq67w5">
 						<property name="$metaclass" value="State20"/>
-						<property name="$name" value="TurnCompleted"/>
-						<node uin="-acitv2lbs83jor-7kjag8">
+						<property name="$name" value="SelectFigureToStartfield"/>
+						<node uin="-acitv2lbw0ft7ykifa2e">
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
 						</node>
-						<link uin="ieje0rlbulcb08-xuq9ar">
+						<link uin="ieje0rlbw0i6v76xg40n">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<participant referencedUin="design:node:::-3uf15dlbs83joqgx8gr4:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::6drk9llbs89m1vmx9eh6:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<property name="__trigger" value="moveFigToStart()"/>
+							<node uin="ttifwdlbw0voz7sx1chf">
+								<property name="$metaclass" value="Constraint"/>
+								<property name="$name" value="guard"/>
+								<node uin="ul14qalbw0voz7ouith7">
+									<property name="$metaclass" value="ValueSpecification"/>
+									<property name="$name" value="ValueSpecification1"/>
+									<property name="language" value="ocl"/>
+									<property name="body" value="finished moving figure"/>
+								</node>
+							</node>
+							<participant referencedUin="design:node:::-3uf15dlbw0ft7v-xq67w5:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbw0g8nfa89g2x:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
-					<node uin="6drk9llbs89m1vmx9eh6">
+					<node uin="-3uf15dlbw0g8nfa89g2x">
+						<property name="$metaclass" value="State20"/>
+						<property name="$name" value="FinishTurn"/>
+						<node uin="-acitv2lbw0g8nh-mmm0n9">
+							<property name="$metaclass" value="Region20"/>
+							<property name="$name" value="Region20"/>
+						</node>
+						<link uin="ieje0rlbw0iekzj9mrmf">
+							<property name="$metaclass" value="TransitionLink20"/>
+							<property name="__trigger" value="finishTurn()"/>
+							<participant referencedUin="design:node:::-3uf15dlbw0g8nfa89g2x:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::6drk9llbw0gh4z-db4e03:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+						</link>
+					</node>
+					<node uin="6drk9llbw0gh4z-db4e03">
 						<property name="$metaclass" value="FinalState20"/>
 						<property name="$name" value="Final1"/>
 					</node>
