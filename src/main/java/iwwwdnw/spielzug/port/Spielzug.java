@@ -2,7 +2,6 @@
 package iwwwdnw.spielzug.port;
 
 import Analyse.ObjectModel.Spieler;
-import Analyse.ObjectModel.Spielfeld;
 import Analyse.ObjectModel.Spielfigur;
 import Analyse.ObjectModel.Startfeld;
 
@@ -10,13 +9,13 @@ public interface Spielzug {
 
 
 
-	void spielzugBeenden();
+	void finishTurn();
 
-	Spielfeld figurenBewegen(Spielfigur figur, Analyse.ObjectModel.Feld felder);
+	void moveFig(Spielfigur figur, Analyse.ObjectModel.Feld felder);
 
-	void figurAufStartefeld(Startfeld startfeld);
+	void moveFigToStart(Startfeld startfeld);
 
-	Integer wuerfelergebnisPruefen();
+	void confirmDiceResult();
 
-	void wuerfeln(Spieler spieler);
+	void throwDice(Spieler spieler);
 }
