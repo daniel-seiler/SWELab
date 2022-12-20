@@ -6,20 +6,12 @@
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Observer">
-			<property name="bounds" value="116,125,92,80"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.MVCPort">
 			<property name="bounds" value="5,125,91,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.SpielvorbereitungPort">
 			<property name="bounds" value="5,5,182,80"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Subject">
-			<property name="bounds" value="207,5,82,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.SpielzugPort">
