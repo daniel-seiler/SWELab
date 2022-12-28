@@ -60,7 +60,7 @@
 			<link uin="ieje0rlbs4ijjo-mm72zd">
 				<property name="$metaclass" value="RequiredInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbs4eh1jwlf71r:ba089nlbmev6np-8bf6g4" role="Client"></participant>
-				<participant referencedUin="jdt:e_class:src:Design.Components.Spielzug" role="Supplier"></participant>
+				<participant referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug" role="Supplier"></participant>
 			</link>
 		</node>
 	</node>
@@ -81,7 +81,7 @@
 			<link uin="ieje0rlbs4fl6z5qlq3j">
 				<property name="$metaclass" value="ProvidedInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbs4cbpr-hxwjto:ba089nlbmew4h0-m55yis" role="Client"></participant>
-				<participant referencedUin="jdt:e_class:src:Design.Components.Spielzug" role="Supplier"></participant>
+				<participant referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-vedwtdlbs3qwzo-rvxs1c">

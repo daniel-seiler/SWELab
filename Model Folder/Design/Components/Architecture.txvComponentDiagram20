@@ -277,15 +277,6 @@
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Design.Components.Spielzug">
-			<property name="bounds" value="515,255,20,20"/>
-			<property name="location_set_by_user" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Spielzug">
-				<property name="bounds" value="20,-3,57,20"/>
-				<property name="location_set_by_user" value="true"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Spielvorbereitung">
 			<property name="bounds" value="355,255,20,20"/>
 			<property name="location_set_by_user" value="true"/>
@@ -302,6 +293,14 @@
 			<property name="$shortcutReference" value="true"/>
 			<property name="foreground_color" value="0,0,0"/>
 			<property name="background_color" value="255,255,128"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug">
+			<property name="bounds" value="515,255,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug">
+				<property name="bounds" value="-18,30,57,20"/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>
