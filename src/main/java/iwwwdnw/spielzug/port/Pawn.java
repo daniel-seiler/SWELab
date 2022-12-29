@@ -1,3 +1,3 @@
 package iwwwdnw.spielzug.port;
-public interface Startfeld {
+public interface Pawn {
 }

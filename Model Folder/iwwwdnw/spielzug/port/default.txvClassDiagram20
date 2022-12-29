@@ -15,8 +15,26 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<property name="collapsedCompartments" value=""/>
-			<reference referencedUin="jdt:e_method:src:iwwwdnw.spielzug.port.Spielzug.wuerfeln:wuerfeln~QSpieler;">
-			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.TurnInfo">
+			<property name="bounds" value="275,104,89,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Pawn">
+			<property name="bounds" value="275,203,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Field">
+			<property name="bounds" value="256,295,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Player">
+			<property name="bounds" value="38,295,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.DiceResult">
+			<property name="bounds" value="147,295,102,80"/>
+			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
 </nodeSet>

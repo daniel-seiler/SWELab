@@ -1,21 +1,17 @@
 
 package iwwwdnw.spielzug.port;
 
-import Analyse.ObjectModel.Spieler;
-import Analyse.ObjectModel.Spielfigur;
-import Analyse.ObjectModel.Startfeld;
-
 public interface Spielzug {
 
 
 
 	void finishTurn();
 
-	void moveFig(Spielfigur figur, Analyse.ObjectModel.Feld felder);
+	TurnInfo movePawn(Field field, Pawn pawn);
 
-	void moveFigToStart(Startfeld startfeld);
+	void pawnToStartField(Field startField);
 
-	void confirmDiceResult();
+	TurnInfo checkDiceResult();
 
-	void throwDice(Spieler spieler);
+	DiceResult throwDice(Player player);
 }

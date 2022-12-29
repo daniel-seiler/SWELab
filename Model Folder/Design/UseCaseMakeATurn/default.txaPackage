@@ -333,26 +333,27 @@
 		<node uin="-qbjze4lbs4u3pn-jx1d8r">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Maske 'Figur auf Spielfeld bewegen' anzeigen und auf Eingabe warten"/>
-			<node uin="-fd3rhzlbt8uevs-einw89">
-				<property name="$metaclass" value="InputPin20"/>
-				<property name="$name" value="Würfelergebnis"/>
-			</node>
 			<node uin="dpq96albt91m12ce4031">
 				<property name="$metaclass" value="OutputPin20"/>
-				<property name="$name" value="Bewegung"/>
+				<property name="$name" value="Feld"/>
 				<link uin="ieje0rlbt91y151yspd6">
 					<property name="$metaclass" value="ObjectFlow20"/>
 					<participant referencedUin="design:node:::dpq96albt91m12ce4031:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Client"></participant>
 					<participant referencedUin="design:node:::-fd3rhzlbt919r5-9zlnuz:-qbjze4lbt8v5bp587wv1:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
 				</link>
 			</node>
-			<node uin="-fd3rhzlbtdxum2-1les4u">
-				<property name="$metaclass" value="InputPin20"/>
-				<property name="$name" value="Figurpositionen"/>
-			</node>
 			<node uin="-fd3rhzlbtdyx6f71dyje">
 				<property name="$metaclass" value="InputPin20"/>
-				<property name="$name" value="Würfelinformationen"/>
+				<property name="$name" value="Zuginformationen"/>
+			</node>
+			<node uin="dpq96alc8z14vk-kaa2cf">
+				<property name="$metaclass" value="OutputPin20"/>
+				<property name="$name" value="Figur"/>
+				<link uin="ieje0rlc8z1cezxkjgu3">
+					<property name="$metaclass" value="ObjectFlow20"/>
+					<participant referencedUin="design:node:::dpq96alc8z14vk-kaa2cf:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Client"></participant>
+					<participant referencedUin="design:node:::-fd3rhzlc8z0m3g-1o61ug:-qbjze4lbt8v5bp587wv1:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
+				</link>
 			</node>
 		</node>
 		<node uin="-qbjze4lbs4vnhu-9u37r">
@@ -378,11 +379,11 @@
 			</link>
 			<node uin="dpq96albt8tk39-ncf4a3">
 				<property name="$metaclass" value="OutputPin20"/>
-				<property name="$name" value="Würfelergebnis"/>
+				<property name="$name" value="Zuginformationen"/>
 				<link uin="ieje0rlbt8ursb6yy73s">
 					<property name="$metaclass" value="ObjectFlow20"/>
 					<participant referencedUin="design:node:::dpq96albt8tk39-ncf4a3:-qbjze4lbs4wnk9i45dzr:-46k66rlbs3n3err4bgsj" role="Client"></participant>
-					<participant referencedUin="design:node:::-fd3rhzlbt8uevs-einw89:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
+					<participant referencedUin="design:node:::-fd3rhzlbtdyx6f71dyje:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
 				</link>
 			</node>
 		</node>
@@ -442,7 +443,11 @@
 			</link>
 			<node uin="-fd3rhzlbt919r5-9zlnuz">
 				<property name="$metaclass" value="InputPin20"/>
-				<property name="$name" value="Bewegung"/>
+				<property name="$name" value="Feld"/>
+			</node>
+			<node uin="-fd3rhzlc8z0m3g-1o61ug">
+				<property name="$metaclass" value="InputPin20"/>
+				<property name="$name" value="Figur"/>
 			</node>
 		</node>
 		<node uin="l7v8clbt8yiqs303aqp">
@@ -502,18 +507,9 @@
 				<participant referencedUin="design:node:::-qbjze4lbt9hjgg-46xfhw:-46k66rlbs3n3err4bgsj" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
 			</link>
-			<node uin="dpq96albtdykimhivjtp">
-				<property name="$metaclass" value="OutputPin20"/>
-				<property name="$name" value="Figurpositionen"/>
-				<link uin="ieje0rlbtdytui-c4lzxb">
-					<property name="$metaclass" value="ObjectFlow20"/>
-					<participant referencedUin="design:node:::dpq96albtdykimhivjtp:-qbjze4lbt9hjgg-46xfhw:-46k66rlbs3n3err4bgsj" role="Client"></participant>
-					<participant referencedUin="design:node:::-fd3rhzlbtdxum2-1les4u:-qbjze4lbs4u3pn-jx1d8r:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>
-				</link>
-			</node>
 			<node uin="dpq96albtdz7lbmw77fm">
 				<property name="$metaclass" value="OutputPin20"/>
-				<property name="$name" value="Würfelinformationen"/>
+				<property name="$name" value="ZugInformationen"/>
 				<link uin="ieje0rlbtdzr60uspty0">
 					<property name="$metaclass" value="ObjectFlow20"/>
 					<participant referencedUin="design:node:::dpq96albtdz7lbmw77fm:-qbjze4lbt9hjgg-46xfhw:-46k66rlbs3n3err4bgsj" role="Client"></participant>
@@ -572,12 +568,12 @@
 		</node>
 		<node uin="-qbjze4lbtd8vv9vzutbt">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Figurposition updaten und speichern"/>
+			<property name="$name" value="Figurpositionen speichern und updaten"/>
 			<node uin="-fd3rhzlbtd9xkrk7iyo3">
 				<property name="$metaclass" value="InputPin20"/>
 				<property name="$name" value="Startfeld"/>
 			</node>
-			<link uin="ieje0rlbtdbl7u-pnfb6d">
+			<link uin="5unk9mlc8zjztmh60sn3">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4lbtd8vv9vzutbt:-46k66rlbs3n3err4bgsj" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20lbtdbbr7mt7loj:-46k66rlbs3n3err4bgsj" role="Supplier"></participant>

@@ -7,7 +7,7 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V-oyrl70kuv21ga7-ing4t2">
-			<property name="bounds" value="324,5,170,211"/>
+			<property name="bounds" value="324,5,379,251"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Interface">
