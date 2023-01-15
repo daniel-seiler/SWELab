@@ -17,7 +17,7 @@ public class Gui implements Observer {
 	public Gui (MVCPort mvcPort, SpielzugPort spielzugPort) {
 		this.spielzugPort = spielzugPort;
 		this.mvcPort = mvcPort;
-		this.mvcPort.attach(this);
+		this.mvcPort.subject().attach(this);
 		this.init();
 		this.controller = new Controller (this, mvcPort, spielzugPort);
 	}

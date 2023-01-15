@@ -21,7 +21,7 @@ public class Controller implements Observer {
 	public Controller (Gui gui, MVCPort mvcPort, SpielzugPort spielzugPort) {
 		this.gui = gui;
 		this.mvcPort = this.gui.getMvcPort();
-		this.mvcPort.attach(this);
+		this.mvcPort.subject().attach(this);
 		scanner = new Scanner(System.in);
 		this.spielzugPort = spielzugPort;
 	}
