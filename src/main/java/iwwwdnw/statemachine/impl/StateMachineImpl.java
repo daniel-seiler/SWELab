@@ -35,6 +35,7 @@ public class StateMachineImpl implements StateMachine, Subject {
 	@Override
 	public void setState(State state) {
 		this.currentState = state;
+        this.observers.forEach(obs -> obs.update(state));
 	}
 
 }
