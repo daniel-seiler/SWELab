@@ -1,5 +1,5 @@
 package iwwwdnw.statemachine.port;
 
-public interface StateMachinePort extends StateMachine {
-	
+public interface StateMachinePort {
+	StateMachine stateMachine();
 }

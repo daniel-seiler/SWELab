@@ -1,56 +1,44 @@
 package iwwwdnw.logic;
 
-import iwwwdnw.spielzug.port.DiceResult;
-import iwwwdnw.spielzug.port.Field;
-import iwwwdnw.spielzug.port.Pawn;
-import iwwwdnw.spielzug.port.Player;
-import iwwwdnw.spielzug.port.TurnInfo;
+import iwwwdnw.logic.port.MVCPort;
+import iwwwdnw.logic.port.SpielvorbereitungPort;
+import iwwwdnw.logic.port.SpielzugPort;
+import iwwwdnw.spielvorbereitung.port.Spielvorbereitung;
+import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.StatemachineFactory;
-import iwwwdnw.statemachine.port.Observer;
+import iwwwdnw.statemachine.port.Subject;
 import iwwwdnw.statemachine.port.SubjectPort;
 
-public class LogicFactoryImpl implements LogicFactory {
-
-	@Override
-	public void detach(Observer parameter0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void attach(Observer parameter0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void finishTurn() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public TurnInfo movePawn(Field field, Pawn pawn) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void pawnToStartField(Field startField) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public TurnInfo checkDiceResult() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public DiceResult throwDice(Player player) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielvorbereitungPort, SpielzugPort {
+    private SubjectPort subjectPort = StatemachineFactory.FACTORY.subjectPort();
+    
+    @Override
+    public MVCPort mvcPort() {
+        return this;
+    }
+    
+    @Override
+    public SpielvorbereitungPort spielvorbereitungPort() {
+        return this;
+    }
+    
+    @Override
+    public SpielzugPort spielzugPort() {
+        return this;
+    }
+    
+    @Override
+    public Subject subject() {
+        return this.subjectPort.subject();
+    }
+    
+    @Override
+    public Spielvorbereitung spielvorbereitung() {
+        return this.spielvorbereitungPort().spielvorbereitung();
+    }
+    
+    @Override
+    public Spielzug spielzug() {
+        return this.spielzugPort().spielzug();
+    }
 }
