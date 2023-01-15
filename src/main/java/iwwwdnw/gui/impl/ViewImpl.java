@@ -33,12 +33,29 @@ public class ViewImpl implements View, Observer {
         this.currentState = state;
     }
     
-    void show(String text) {
-        System.out.println("Controller tells me to print this: " + text);
+    void show(String out) {
+        System.out.println(out);
     }
     
     void display() {
-        System.out.println("Display result here");
+        StringBuilder out = new StringBuilder();
+        out.append("-----------------------------------");
+        
+        if (State.S.DiceAvailable.equals(currentState)) {
+        
+        } else if (State.S.DiceResult.equals(currentState)) {
+        
+        } else if (State.S.SelectFigureToMove.equals(currentState)) {
+        
+        } else if (State.S.SelectFigureToStartfield.equals(currentState)) {
+        
+        } else if (State.S.FinishTurn.equals(currentState)) {
+        
+        } else {
+            throw new RuntimeException("Illegal state");
+        }
+        
+        System.out.println(out);
     }
     
     public MVCPort getMvcPort() {
