@@ -1,5 +1,7 @@
 package iwwwdnw.gui;
 
-public interface GuiFactory {
+import iwwwdnw.gui.GuiFactoryImpl;
 
+public interface GuiFactory {
+	GuiFactory FACTORY = new GuiFactoryImpl();
 }

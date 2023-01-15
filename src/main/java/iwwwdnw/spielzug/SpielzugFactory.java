@@ -1,5 +1,7 @@
 package iwwwdnw.spielzug;
 
-public interface SpielzugFactory {
+import iwwwdnw.spielzug.port.SpielzugPort;
 
+public interface SpielzugFactory extends SpielzugPort {
+	SpielzugFactory FACTORY = new SpielzugFactoryImpl();
 }

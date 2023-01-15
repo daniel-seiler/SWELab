@@ -1,5 +1,5 @@
 package iwwwdnw.spielvorbereitung;
 
-public class SpielvorbereitungFactoryImpl {
+public class SpielvorbereitungFactoryImpl implements SpielvorbereitungFactory, Spielvorbereitung {
 
 }

@@ -1,5 +1,7 @@
 package iwwwdnw.databaseConnector;
 
-public interface DatabaseConnectorFactory {
+import iwwwdnw.databaseConnector.port.AccessPort;
 
+public interface DatabaseConnectorFactory extends AccessPort {
+	DatabaseConnectorFactory FACTORY = new DatabaseConnectorFactoryImpl();
 }
