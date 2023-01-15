@@ -1,7 +1,5 @@
 package iwwwdnw.statemachine.port;
 
-public interface SubjectPort {
+public interface SubjectPort extends Subject {
 
-	public Subject subject();
-	
 }

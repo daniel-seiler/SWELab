@@ -393,10 +393,6 @@
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spielfiguren">
-			<property name="bounds" value="3,55,112,80"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Würfel">
 			<property name="bounds" value="1515,555,80,80"/>
 			<property name="location_set_by_user" value="true"/>
