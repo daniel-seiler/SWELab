@@ -1,3 +1,6 @@
 package iwwwdnw.logic.port;
-public interface MVCPort {
+
+import iwwwdnw.statemachine.port.SubjectPort;
+
+public interface MVCPort extends SubjectPort {
 }
