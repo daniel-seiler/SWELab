@@ -6,47 +6,47 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="Class Diagram1"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Facade">
-			<property name="bounds" value="138,195,167,107"/>
+			<property name="bounds" value="138,195,200,134"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="collapsedCompartments" value="Property20"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.comp1.Facade:i1">
-				<property name="sourceAnchor" value="310,280"/>
+				<property name="sourceAnchor" value="343,280"/>
 				<property name="targetAnchor" value="600,280"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:iwwwdnw.comp1.Facade:Factory">
 				<property name="sourceAnchor" value="255,200"/>
-				<property name="targetAnchor" value="255,130"/>
+				<property name="targetAnchor" value="255,157"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 			<reference referencedUin="jdt:l_impl:src:iwwwdnw.comp1.Facade:PortA">
-				<property name="sourceAnchor" value="310,241"/>
-				<property name="targetAnchor" value="580,100"/>
+				<property name="sourceAnchor" value="343,240"/>
+				<property name="targetAnchor" value="580,117"/>
 				<property name="bendpoints" value="580,180"/>
 				<property name="smooth_bendpoints" value="580,180"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.Factory">
-			<property name="bounds" value="138,15,194,110"/>
+			<property name="bounds" value="138,15,200,137"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.comp1.Factory:FACTORY">
-				<property name="sourceAnchor" value="337,100"/>
-				<property name="targetAnchor" value="333,130"/>
-				<property name="bendpoints" value="400,100,400,159,333,159"/>
-				<property name="smooth_bendpoints" value="400,100,400,159,333,159"/>
+				<property name="sourceAnchor" value="343,147"/>
+				<property name="targetAnchor" value="334,157"/>
+				<property name="bendpoints" value="343,148,371,148,371,100,400,100,400,159,333,159,333,158,334,158"/>
+				<property name="smooth_bendpoints" value="343,148,371,148,371,100,400,100,400,159,333,159,333,158,334,158"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.port.PortA">
-			<property name="bounds" value="495,15,188,80"/>
+			<property name="bounds" value="495,15,200,97"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.comp1.impl.I1Impl">
-			<property name="bounds" value="595,235,192,80"/>
+			<property name="bounds" value="595,235,200,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>

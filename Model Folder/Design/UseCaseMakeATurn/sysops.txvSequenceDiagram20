@@ -9,8 +9,13 @@
 		<property name="$name" value="sysops"/>
 		<reference referencedUin="design:node:::-yrgd8ekuv2hwbko1875w">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="5,5,102,50"/>
+			<property name="bounds" value="5,5,731,342"/>
 			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::-y8nsowlbun47t9oicrc7:-yrgd8ekuv2hwbko1875w">
+				<property name="bounds" value="85,5,60,300"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
 		</reference>
 	</view>
 	<link uin="ieje0rkuv2hwblsoushe">

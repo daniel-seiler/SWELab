@@ -5,5 +5,50 @@
 	<view uin="8fmpwgkmt92zex-in4k7r">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V-oyrl70kuv21ga7-ing4t2">
+			<property name="bounds" value="324,5,379,251"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Interface">
+			<property name="bounds" value="213,5,91,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Spielvorbereitung">
+			<property name="bounds" value="107,125,152,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V-oyrl70lbs2y18fsxqwl9">
+			<property name="bounds" value="245,265,196,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Interface2">
+			<property name="bounds" value="5,245,100,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhlbmdkc7o-194dcp">
+			<property name="bounds" value="5,465,176,328"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Spielzug">
+			<property name="bounds" value="5,5,86,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V-oyrl70lbs2ypn1-ocs8xy">
+			<property name="bounds" value="5,365,196,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Store">
+			<property name="bounds" value="5,125,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Interface1">
+			<property name="bounds" value="125,245,100,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Subject">
+			<property name="bounds" value="111,5,82,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
