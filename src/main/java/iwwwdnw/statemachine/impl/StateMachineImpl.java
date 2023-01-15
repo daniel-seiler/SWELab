@@ -8,8 +8,6 @@ import iwwwdnw.statemachine.port.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 public class StateMachineImpl implements StateMachine, Subject {
 	private State currentState;
 	private List<Observer> observers = new ArrayList<>();
@@ -38,5 +36,6 @@ public class StateMachineImpl implements StateMachine, Subject {
 	public void setState(State state) {
 		this.currentState = state;
 	}
+
 }
 
