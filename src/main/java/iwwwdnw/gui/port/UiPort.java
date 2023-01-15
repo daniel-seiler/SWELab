@@ -1,5 +1,5 @@
 package iwwwdnw.gui.port;
 
-public interface UiPort {
+public interface UiPort extends Ui {
 
 }
