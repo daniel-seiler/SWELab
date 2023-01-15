@@ -30,31 +30,31 @@ public class SpielzugImpl implements Spielzug {
 		this.stateMachine = stateMachine;
 		this.board = board;
 		this.dice = new Dice();
-	}
-	
-	public void newTurn(PlayerImpl player) {
-		currentPlayer = player;
+		currentPlayer = board.getPlayers().get(0);
 	}
 	
 	
 	@Override
 	public void finishTurn() {
-		//TODO
+		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
+		dice = new Dice();
+		currentMovements.clear();
+		+stateMachine.setState(S.DiceAvailable);
 	}
 
 	@Override
 	public TurnInfo movePawn(Field field, PawnImpl pawn) {
-		List<Field> movement = currentMovements.get(pawn);
-		/*if (movement != null) {
-			if (movement.stream().anyMatch(e -> e.equals(field))) {
-				return new TurnInfo(false);
-			}
-		}*/
+		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
+			// move not possible, because move is to far
+			stateMachine.setState(S.SelectFigureToMove);
+			return new TurnInfo(false);
+		}
 		// check for positioning of all pawns of all players
 		for (PlayerImpl player : board.getPlayers()) {
 			if (player.equals(currentPlayer)) {
 				// check if all rules of current player positioning are correct
 				if (!checkPawnsOfCurrentPlayer(field, pawn)) {
+					stateMachine.setState(S.SelectFigureToMove);
 					return new TurnInfo(false); 
 				}
 			} else {
@@ -64,10 +64,28 @@ public class SpielzugImpl implements Spielzug {
 				}
 			}
 		}
-		for (int i = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID()); i <= Math.max(field.getFieldID(), pawn.getCurrentField().getFieldID()); i++) {
-			board.g
+		// save this move
+		if ( currentMovements.containsKey(pawn)) {
+			currentMovements.get(pawn).addAll(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
+		} else {
+			currentMovements.put(pawn, board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
+		}
+		pawn.setCurrentField(field);
+		diceResult.sub(getDifference(field, pawn));
+		if (diceResult.isZero()) {
+			// User turn finished
+			stateMachine.setState(S.FinishTurn);
+		} else {
+			// User can still move pawns
+			stateMachine.setState(S.SelectFigureToMove);
 		}
 		return new TurnInfo(true);
+	}
+	
+	int getDifference(Field field, PawnImpl pawn) {
+		int max = Math.max(pawn.getCurrentField().getFieldID(), field.getFieldID());
+    	int min = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID());
+    	return Math.min(max - min, min + Board.FIELDS_TOTAL - max);
 	}
 	
 	/*
@@ -99,12 +117,7 @@ public class SpielzugImpl implements Spielzug {
 	}
 	
 	private Boolean checkIfPawnStepsOnField(Field fieldToCheck, Field field, PawnImpl pawn) {
-		for (int i = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID()); i <= Math.max(field.getFieldID(), pawn.getCurrentField().getFieldID()); i++) {
-			if (i == fieldToCheck.getFieldID()) {
-				return false;
-			}
-		}
-		return false;
+		return board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().anyMatch(f -> f.equals(fieldToCheck));
 	}
 
 	@Override
@@ -119,17 +132,9 @@ public class SpielzugImpl implements Spielzug {
 			}
 		}
 	}
-	
-	private void initNewTurn(PlayerImpl player) {
-		currentPlayer = player;
-		dice = new Dice();
-		currentMovements.clear();
-	}
 
 	@Override
-	public DiceResult throwDice(PlayerImpl player) {
-		// if new turn -> set current player to new player
-		if (player != currentPlayer) initNewTurn(player);
+	public DiceResult throwDice() {
 		// get random dice number
 		diceResult = dice.rollTwo();
 		// check result for turn options

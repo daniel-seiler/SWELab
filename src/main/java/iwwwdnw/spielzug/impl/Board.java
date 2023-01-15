@@ -44,7 +44,17 @@ public class Board {
     public List<Field> getFieldsInRange(int first, int second) {
     	int max = Math.max(first, second);
     	int min = Math.min(first, second);
-    	if (max - min > min )
+    	List<Field> fields = new ArrayList<Field>();
+    	if (max - min > min + FIELDS_TOTAL - max) {
+    		for (int i = min; i <= max; i++) {
+    			fields.add(gameFields.get(i));
+    		}
+    	} else {
+    		for (int i = max; i <= min + FIELDS_TOTAL; i++) {
+    			fields.add(gameFields.get(i % FIELDS_TOTAL));
+    		}
+    	}
+    	return fields;
     }
 
     private void initBoardPositions() {
