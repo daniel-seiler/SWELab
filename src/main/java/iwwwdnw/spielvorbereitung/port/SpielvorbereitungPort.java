@@ -1,3 +1,4 @@
 package iwwwdnw.spielvorbereitung.port;
-public interface SpielvorbereitungPort extends Spielvorbereitung{
+public interface SpielvorbereitungPort {
+    Spielvorbereitung spielvorbereitung();
 }

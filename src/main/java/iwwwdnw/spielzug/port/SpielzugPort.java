@@ -1,3 +1,4 @@
 package iwwwdnw.spielzug.port;
-public interface SpielzugPort extends Spielzug {
+public interface SpielzugPort {
+    Spielzug spielzug();
 }

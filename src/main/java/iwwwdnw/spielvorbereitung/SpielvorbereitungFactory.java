@@ -1,7 +1,9 @@
 package iwwwdnw.spielvorbereitung;
 
-import iwwwdnw.logic.port.SpielvorbereitungPort;
+import iwwwdnw.spielvorbereitung.port.SpielvorbereitungPort;
 
-public interface SpielvorbereitungFactory extends SpielvorbereitungPort {
+public interface SpielvorbereitungFactory {
 	SpielvorbereitungFactory FACTORY = new SpielvorbereitungFactoryImpl();
+    
+    SpielvorbereitungPort spielvorbereitungPort();
 }
