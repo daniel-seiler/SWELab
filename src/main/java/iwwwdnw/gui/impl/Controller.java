@@ -13,6 +13,7 @@ public class Controller implements Observer {
     private Scanner scanner;
     private MVCPort mvcPort;
     private SpielzugPort spielzugPort;
+    private State currentState;
     
     
     public Controller(ViewImpl gui, MVCPort mvcPort, SpielzugPort spielzugPort) {
@@ -25,7 +26,7 @@ public class Controller implements Observer {
     
     @Override
     public void update(State state) {
-        System.out.println("Here controller needs to do something");
+        this.currentState = state;
     }
     
     public MVCPort getMvcPort() {
