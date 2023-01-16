@@ -15,7 +15,7 @@ public interface Spielzug {
 
 	void pawnToStartField(Field startField);
 
-	DiceResult throwDice(PlayerImpl player);
+	DiceResult throwDice();
 	
 	
 }
