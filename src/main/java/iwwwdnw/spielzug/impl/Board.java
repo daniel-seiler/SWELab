@@ -45,7 +45,7 @@ public class Board {
     	int max = Math.max(first, second);
     	int min = Math.min(first, second);
     	List<Field> fields = new ArrayList<Field>();
-    	if (max - min > min + FIELDS_TOTAL - max) {
+    	if (max - min < min + FIELDS_TOTAL - max) {
     		for (int i = min; i <= max; i++) {
     			fields.add(gameFields.get(i));
     		}

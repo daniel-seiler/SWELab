@@ -31,6 +31,7 @@ public class SpielzugImpl implements Spielzug {
 		this.board = board;
 		this.dice = new Dice();
 		currentPlayer = board.getPlayers().get(0);
+		stateMachine.setState(S.DiceAvailable);
 	}
 	
 	
@@ -39,7 +40,7 @@ public class SpielzugImpl implements Spielzug {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
 		dice = new Dice();
 		currentMovements.clear();
-		+stateMachine.setState(S.DiceAvailable);
+		stateMachine.setState(S.DiceAvailable);
 	}
 
 	@Override
