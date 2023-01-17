@@ -3,6 +3,7 @@ package iwwwdnw.spielzug.impl;
 import java.util.*;
 
 import iwwwdnw.spielzug.port.Field;
+import iwwwdnw.spielzug.port.Field.FieldType;
 
 public class Board {
 
@@ -41,6 +42,10 @@ public class Board {
     	return startFields.get(player);
     }
     
+    public Field getField(int fieldId) {
+    	return gameFields.get(fieldId);
+    }
+    
     public List<Field> getFieldsInRange(int first, int second) {
     	int max = Math.max(first, second);
     	int min = Math.min(first, second);
@@ -77,5 +82,17 @@ public class Board {
             pawns.add(new PawnImpl(new HomeField()));
         }
         return pawns;
+    }
+    
+    @Override
+	public String toString() {
+    	String board = "";
+    	for (int i = 0; i < FIELDS_TOTAL; i++) {
+    		if (gameFields.get(i).get() == FieldType.StartField) {
+    			board += "Startfield: ";
+    		}
+    		board += gameFields.get(i).getFieldID() + "|";
+    	}
+    	return board;
     }
 }
