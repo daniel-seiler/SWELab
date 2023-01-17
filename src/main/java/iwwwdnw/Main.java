@@ -1,9 +1,11 @@
 package iwwwdnw;
 
+import iwwwdnw.gui.GuiFactory;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hallo SWE");
+        GuiFactory.FACTORY.viewPort().view().startEventLoop();
 	}
 
 }
