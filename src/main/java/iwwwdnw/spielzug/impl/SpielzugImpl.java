@@ -133,6 +133,7 @@ public class SpielzugImpl implements Spielzug {
 				return;
 			}
 		}
+        //TODO return move info
 	}
 
 	@Override
@@ -163,6 +164,16 @@ public class SpielzugImpl implements Spielzug {
 		}
 		return diceResult;
 	}
+    
+    public Field getField(int id) {
+        //TODO
+        return null;
+    }
+    
+    public PawnImpl getPawn(int id) {
+        //TODO
+        return null;
+    }
 
 	
 }
