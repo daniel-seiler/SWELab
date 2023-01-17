@@ -1,6 +1,9 @@
 package iwwwdnw.spielzug;
 
-import iwwwdnw.spielzug.port.*;
+import iwwwdnw.spielzug.impl.*;
+import iwwwdnw.spielzug.port.Field;
+import iwwwdnw.spielzug.port.Spielzug;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.State;
 import iwwwdnw.statemachine.port.StateMachinePort;
@@ -30,7 +33,7 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public TurnInfo movePawn(Field field, Pawn pawn) {
+    public TurnInfo movePawn(Field field, PawnImpl pawn) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
             return null;
         return this.spielzug().movePawn(field, pawn);
@@ -44,16 +47,9 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public TurnInfo checkDiceResult() {
-        if (stateMachine.getState() != State.S.DiceResult)
-            return null;
-        return this.spielzug().checkDiceResult();
-    }
-    
-    @Override
-    public DiceResult throwDice(Player player) {
+    public DiceResult throwDice() {
         if (stateMachine.getState() != State.S.DiceAvailable)
             return null;
-        return this.spielzug().throwDice(player);
+        return this.spielzug().throwDice();
     }
 }
