@@ -9,7 +9,7 @@ public class TurnInfo {
     
     @Override
     public String toString() {
-        //TODO
+        //TODO duell started, moves left, ...
         return success ? "Success" : "No success";
     }
 }
