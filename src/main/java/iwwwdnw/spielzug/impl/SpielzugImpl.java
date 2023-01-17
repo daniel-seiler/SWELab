@@ -41,6 +41,7 @@ public class SpielzugImpl implements Spielzug {
 		dice = new Dice();
 		currentMovements.clear();
 		stateMachine.setState(S.DiceAvailable);
+        //TODO return next player
 	}
 
 	@Override
@@ -122,7 +123,7 @@ public class SpielzugImpl implements Spielzug {
 	}
 
 	@Override
-	public void pawnToStartField(Field startField) {
+	public void pawnToStartField() {
 		List<PawnImpl> pawns = currentPlayer.getPawns();
 		Field startfield = board.getStartField(currentPlayer);
 		for (PawnImpl pawn : pawns) {

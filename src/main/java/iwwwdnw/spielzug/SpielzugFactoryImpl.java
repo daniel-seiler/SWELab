@@ -40,10 +40,10 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public void pawnToStartField(Field startField) {
+    public void pawnToStartField() {
         if (stateMachine.getState() != State.S.SelectFigureToStartfield)
             return;
-        this.spielzug().pawnToStartField(startField);
+        this.spielzug().pawnToStartField();
     }
     
     @Override

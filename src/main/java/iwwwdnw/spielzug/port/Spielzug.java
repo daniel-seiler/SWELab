@@ -13,7 +13,7 @@ public interface Spielzug {
 
 	TurnInfo movePawn(Field field, PawnImpl pawn);
 
-	void pawnToStartField(Field startField);
+	void pawnToStartField();
 
 	DiceResult throwDice();
 	

@@ -6,4 +6,10 @@ public class TurnInfo {
 	TurnInfo(Boolean success) {
 		this.success = success;
 	}
+    
+    @Override
+    public String toString() {
+        //TODO
+        return success ? "Success" : "No success";
+    }
 }
