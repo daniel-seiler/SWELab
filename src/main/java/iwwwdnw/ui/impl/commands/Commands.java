@@ -3,6 +3,7 @@ package iwwwdnw.ui.impl.commands;
 import iwwwdnw.spielzug.impl.PawnImpl;
 import iwwwdnw.spielzug.impl.SpielzugImpl;
 import iwwwdnw.spielzug.port.Field;
+import iwwwdnw.spielzug.port.Pawn;
 import iwwwdnw.spielzug.port.Spielzug;
 
 import java.util.regex.MatchResult;
@@ -28,7 +29,7 @@ public enum Commands {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
             Field tmpField = ((SpielzugImpl) spielzug).getField(42);
-            PawnImpl tmpPawn = ((SpielzugImpl) spielzug).getPawn(42);
+            Pawn tmpPawn = ((SpielzugImpl) spielzug).getPawn(42);
            spielzug.movePawn(tmpField, tmpPawn);
         }
     },
@@ -40,7 +41,7 @@ public enum Commands {
         }
     },
     
-    HELP("*") {
+    HELP(".*") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
            //TODO HELP
