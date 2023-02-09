@@ -1,9 +1,7 @@
 package iwwwdnw.spielzug;
 
 import iwwwdnw.spielzug.impl.PawnImpl;
-import iwwwdnw.spielzug.port.Field;
-import iwwwdnw.spielzug.port.Spielzug;
-import iwwwdnw.spielzug.port.SpielzugPort;
+import iwwwdnw.spielzug.port.*;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.State;
 import iwwwdnw.statemachine.port.StateMachine;
@@ -27,7 +25,7 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
    
     @Override
-    public void movePawn(Field field, PawnImpl pawn) {
+    public void movePawn(Field field, Pawn pawn) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
             return;
         this.spielzug().movePawn(field, pawn);
@@ -50,5 +48,10 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     @Override
     public Spielzug spielzug() {
         return this;
+    }
+
+    @Override
+    public SpielzugInfo spielzugInfo() {
+        return spielzugPort().spielzugInfo();
     }
 }

@@ -4,6 +4,7 @@ import java.util.*;
 
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Field.FieldType;
+import iwwwdnw.spielzug.port.Pawn;
 
 public class Board {
 
@@ -18,7 +19,7 @@ public class Board {
     private final List<Field> gameFields = new ArrayList<Field>();
     private final Map<PlayerImpl, StartField> startFields = new HashMap<PlayerImpl, StartField>();
 
-    private Board() {
+    Board() {
         players.add(new PlayerImpl(Colour.RED, "Rot", 0, initHome()));
         players.add(new PlayerImpl(Colour.YELLOW, "Gelb", 1, initHome()));
         players.add(new PlayerImpl(Colour.GREEN, "Gruen", 2, initHome()));
@@ -76,8 +77,8 @@ public class Board {
     }
 
   
-    private List<PawnImpl> initHome() { 
-    	List<PawnImpl> pawns = new ArrayList<PawnImpl>();
+    private List<Pawn> initHome() {
+    	List<Pawn> pawns = new ArrayList<>();
         for (int count = 0; count < NUM_PAWNS; count++) {
             pawns.add(new PawnImpl(new HomeField()));
         }
