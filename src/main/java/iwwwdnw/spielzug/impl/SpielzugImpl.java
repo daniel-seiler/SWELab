@@ -5,6 +5,7 @@ import iwwwdnw.spielzug.port.Spielzug;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import iwwwdnw.spielzug.impl.DiceResult;
 import iwwwdnw.spielzug.port.Field;
@@ -36,20 +37,22 @@ public class SpielzugImpl implements Spielzug {
 	
 	
 	@Override
-	public void finishTurn() {
+	public PlayerImpl finishTurn() {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
 		dice = new Dice();
 		currentMovements.clear();
 		stateMachine.setState(S.DiceAvailable);
+		return currentPlayer;
         //TODO return next player
 	}
 
 	@Override
 	public TurnInfo movePawn(Field field, PawnImpl pawn) {
+		PlayerImpl duellPlayer = null;
 		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far
 			stateMachine.setState(S.SelectFigureToMove);
-			return new TurnInfo(false);
+			return new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
 		}
 		// check for positioning of all pawns of all players
 		for (PlayerImpl player : board.getPlayers()) {
@@ -57,12 +60,17 @@ public class SpielzugImpl implements Spielzug {
 				// check if all rules of current player positioning are correct
 				if (!checkPawnsOfCurrentPlayer(field, pawn)) {
 					stateMachine.setState(S.SelectFigureToMove);
-					return new TurnInfo(false); 
+					return new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null); 
 				}
 			} else {
 				//check if pawn will be on other players field
 				if (checkPawnsOfOtherPlayer(player, field)) {
-					//TODO DUELL!!
+					duellPlayer = player;
+					for (PawnImpl p : player.getPawns()) {
+						if (pawn.getCurrentField().equals(field)) {
+							p.setCurrentField(new HomeField());
+						}
+					}
 				}
 			}
 		}
@@ -81,7 +89,7 @@ public class SpielzugImpl implements Spielzug {
 			// User can still move pawns
 			stateMachine.setState(S.SelectFigureToMove);
 		}
-		return new TurnInfo(true);
+		return new TurnInfo(true, board, board.getPlayers(), currentPlayer, diceResult, duellPlayer);
 	}
 	
 	int getDifference(Field field, PawnImpl pawn) {
@@ -166,13 +174,11 @@ public class SpielzugImpl implements Spielzug {
 	}
     
     public Field getField(int id) {
-        //TODO
-        return null;
+        return board.getField(id);
     }
     
     public PawnImpl getPawn(int id) {
-        //TODO
-        return null;
+        return currentPlayer.getPawns().get(id);
     }
 
 	
