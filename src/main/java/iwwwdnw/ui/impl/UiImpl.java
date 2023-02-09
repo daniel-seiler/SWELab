@@ -42,8 +42,7 @@ public class UiImpl implements Ui, Observer {
         out.append(Output.SEPARATOR);
         
         if (State.S.DiceAvailable.equals(currentState)) {
-            out.append(Output.TYPE_HELP)
-                    .append(Output.TYPE_THROW);
+            out.append(Output.TYPE_THROW);
         } else if (State.S.DiceResult.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
@@ -61,6 +60,7 @@ public class UiImpl implements Ui, Observer {
         } else {
             out.append(Output.INVALID_INPUT);
         }
+        out.append(Output.ASK_FOR_COMMAND);
         
         show(out.toString());
     }

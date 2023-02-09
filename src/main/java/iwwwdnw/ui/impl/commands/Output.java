@@ -3,8 +3,6 @@ package iwwwdnw.ui.impl.commands;
 public enum Output {
     NEW_LINE("\n"),
     
-    TYPE_HELP("Type \"help\" for help" + NEW_LINE),
-    
     TYPE_THROW("Type \"throw\" to throw the dices" + NEW_LINE),
     
     TYPE_MOVE("Type \"move [pawn_nr] [field_nr]\" to move a pawn" + NEW_LINE),
@@ -18,11 +16,18 @@ public enum Output {
     SEPARATOR("---------------------------------------------" + NEW_LINE),
     
     FINISHED_TURN("You finished your turn..." + NEW_LINE +
-                         "Next player is: ");
+                         "Next player is: "),
+    
+    ASK_FOR_COMMAND(NEW_LINE + "What do you want to do next?");
     
     private final String output;
     
     Output(final String output) {
         this.output = output;
+    }
+    
+    @Override
+    public String toString() {
+        return output;
     }
 }

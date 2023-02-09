@@ -36,7 +36,6 @@ public class Controller implements Observer {
     }
     
     void doit() {
-        gui.show("What do you want to do next?");
         String input = scanner.nextLine();
         try {
             gui.show(Commands.executeMatching(input, spielzugPort).toString());
