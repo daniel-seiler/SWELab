@@ -59,8 +59,9 @@ public class UiImpl implements Ui, Observer {
                     .append(spielPort.spielzugInfo().currentPlayer())
                     .append(Output.TYPE_NEXT);
         } else {
-            throw new RuntimeException("Illegal state");
+            out.append(Output.INVALID_INPUT);
         }
+        
         show(out.toString());
     }
     

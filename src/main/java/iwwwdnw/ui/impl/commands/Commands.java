@@ -38,14 +38,8 @@ public enum Commands {
         public void execute(MatchResult matcher, SpielzugPort spielzugPort) {
             spielzugPort.spielzug().finishTurn();
         }
-    },
-    
-    HELP(".*") {
-        @Override
-        public void execute(MatchResult matcher, SpielzugPort spielzugPort) {
-           //TODO HELP
-        }
     };
+    
     private final Pattern pattern;
     
     Commands(final String command) {

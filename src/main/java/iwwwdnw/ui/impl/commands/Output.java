@@ -13,6 +13,8 @@ public enum Output {
     
     TYPE_NEXT("Type \"next\" to start your turn" + NEW_LINE),
     
+    INVALID_INPUT("Your input is unknown. Please use one of the available commands"),
+    
     SEPARATOR("---------------------------------------------" + NEW_LINE),
     
     FINISHED_TURN("You finished your turn..." + NEW_LINE +
