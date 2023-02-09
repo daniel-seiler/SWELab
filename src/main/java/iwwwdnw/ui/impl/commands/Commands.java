@@ -13,14 +13,13 @@ public enum Commands {
     THROW_DICE("throw") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
-            this.output = spielzug.throwDice().toString();
+            spielzug.throwDice();
         }
     },
     
     PAWN_TO_START_FIELD("moveToStart") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
-            //TODO output is coming from spielzug
             spielzug.pawnToStartField();
         }
     },
@@ -30,14 +29,13 @@ public enum Commands {
         public void execute(MatchResult matcher, Spielzug spielzug) {
             Field tmpField = ((SpielzugImpl) spielzug).getField(42);
             PawnImpl tmpPawn = ((SpielzugImpl) spielzug).getPawn(42);
-            this.output = spielzug.movePawn(tmpField, tmpPawn).toString();
+           spielzug.movePawn(tmpField, tmpPawn);
         }
     },
     
-    FINISH_TURN("finish") {
+    FINISH_TURN("next") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
-            //TODO return next player coming
             spielzug.finishTurn();
         }
     },
@@ -45,13 +43,9 @@ public enum Commands {
     HELP("*") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
-            //TODO
-            this.output = "Help message";
+           //TODO HELP
         }
     };
-    
-    
-    protected String output;
     private final Pattern pattern;
     
     Commands(final String command) {
@@ -69,10 +63,5 @@ public enum Commands {
             }
         }
         throw new InputException("Command not found");
-    }
-    
-    @Override
-    public String toString() {
-        return this.output;
     }
 }

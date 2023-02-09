@@ -13,6 +13,7 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     
     private final StateMachinePort stateMachinePort = StatemachineFactory.FACTORY.stateMachinePort();
     private StateMachine stateMachine;
+    
     @Override
     public SpielzugPort spielzugPort() {
         return this;

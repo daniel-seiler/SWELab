@@ -33,5 +33,10 @@ public class PlayerImpl {
     	return pawns;
     }
     
+    @Override
+    public String toString() {
+    	return colour.name();
+    }
+    
     
 }
