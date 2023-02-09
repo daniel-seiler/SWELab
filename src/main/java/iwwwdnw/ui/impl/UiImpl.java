@@ -3,17 +3,16 @@ package iwwwdnw.ui.impl;
 import iwwwdnw.logic.port.SpielPort;
 import iwwwdnw.ui.port.Ui;
 import iwwwdnw.logic.port.MVCPort;
-import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
 
 public class UiImpl implements Ui, Observer {
     
-    private MVCPort mvcPort;
-    private Controller controller;
+    private final MVCPort mvcPort;
+    private final Controller controller;
     private State currentState;
     private boolean running = true;
-    private SpielPort spielPort;
+    private final SpielPort spielPort;
     
     public UiImpl(MVCPort mvcPort, SpielPort spielPort) {
         this.spielPort = spielPort;
