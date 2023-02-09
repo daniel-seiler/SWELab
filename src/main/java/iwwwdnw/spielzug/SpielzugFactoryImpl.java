@@ -1,27 +1,20 @@
 package iwwwdnw.spielzug;
 
-import iwwwdnw.spielzug.impl.*;
+import iwwwdnw.spielzug.impl.PawnImpl;
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.State;
-import iwwwdnw.statemachine.port.StateMachinePort;
 import iwwwdnw.statemachine.port.StateMachine;
-
-
+import iwwwdnw.statemachine.port.StateMachinePort;
 
 public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spielzug {
-    private final StateMachinePort stateMachinePort  = StatemachineFactory.FACTORY.stateMachinePort();
-    private StateMachine stateMachine;
     
+    private final StateMachinePort stateMachinePort = StatemachineFactory.FACTORY.stateMachinePort();
+    private StateMachine stateMachine;
     @Override
     public SpielzugPort spielzugPort() {
-        return this;
-    }
-    
-    @Override
-    public Spielzug spielzug() {
         return this;
     }
     
@@ -31,12 +24,12 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
             return;
         this.spielzug().finishTurn();
     }
-    
+   
     @Override
-    public TurnInfo movePawn(Field field, PawnImpl pawn) {
+    public void movePawn(Field field, PawnImpl pawn) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
-            return null;
-        return this.spielzug().movePawn(field, pawn);
+            return;
+        this.spielzug().movePawn(field, pawn);
     }
     
     @Override
@@ -47,9 +40,14 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public DiceResult throwDice() {
+    public void throwDice() {
         if (stateMachine.getState() != State.S.DiceAvailable)
-            return null;
-        return this.spielzug().throwDice();
+            return;
+        this.spielzug().throwDice();
+    }
+    
+    @Override
+    public Spielzug spielzug() {
+        return this;
     }
 }

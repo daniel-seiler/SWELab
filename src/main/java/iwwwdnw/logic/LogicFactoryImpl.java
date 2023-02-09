@@ -1,31 +1,26 @@
 package iwwwdnw.logic;
 
 import iwwwdnw.logic.port.MVCPort;
-import iwwwdnw.logic.port.SpielvorbereitungPort;
-import iwwwdnw.spielzug.port.SpielzugPort;
-import iwwwdnw.spielvorbereitung.port.Spielvorbereitung;
-//import iwwwdnw.spielzug.SpielzugFactory;
+import iwwwdnw.logic.port.SpielPort;
+import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.Subject;
 import iwwwdnw.statemachine.port.SubjectPort;
 
-public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielvorbereitungPort, SpielzugPort {
+public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielPort {
+    
     private SubjectPort subjectPort = StatemachineFactory.FACTORY.subjectPort();
-    //private SpielzugPort spielzugPort = (SpielzugPort) SpielzugFactory.FACTORY.spielzugPort();
+    private SpielzugPort spielzugPort = SpielzugFactory.FACTORY.spielzugPort();
     
     @Override
-    public MVCPort mvcPort() {
+    public MVCPort MVCPort() {
         return this;
     }
     
     @Override
-    public SpielvorbereitungPort spielvorbereitungPort() {
-        return this;
-    }
-    
-    @Override
-    public SpielzugPort spielzugPort() {
+    public SpielPort spielPort() {
         return this;
     }
     
@@ -35,12 +30,7 @@ public class LogicFactoryImpl implements LogicFactory, MVCPort, Spielvorbereitun
     }
     
     @Override
-    public Spielvorbereitung spielvorbereitung() {
-        return this.spielvorbereitungPort().spielvorbereitung();
-    }
-    
-    @Override
     public Spielzug spielzug() {
-        return this;
+        return this.spielzugPort.spielzug();
     }
 }

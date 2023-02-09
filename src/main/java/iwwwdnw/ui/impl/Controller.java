@@ -1,7 +1,7 @@
-package iwwwdnw.gui.impl;
+package iwwwdnw.ui.impl;
 
-import iwwwdnw.gui.impl.commands.Commands;
-import iwwwdnw.gui.impl.commands.InputException;
+import iwwwdnw.ui.impl.commands.Commands;
+import iwwwdnw.ui.impl.commands.InputException;
 import iwwwdnw.logic.port.MVCPort;
 import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.port.Observer;
@@ -11,14 +11,14 @@ import java.util.Scanner;
 
 public class Controller implements Observer {
     
-    private ViewImpl gui;
+    private UiImpl gui;
     private Scanner scanner;
     private MVCPort mvcPort;
     private SpielzugPort spielzugPort;
     private State currentState;
     
     
-    public Controller(ViewImpl gui, MVCPort mvcPort, SpielzugPort spielzugPort) {
+    public Controller(UiImpl gui, MVCPort mvcPort, SpielzugPort spielzugPort) {
         this.gui = gui;
         this.mvcPort = this.gui.getMvcPort();
         this.mvcPort.subject().attach(this);

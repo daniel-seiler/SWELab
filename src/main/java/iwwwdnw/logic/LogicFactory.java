@@ -1,16 +1,13 @@
 package iwwwdnw.logic;
 
-import iwwwdnw.logic.LogicFactoryImpl;
 import iwwwdnw.logic.port.MVCPort;
-import iwwwdnw.logic.port.SpielvorbereitungPort;
-import iwwwdnw.logic.port.SpielzugPort;
+import iwwwdnw.logic.port.SpielPort;
 
 public interface LogicFactory {
-	LogicFactory FACTORY = new LogicFactoryImpl();
+    LogicFactory FACTORY = new LogicFactoryImpl();
     
-    MVCPort mvcPort();
+    MVCPort MVCPort();
     
-    SpielvorbereitungPort spielvorbereitungPort();
+    SpielPort spielPort();
     
-    SpielzugPort spielzugPort();
 }

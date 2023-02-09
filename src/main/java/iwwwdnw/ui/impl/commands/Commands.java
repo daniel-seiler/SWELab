@@ -1,9 +1,7 @@
-package iwwwdnw.gui.impl.commands;
+package iwwwdnw.ui.impl.commands;
 
-import iwwwdnw.spielzug.impl.DiceResult;
 import iwwwdnw.spielzug.impl.PawnImpl;
 import iwwwdnw.spielzug.impl.SpielzugImpl;
-import iwwwdnw.spielzug.impl.TurnInfo;
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Spielzug;
 

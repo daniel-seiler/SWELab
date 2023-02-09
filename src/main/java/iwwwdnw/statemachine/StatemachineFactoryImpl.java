@@ -4,13 +4,13 @@ import iwwwdnw.statemachine.impl.StateMachineImpl;
 import iwwwdnw.statemachine.port.*;
 
 public class StatemachineFactoryImpl implements StatemachineFactory, SubjectPort, StateMachinePort, StateMachine, Subject {
-    
     private StateMachineImpl stateMachine;
-    private void mkStateMachine() {
+    
+    private StateMachineImpl getStateMachine() {
         if (this.stateMachine == null)
             this.stateMachine = new StateMachineImpl();
+        return this.stateMachine;
     }
-    
     @Override
     public SubjectPort subjectPort() {
         return this;
@@ -18,18 +18,6 @@ public class StatemachineFactoryImpl implements StatemachineFactory, SubjectPort
     
     @Override
     public StateMachinePort stateMachinePort() {
-        return this;
-    }
-    
-    @Override
-    public StateMachine stateMachine() {
-        this.mkStateMachine();
-        return this;
-    }
-    
-    @Override
-    public Subject subject() {
-        this.mkStateMachine();
         return this;
     }
     
@@ -44,12 +32,22 @@ public class StatemachineFactoryImpl implements StatemachineFactory, SubjectPort
     }
     
     @Override
-    public void detach(Observer obs) {
-        this.stateMachine.detach(obs);
+    public StateMachine stateMachine() {
+        return this.getStateMachine();
     }
     
     @Override
     public void attach(Observer obs) {
         this.stateMachine.attach(obs);
+    }
+    
+    @Override
+    public void detach(Observer obs) {
+        this.stateMachine.detach(obs);
+    }
+    
+    @Override
+    public Subject subject() {
+        return this.getStateMachine();
     }
 }

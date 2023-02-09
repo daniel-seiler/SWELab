@@ -1,21 +1,23 @@
-package iwwwdnw.gui.impl;
+package iwwwdnw.ui.impl;
 
-import iwwwdnw.gui.port.View;
+import iwwwdnw.logic.port.SpielPort;
+import iwwwdnw.ui.port.Ui;
 import iwwwdnw.logic.port.MVCPort;
 import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
 
-public class ViewImpl implements View, Observer {
+public class UiImpl implements Ui, Observer {
     
     private MVCPort mvcPort;
     private Controller controller;
     private State currentState;
     private boolean running = true;
     private SpielzugPort spielzugPort;
+    //TODO change spielzugPort to spielPort
     
-    public ViewImpl(MVCPort mvcPort, SpielzugPort spielzugPort) {
-        this.spielzugPort = spielzugPort;
+    public UiImpl(MVCPort mvcPort, SpielPort spielPort) {
+        this.spielzugPort = spielPort;
         this.mvcPort = mvcPort;
         this.mvcPort.subject().attach(this);
         this.init();

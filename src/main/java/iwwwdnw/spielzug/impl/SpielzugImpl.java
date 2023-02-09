@@ -45,7 +45,7 @@ public class SpielzugImpl implements Spielzug {
 	}
 
 	@Override
-	public TurnInfo movePawn(Field field, PawnImpl pawn) {
+	public void movePawn(Field field, PawnImpl pawn) {
 		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far
 			stateMachine.setState(S.SelectFigureToMove);
