@@ -8,7 +8,7 @@ import iwwwdnw.statemachine.port.StateMachine;
 import iwwwdnw.statemachine.port.StateMachinePort;
 
 public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spielzug {
-    
+
     private final StateMachinePort stateMachinePort = StatemachineFactory.FACTORY.stateMachinePort();
     private StateMachine stateMachine;
     
@@ -18,12 +18,17 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
+    public Spielzug spielzug() {
+        return this;
+    }
+    
+    @Override
     public void finishTurn() {
         if (stateMachine.getState() != State.S.FinishTurn)
             return;
         this.spielzug().finishTurn();
     }
-   
+
     @Override
     public void movePawn(Field field, Pawn pawn) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
@@ -44,7 +49,7 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
             return;
         this.spielzug().throwDice();
     }
-    
+
     @Override
     public Spielzug spielzug() {
         return this;
