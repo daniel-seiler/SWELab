@@ -11,7 +11,7 @@ public interface Spielzug {
 
 	void finishTurn();
 
-	void movePawn(Field field, PawnImpl pawn);
+	void movePawn(Field field, Pawn pawn);
 
 	void pawnToStartField();
 

@@ -1,5 +1,7 @@
 package iwwwdnw.spielzug.impl;
 
+import iwwwdnw.spielzug.port.Pawn;
+
 import java.util.List;
 
 
@@ -8,9 +10,9 @@ public class PlayerImpl {
 	private final Colour colour;
     private final String name;
     private final int startPosition;
-    private final List<PawnImpl> pawns;
+    private final List<Pawn> pawns;
 
-    public PlayerImpl(Colour colour, String name, int startPosition, List<PawnImpl> pawns) {
+    public PlayerImpl(Colour colour, String name, int startPosition, List<Pawn> pawns) {
         this.colour = colour;
         this.name = name;
         this.startPosition = startPosition;
@@ -29,7 +31,7 @@ public class PlayerImpl {
         return startPosition;
     }
     
-    public List<PawnImpl> getPawns() {
+    public List<Pawn> getPawns() {
     	return pawns;
     }
     

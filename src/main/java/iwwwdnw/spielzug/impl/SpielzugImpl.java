@@ -1,18 +1,13 @@
 package iwwwdnw.spielzug.impl;
 
+import iwwwdnw.spielzug.port.Pawn;
 import iwwwdnw.spielzug.port.Spielzug;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-
-import iwwwdnw.spielzug.impl.DiceResult;
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Field.FieldType;
-import iwwwdnw.spielzug.impl.PawnImpl;
-import iwwwdnw.spielzug.impl.PlayerImpl;
-import iwwwdnw.spielzug.impl.TurnInfo;
 import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.statemachine.port.State.S;
 import iwwwdnw.statemachine.port.StateMachine;
@@ -28,7 +23,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	private TurnInfo turnInfo;
 	private static final int MAX_THROWS = 3;
 	private static final int MAGIC_NUMBER = 7;
-	private Map<PawnImpl, List<Field>> currentMovements = new HashMap<>();
+	private Map<Pawn, List<Field>> currentMovements = new HashMap<>();
 	
 	public SpielzugImpl(StateMachine stateMachine, Board board) {
 		this.stateMachine = stateMachine;
@@ -49,7 +44,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	}
 
 	@Override
-	public void movePawn(Field field, PawnImpl pawn) {
+	public void movePawn(Field field, Pawn pawn) {
 		PlayerImpl duellPlayer = null;
 		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far
@@ -60,7 +55,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		for (PlayerImpl player : board.getPlayers()) {
 			if (player.equals(currentPlayer)) {
 				// check if all rules of current player positioning are correct
-				if (!checkPawnsOfCurrentPlayer(field, pawn)) {
+				if (!checkPawnsOfCurrentPlayer(field,pawn)) {
 					stateMachine.setState(S.SelectFigureToMove);
 					turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
 				}
@@ -68,7 +63,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 				//check if pawn will be on other players field
 				if (checkPawnsOfOtherPlayer(player, field)) {
 					duellPlayer = player;
-					for (PawnImpl p : player.getPawns()) {
+					for (Pawn p : player.getPawns()) {
 						if (pawn.getCurrentField().equals(field)) {
 							p.setCurrentField(new HomeField());
 						}
@@ -94,7 +89,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		turnInfo = new TurnInfo(true, board, board.getPlayers(), currentPlayer, diceResult, duellPlayer);
 	}
 	
-	int getDifference(Field field, PawnImpl pawn) {
+	int getDifference(Field field, Pawn pawn) {
 		int max = Math.max(pawn.getCurrentField().getFieldID(), field.getFieldID());
     	int min = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID());
     	return Math.min(max - min, min + Board.FIELDS_TOTAL - max);
@@ -104,7 +99,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	 * @return true on duell
 	 */
 	Boolean checkPawnsOfOtherPlayer(PlayerImpl player, Field field) {
-		for (PawnImpl p : player.getPawns()) {
+		for (Pawn p : player.getPawns()) {
 			if(p.getCurrentField().getFieldID() == field.getFieldID()) {
 				return true;
 			}
@@ -115,8 +110,8 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	/*
 	 * @return true on error
 	 */
-	Boolean checkPawnsOfCurrentPlayer(Field field, PawnImpl pawn) {
-		for (PawnImpl p : currentPlayer.getPawns()) {
+	Boolean checkPawnsOfCurrentPlayer(Field field, Pawn pawn) {
+		for (Pawn p : currentPlayer.getPawns()) {
 			if (currentMovements.containsKey(p)) {
 				for (Field f : currentMovements.get(p)) {
 					if (checkIfPawnStepsOnField(f, field, pawn)) return true;
@@ -128,15 +123,15 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		return false;
 	}
 	
-	private Boolean checkIfPawnStepsOnField(Field fieldToCheck, Field field, PawnImpl pawn) {
+	private Boolean checkIfPawnStepsOnField(Field fieldToCheck, Field field, Pawn pawn) {
 		return board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().anyMatch(f -> f.equals(fieldToCheck));
 	}
 
 	@Override
 	public void pawnToStartField() {
-		List<PawnImpl> pawns = currentPlayer.getPawns();
+		List<Pawn> pawns = currentPlayer.getPawns();
 		Field startfield = board.getStartField(currentPlayer);
-		for (PawnImpl pawn : pawns) {
+		for (Pawn pawn : pawns) {
 			if (pawn.getCurrentField().get() == FieldType.HomeField) {
 				pawn.setCurrentField(startfield);
 				stateMachine.setState(S.FinishTurn);
@@ -178,7 +173,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
         return board.getField(id);
     }
     
-    public PawnImpl getPawn(int id) {
+    public Pawn getPawn(int id) {
         return currentPlayer.getPawns().get(id);
     }
 
