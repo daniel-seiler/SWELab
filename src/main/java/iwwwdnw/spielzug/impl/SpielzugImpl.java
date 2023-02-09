@@ -11,6 +11,7 @@ import iwwwdnw.spielzug.port.Field.FieldType;
 import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.statemachine.port.State.S;
 import iwwwdnw.statemachine.port.StateMachine;
+import iwwwdnw.statemachine.port.StateMachinePort;
 
 public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	
@@ -25,8 +26,8 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	private static final int MAGIC_NUMBER = 7;
 	private Map<Pawn, List<Field>> currentMovements = new HashMap<>();
 	
-	public SpielzugImpl(StateMachine stateMachine) {
-		this.stateMachine = stateMachine;
+	public SpielzugImpl(StateMachinePort stateMachinePort) {
+		this.stateMachine = stateMachinePort.stateMachine();
 		this.board = new Board();
 		this.dice = new Dice();
 		currentPlayer = board.getPlayers().get(0);
@@ -40,7 +41,6 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		dice = new Dice();
 		currentMovements.clear();
 		stateMachine.setState(S.DiceAvailable);
-        //TODO return next player
 	}
 
 	@Override
@@ -138,7 +138,6 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 				return;
 			}
 		}
-        //TODO return move info
 	}
 
 	@Override

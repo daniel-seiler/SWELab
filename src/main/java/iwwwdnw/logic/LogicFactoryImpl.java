@@ -4,6 +4,7 @@ import iwwwdnw.logic.port.MVCPort;
 import iwwwdnw.logic.port.SpielPort;
 import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
+import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.Subject;
@@ -32,5 +33,10 @@ public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielPort {
     @Override
     public Spielzug spielzug() {
         return this.spielzugPort.spielzug();
+    }
+    
+    @Override
+    public SpielzugInfo spielzugInfo() {
+        return this.spielzugPort.spielzugInfo();
     }
 }

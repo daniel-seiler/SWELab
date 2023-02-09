@@ -13,15 +13,14 @@ public class UiImpl implements Ui, Observer {
     private Controller controller;
     private State currentState;
     private boolean running = true;
-    private SpielzugPort spielzugPort;
-    //TODO change spielzugPort to spielPort
+    private SpielPort spielPort;
     
     public UiImpl(MVCPort mvcPort, SpielPort spielPort) {
-        this.spielzugPort = spielPort;
+        this.spielPort = spielPort;
         this.mvcPort = mvcPort;
         this.mvcPort.subject().attach(this);
         this.init();
-        this.controller = new Controller(this, mvcPort, spielzugPort);
+        this.controller = new Controller(this, mvcPort, spielPort);
     }
     
     
@@ -47,16 +46,16 @@ public class UiImpl implements Ui, Observer {
                     "TYPE [*] for help\n" +
                     "TYPE [throw] to throw the dices:");
         } else if (State.S.DiceResult.equals(currentState)) {
-            out.append(spielzugPort.spielzugInfo().getDiceResult());
+            out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
-            out.append(spielzugPort.spielzugInfo().getBoard());
+            out.append(spielPort.spielzugInfo().getBoard());
             out.append("Move a pawn [move {pawn_nr} {field_nr}: ");
         } else if (State.S.SelectFigureToStartfield.equals(currentState)) {
             out.append("Move a pawn to a start field: TYPE [moveToStart]: ");
         } else if (State.S.FinishTurn.equals(currentState)) {
             out.append("YOU FINISHED YOUR TURN...\n");
             out.append("Next player:");
-            out.append(spielzugPort.spielzugInfo().currentPlayer());
+            out.append(spielPort.spielzugInfo().currentPlayer());
             out.append("\nTYPE [next] to start turn: ");
         } else {
             throw new RuntimeException("Illegal state");

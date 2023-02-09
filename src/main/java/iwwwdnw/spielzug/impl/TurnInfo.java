@@ -33,7 +33,6 @@ public class TurnInfo {
 
     @Override
     public String toString() {
-        //TODO
 		String resultString;
 		if (success) {
 			resultString = "Finished turn with success\n";
