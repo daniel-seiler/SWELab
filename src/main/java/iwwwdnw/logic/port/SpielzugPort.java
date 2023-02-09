@@ -1,3 +1,7 @@
 package iwwwdnw.logic.port;
-public interface SpielzugPort extends iwwwdnw.spielzug.port.SpielzugPort {
+
+import iwwwdnw.spielzug.port.Spielzug;
+
+public interface SpielzugPort {
+    Spielzug spielzugPort();
 }

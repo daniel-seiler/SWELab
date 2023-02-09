@@ -19,7 +19,7 @@ public enum Commands {
         }
     },
     
-    PAWN_TO_START_FIELD("") {
+    PAWN_TO_START_FIELD("moveToStart") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
             //TODO output is coming from spielzug
@@ -27,7 +27,7 @@ public enum Commands {
         }
     },
     
-    MOVE_PAWN("") {
+    MOVE_PAWN("move\\s\\d+\\s\\d+") {
         @Override
         public void execute(MatchResult matcher, Spielzug spielzug) {
             Field tmpField = ((SpielzugImpl) spielzug).getField(42);

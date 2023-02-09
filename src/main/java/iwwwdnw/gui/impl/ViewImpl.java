@@ -2,7 +2,7 @@ package iwwwdnw.gui.impl;
 
 import iwwwdnw.gui.port.View;
 import iwwwdnw.logic.port.MVCPort;
-import iwwwdnw.logic.port.SpielzugPort;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
 
@@ -11,7 +11,7 @@ public class ViewImpl implements View, Observer {
     private MVCPort mvcPort;
     private Controller controller;
     private State currentState;
-    private boolean running = false;
+    private boolean running = true;
     private SpielzugPort spielzugPort;
     
     public ViewImpl(MVCPort mvcPort, SpielzugPort spielzugPort) {
@@ -25,7 +25,6 @@ public class ViewImpl implements View, Observer {
     
     private void init() {
         System.out.println("Game has started");
-        
     }
     
     @Override
@@ -55,7 +54,7 @@ public class ViewImpl implements View, Observer {
             throw new RuntimeException("Illegal state");
         }
         
-        System.out.println(out);
+        show(out.toString());
     }
     
     public MVCPort getMvcPort() {

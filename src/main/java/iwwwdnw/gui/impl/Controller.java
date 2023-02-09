@@ -1,7 +1,9 @@
 package iwwwdnw.gui.impl;
 
+import iwwwdnw.gui.impl.commands.Commands;
+import iwwwdnw.gui.impl.commands.InputException;
 import iwwwdnw.logic.port.MVCPort;
-import iwwwdnw.logic.port.SpielzugPort;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
 
@@ -34,8 +36,13 @@ public class Controller implements Observer {
     }
     
     void doit() {
-        this.gui.show("What do you want to do next?");
+        gui.show("What do you want to do next?");
         String input = scanner.nextLine();
+        try {
+            gui.show(Commands.executeMatching(input, spielzugPort.spielzug()).toString());
+        } catch(InputException ie) {
+            gui.show(ie.getMessage());
+        }
     }
     
 }

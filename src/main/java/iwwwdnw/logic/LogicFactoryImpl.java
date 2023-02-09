@@ -2,8 +2,9 @@ package iwwwdnw.logic;
 
 import iwwwdnw.logic.port.MVCPort;
 import iwwwdnw.logic.port.SpielvorbereitungPort;
-import iwwwdnw.logic.port.SpielzugPort;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.spielvorbereitung.port.Spielvorbereitung;
+//import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.Subject;
@@ -11,6 +12,7 @@ import iwwwdnw.statemachine.port.SubjectPort;
 
 public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielvorbereitungPort, SpielzugPort {
     private SubjectPort subjectPort = StatemachineFactory.FACTORY.subjectPort();
+    //private SpielzugPort spielzugPort = (SpielzugPort) SpielzugFactory.FACTORY.spielzugPort();
     
     @Override
     public MVCPort mvcPort() {
@@ -39,6 +41,6 @@ public class LogicFactoryImpl implements LogicFactory, MVCPort, Spielvorbereitun
     
     @Override
     public Spielzug spielzug() {
-        return this.spielzugPort().spielzug();
+        return this;
     }
 }
