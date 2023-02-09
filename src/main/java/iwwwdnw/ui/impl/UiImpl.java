@@ -1,6 +1,7 @@
 package iwwwdnw.ui.impl;
 
 import iwwwdnw.logic.port.SpielPort;
+import iwwwdnw.ui.impl.commands.Output;
 import iwwwdnw.ui.port.Ui;
 import iwwwdnw.logic.port.MVCPort;
 import iwwwdnw.statemachine.port.Observer;
@@ -38,24 +39,25 @@ public class UiImpl implements Ui, Observer {
     
     void display() {
         StringBuilder out = new StringBuilder();
-        out.append("-----------------------------------\n");
+        out.append(Output.SEPARATOR);
         
         if (State.S.DiceAvailable.equals(currentState)) {
-            out.append("Start your next turn by throwing the dice\n" +
-                    "TYPE [*] for help\n" +
-                    "TYPE [throw] to throw the dices:");
+            out.append(Output.TYPE_HELP)
+                    .append(Output.TYPE_THROW);
         } else if (State.S.DiceResult.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
-            out.append(spielPort.spielzugInfo().getBoard());
-            out.append("Move a pawn [move {pawn_nr} {field_nr}: ");
+            out.append(spielPort.spielzugInfo().getMovementResult())
+                    .append(spielPort.spielzugInfo().getBoard())
+                    .append(Output.TYPE_MOVE);
         } else if (State.S.SelectFigureToStartfield.equals(currentState)) {
-            out.append("Move a pawn to a start field: TYPE [moveToStart]: ");
+            out.append(spielPort.spielzugInfo().getBoard())
+                    .append(Output.TYPE_MOVE_TO_START);
         } else if (State.S.FinishTurn.equals(currentState)) {
-            out.append("YOU FINISHED YOUR TURN...\n");
-            out.append("Next player:");
-            out.append(spielPort.spielzugInfo().currentPlayer());
-            out.append("\nTYPE [next] to start turn: ");
+            out.append(spielPort.spielzugInfo().getBoard())
+                    .append(Output.FINISHED_TURN)
+                    .append(spielPort.spielzugInfo().currentPlayer())
+                    .append(Output.TYPE_NEXT);
         } else {
             throw new RuntimeException("Illegal state");
         }

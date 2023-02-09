@@ -11,10 +11,10 @@ import java.util.Scanner;
 
 public class Controller implements Observer {
     
-    private UiImpl gui;
-    private Scanner scanner;
-    private MVCPort mvcPort;
-    private SpielzugPort spielzugPort;
+    private final UiImpl gui;
+    private final Scanner scanner;
+    private final MVCPort mvcPort;
+    private final SpielzugPort spielzugPort;
     private State currentState;
     
     
@@ -39,7 +39,7 @@ public class Controller implements Observer {
         gui.show("What do you want to do next?");
         String input = scanner.nextLine();
         try {
-            gui.show(Commands.executeMatching(input, spielzugPort.spielzug()).toString());
+            gui.show(Commands.executeMatching(input, spielzugPort).toString());
         } catch(InputException ie) {
             gui.show(ie.getMessage());
         }
