@@ -9,13 +9,13 @@ import iwwwdnw.spielzug.impl.TurnInfo;
 public interface Spielzug {
 
 
-	PlayerImpl finishTurn();
+	void finishTurn();
 
-	TurnInfo movePawn(Field field, PawnImpl pawn);
+	void movePawn(Field field, PawnImpl pawn);
 
 	void pawnToStartField();
 
-	DiceResult throwDice();
+	void throwDice();
 	
 	
 	

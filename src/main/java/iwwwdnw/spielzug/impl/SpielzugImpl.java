@@ -13,16 +13,19 @@ import iwwwdnw.spielzug.port.Field.FieldType;
 import iwwwdnw.spielzug.impl.PawnImpl;
 import iwwwdnw.spielzug.impl.PlayerImpl;
 import iwwwdnw.spielzug.impl.TurnInfo;
+import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.statemachine.port.State.S;
 import iwwwdnw.statemachine.port.StateMachine;
 
-public class SpielzugImpl implements Spielzug {
+public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	
 	private PlayerImpl currentPlayer;
 	private DiceResult diceResult;
 	private final Board board;
 	private final StateMachine stateMachine;
 	private Dice dice;
+
+	private TurnInfo turnInfo;
 	private static final int MAX_THROWS = 3;
 	private static final int MAGIC_NUMBER = 7;
 	private Map<PawnImpl, List<Field>> currentMovements = new HashMap<>();
@@ -37,22 +40,21 @@ public class SpielzugImpl implements Spielzug {
 	
 	
 	@Override
-	public PlayerImpl finishTurn() {
+	public void finishTurn() {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
 		dice = new Dice();
 		currentMovements.clear();
 		stateMachine.setState(S.DiceAvailable);
-		return currentPlayer;
         //TODO return next player
 	}
 
 	@Override
-	public TurnInfo movePawn(Field field, PawnImpl pawn) {
+	public void movePawn(Field field, PawnImpl pawn) {
 		PlayerImpl duellPlayer = null;
 		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far
 			stateMachine.setState(S.SelectFigureToMove);
-			return new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
+			turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
 		}
 		// check for positioning of all pawns of all players
 		for (PlayerImpl player : board.getPlayers()) {
@@ -60,7 +62,7 @@ public class SpielzugImpl implements Spielzug {
 				// check if all rules of current player positioning are correct
 				if (!checkPawnsOfCurrentPlayer(field, pawn)) {
 					stateMachine.setState(S.SelectFigureToMove);
-					return new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null); 
+					turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
 				}
 			} else {
 				//check if pawn will be on other players field
@@ -89,7 +91,7 @@ public class SpielzugImpl implements Spielzug {
 			// User can still move pawns
 			stateMachine.setState(S.SelectFigureToMove);
 		}
-		return new TurnInfo(true, board, board.getPlayers(), currentPlayer, diceResult, duellPlayer);
+		turnInfo = new TurnInfo(true, board, board.getPlayers(), currentPlayer, diceResult, duellPlayer);
 	}
 	
 	int getDifference(Field field, PawnImpl pawn) {
@@ -145,7 +147,7 @@ public class SpielzugImpl implements Spielzug {
 	}
 
 	@Override
-	public DiceResult throwDice() {
+	public void throwDice() {
 		// get random dice number
 		diceResult = dice.rollTwo();
 		// check result for turn options
@@ -170,7 +172,6 @@ public class SpielzugImpl implements Spielzug {
 				stateMachine.setState(S.SelectFigureToMove);
 			}
 		}
-		return diceResult;
 	}
     
     public Field getField(int id) {
@@ -181,5 +182,23 @@ public class SpielzugImpl implements Spielzug {
         return currentPlayer.getPawns().get(id);
     }
 
-	
+	@Override
+	public String getBoard() {
+		return (turnInfo != null) ? turnInfo.getBoard() : null;
+	}
+
+	@Override
+	public String getMovementResult() {
+		return (turnInfo != null) ? turnInfo.toString() : null;
+	}
+
+	@Override
+	public String getDiceResult() {
+		return diceResult != null ? diceResult.toString() : null;
+	}
+
+	@Override
+	public String currentPlayer() {
+		return  currentPlayer.getName();
+	}
 }

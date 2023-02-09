@@ -6,12 +6,17 @@ import iwwwdnw.spielzug.port.Field.FieldType;
 
 public class TurnInfo {
 	
-	private final Boolean success;
-	private final Board board;
-	private final List<PlayerImpl> players;
-	private final PlayerImpl currentPlayer;
-	private final DiceResult diceResult;
-	private final PlayerImpl duellPlayer;
+	private Boolean success;
+	private Board board;
+	private List<PlayerImpl> players;
+	private PlayerImpl currentPlayer;
+	private DiceResult diceResult;
+	private PlayerImpl duellPlayer;
+
+	TurnInfo(PlayerImpl currentPlayer) {
+		this.currentPlayer = currentPlayer;
+	}
+
 
 	TurnInfo(Boolean success, Board board, List<PlayerImpl> players, PlayerImpl currentPlayer, DiceResult diceResult, PlayerImpl duellPlayer) {
 		this.success = success;
@@ -29,36 +34,38 @@ public class TurnInfo {
     @Override
     public String toString() {
         //TODO
+		String resultString;
 		if (success) {
-			String resultString = "Spielzug durchgef�hrt\n";
+			resultString = "Finished turn with success\n";
 			if (duellPlayer != null) {
-				resultString += currentPlayer.getColour().name() + " hat ein DUELL gewonnen gegen" + duellPlayer.getColour().name() + "\n";
+				resultString += currentPlayer.getColour().name() + " won a duel against " + duellPlayer.getColour().name() + "\n";
 			}
-			return getPostitions(resultString);
 		} else {
-			String resultString = "Spielzug fehlgeschlagen\n";
-			return getPostitions(resultString);
+			resultString = "ERROR: movement not allowed\n";
 		}
-    }
+		return getPostitions(resultString);
+	}
 
     private String getPostitions(String resultString) {
-    	resultString +=  currentPlayer.getColour().name() + " ist am Zug\n";
+    	resultString +=  currentPlayer.getColour().name() + " is currently playing\n";
     	if (diceResult != null) {
-    		resultString += "Noch uebrige Augenzahlen: " + diceResult.getResult() + "\n";
+    		resultString += "Number of possible movements: " + diceResult.getResult() + "\n";
     	}
-    	for (PlayerImpl player : players) {
-			resultString += player.getColour().name() + ": ";
+		StringBuilder resultStringBuilder = new StringBuilder(resultString);
+		for (PlayerImpl player : players) {
+			resultStringBuilder.append(player.getColour().name()).append(": ");
 			for (int i = 0; i < player.getPawns().size(); i++) {
-				resultString += "(Spieler " + i + ": ";
+				resultStringBuilder.append("(pawn_").append(i).append(": ");
 				if (player.getPawns().get(i).getCurrentField().get() == FieldType.HomeField) {
-					resultString += " Heimatfeld), ";
+					resultStringBuilder.append(" homefield), ");
 				} else {
-					resultString += "Feld " + player.getPawns().get(i).getCurrentField().getFieldID() + "), ";
+					resultStringBuilder.append("field ").append(player.getPawns().get(i).getCurrentField().getFieldID()).append("), ");
 				}
 			}
-			resultString += "\n";
+			resultStringBuilder.append("\n");
 		}
-    	return resultString;
+		resultString = resultStringBuilder.toString();
+		return resultString;
     }
 
     public String getBoard() {

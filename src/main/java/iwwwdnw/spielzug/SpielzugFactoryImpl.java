@@ -33,10 +33,10 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public TurnInfo movePawn(Field field, PawnImpl pawn) {
+    public void movePawn(Field field, PawnImpl pawn) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
-            return null;
-        return this.spielzug().movePawn(field, pawn);
+            return;
+        this.spielzug().movePawn(field, pawn);
     }
     
     @Override
@@ -47,9 +47,9 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public DiceResult throwDice() {
+    public void throwDice() {
         if (stateMachine.getState() != State.S.DiceAvailable)
-            return null;
-        return this.spielzug().throwDice();
+            return;
+        this.spielzug().throwDice();
     }
 }

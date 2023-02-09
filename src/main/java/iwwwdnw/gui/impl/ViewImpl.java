@@ -38,22 +38,27 @@ public class ViewImpl implements View, Observer {
     
     void display() {
         StringBuilder out = new StringBuilder();
-        out.append("-----------------------------------");
+        out.append("-----------------------------------\n");
         
         if (State.S.DiceAvailable.equals(currentState)) {
-        
+            out.append("Start your next turn by throwing the dice\n" +
+                    "TYPE [*] for help\n" +
+                    "TYPE [throw] to throw the dices:");
         } else if (State.S.DiceResult.equals(currentState)) {
-        
+            out.append(spielzugPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
-        
+            out.append(spielzugPort.spielzugInfo().getBoard());
+            out.append("Move a pawn [move {pawn_nr} {field_nr}: ");
         } else if (State.S.SelectFigureToStartfield.equals(currentState)) {
-        
+            out.append("Move a pawn to a start field: TYPE [moveToStart]: ");
         } else if (State.S.FinishTurn.equals(currentState)) {
-        
+            out.append("YOU FINISHED YOUR TURN...\n");
+            out.append("Next player:");
+            out.append(spielzugPort.spielzugInfo().currentPlayer());
+            out.append("\nTYPE [next] to start turn: ");
         } else {
             throw new RuntimeException("Illegal state");
         }
-        
         show(out.toString());
     }
     
