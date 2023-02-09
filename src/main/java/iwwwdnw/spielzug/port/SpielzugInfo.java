@@ -12,7 +12,4 @@ public interface SpielzugInfo {
 
     String currentPlayer();
 
-
-
-
 }
