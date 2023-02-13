@@ -7,7 +7,7 @@ public interface Spielzug {
 
 	void finishTurn();
 
-	void movePawn(Field field, Pawn pawn);
+	void movePawn(int fieldId, int pawnId);
 
 	void pawnToStartField();
 

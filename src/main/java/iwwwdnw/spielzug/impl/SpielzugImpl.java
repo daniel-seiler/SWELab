@@ -6,6 +6,8 @@ import iwwwdnw.spielzug.port.Spielzug;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Field.FieldType;
 import iwwwdnw.spielzug.port.SpielzugInfo;
@@ -40,31 +42,37 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
 		dice = new Dice();
 		currentMovements.clear();
+		diceResult = null;
+		turnInfo = null;
 		stateMachine.setState(S.DiceAvailable);
 	}
 
 	@Override
-	public void movePawn(Field field, Pawn pawn) {
-		PlayerImpl duellPlayer = null;
-		if (diceResult.getResult() - getDifference(field, pawn) < 0) {
-			// move not possible, because move is to far
+	public void movePawn(int fieldId, int pawnId) {
+		Field field = board.getField(fieldId);
+		Pawn pawn = getPawn(pawnId);
+				PlayerImpl duellPlayer = null;
+		if (pawn.getCurrentField().get() == FieldType.HomeField || diceResult.getResult() - getDifference(field, pawn) < 0) {
+			// move not possible, because move is to far, or pawn is still in homefield
 			stateMachine.setState(S.SelectFigureToMove);
 			turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
+			return;
 		}
 		// check for positioning of all pawns of all players
 		for (PlayerImpl player : board.getPlayers()) {
 			if (player.equals(currentPlayer)) {
 				// check if all rules of current player positioning are correct
-				if (!checkPawnsOfCurrentPlayer(field,pawn)) {
+				if (checkPawnsOfCurrentPlayer(field, pawn)) {
 					stateMachine.setState(S.SelectFigureToMove);
 					turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
+					return;
 				}
 			} else {
-				//check if pawn will be on other players field
+				//check if pawn will be on other players boardField
 				if (checkPawnsOfOtherPlayer(player, field)) {
 					duellPlayer = player;
 					for (Pawn p : player.getPawns()) {
-						if (pawn.getCurrentField().equals(field)) {
+						if (p.getCurrentField().equals(field)) {
 							p.setCurrentField(new HomeField());
 						}
 					}
@@ -77,8 +85,8 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		} else {
 			currentMovements.put(pawn, board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
 		}
-		pawn.setCurrentField(field);
 		diceResult.sub(getDifference(field, pawn));
+		pawn.setCurrentField(field);
 		if (diceResult.isZero()) {
 			// User turn finished
 			stateMachine.setState(S.FinishTurn);
@@ -100,7 +108,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	 */
 	Boolean checkPawnsOfOtherPlayer(PlayerImpl player, Field field) {
 		for (Pawn p : player.getPawns()) {
-			if(p.getCurrentField().getFieldID() == field.getFieldID()) {
+			if(p.getCurrentField().equals(field)) {
 				return true;
 			}
 		}
@@ -112,12 +120,14 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	 */
 	Boolean checkPawnsOfCurrentPlayer(Field field, Pawn pawn) {
 		for (Pawn p : currentPlayer.getPawns()) {
-			if (currentMovements.containsKey(p)) {
-				for (Field f : currentMovements.get(p)) {
-					if (checkIfPawnStepsOnField(f, field, pawn)) return true;
-				}
+			if (p.equals(pawn) && currentMovements.containsKey(p)) {
+				//step onto trail of current pawn
+				if(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().
+						filter(e -> currentMovements.get(pawn).stream().
+								anyMatch(f -> f.equals(e))).collect(Collectors.toSet()).size() > 1) return true;
 			} else {
-				if (checkIfPawnStepsOnField(p.getCurrentField(), field, pawn)) return true;
+				//step on to field of own pawn
+				if (p.getCurrentField().equals(field)) return true;
 			}
 		}
 		return false;
@@ -178,17 +188,17 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 
 	@Override
 	public String getBoard() {
-		return (turnInfo != null) ? turnInfo.getBoard() : null;
+		return (board != null) ? board.toString() : null;
 	}
 
 	@Override
 	public String getMovementResult() {
-		return (turnInfo != null) ? turnInfo.toString() : null;
+		return (turnInfo != null) ? turnInfo.toString() : "Not yet moved";
 	}
 
 	@Override
 	public String getDiceResult() {
-		return diceResult != null ? diceResult.toString() : null;
+		return diceResult != null ? diceResult.toString() : "No result available";
 	}
 
 	@Override

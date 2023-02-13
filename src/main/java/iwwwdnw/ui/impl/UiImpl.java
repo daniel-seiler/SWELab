@@ -39,11 +39,12 @@ public class UiImpl implements Ui, Observer {
     void display() {
         StringBuilder out = new StringBuilder();
         out.append("-----------------------------------\n");
-        
+        out.append("Current player: ");
+        out.append(spielPort.spielzugInfo().currentPlayer());
+        out.append("\n");
         if (State.S.DiceAvailable.equals(currentState)) {
-            out.append("Start your next turn by throwing the dice\n" +
-                    "TYPE [*] for help\n" +
-                    "TYPE [throw] to throw the dices:");
+            out.append("\nTYPE [throw] to throw the dices: ");
+            out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.DiceResult.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
@@ -53,8 +54,6 @@ public class UiImpl implements Ui, Observer {
             out.append("Move a pawn to a start field: TYPE [moveToStart]: ");
         } else if (State.S.FinishTurn.equals(currentState)) {
             out.append("YOU FINISHED YOUR TURN...\n");
-            out.append("Next player:");
-            out.append(spielPort.spielzugInfo().currentPlayer());
             out.append("\nTYPE [next] to start turn: ");
         } else {
             throw new RuntimeException("Illegal state");

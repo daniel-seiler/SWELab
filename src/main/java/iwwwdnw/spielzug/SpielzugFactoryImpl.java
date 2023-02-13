@@ -34,10 +34,10 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     }
     
     @Override
-    public void movePawn(Field field, Pawn pawn) {
+    public void movePawn(int fieldId, int pawnId) {
         if (stateMachine.getState() != State.S.SelectFigureToMove)
             return;
-        this.spielzug.movePawn(field, pawn);
+        this.spielzug.movePawn(fieldId, pawnId);
     }
     
     @Override

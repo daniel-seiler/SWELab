@@ -11,7 +11,7 @@ public class Dice {
     public DiceResult rollTwo() {
     	numThrows++;
         int r1 =  random.nextInt(MAX_ROLL) + 1;
-        return new DiceResult(r1 + (random.nextInt(MAX_ROLL) + 1));
+        return new DiceResult(/*r1 + (random.nextInt(MAX_ROLL) + 1)*/ 7);
     }
     
     public int getNumThrows() {
