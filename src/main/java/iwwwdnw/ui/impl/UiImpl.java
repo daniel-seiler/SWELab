@@ -41,8 +41,14 @@ public class UiImpl implements Ui, Observer {
         StringBuilder out = new StringBuilder();
         out.append(Output.SEPARATOR);
         
+        out.append("-----------------------------------\n");
+        out.append("Current player: ");
+        out.append(spielPort.spielzugInfo().currentPlayer());
+        out.append("\n");
         if (State.S.DiceAvailable.equals(currentState)) {
             out.append(Output.TYPE_THROW);
+            out.append("\nTYPE [throw] to throw the dices: ");
+            out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.DiceResult.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
@@ -57,6 +63,8 @@ public class UiImpl implements Ui, Observer {
                     .append(Output.FINISHED_TURN)
                     .append(spielPort.spielzugInfo().currentPlayer())
                     .append(Output.TYPE_NEXT);
+            out.append("YOU FINISHED YOUR TURN...\n");
+            out.append("\nTYPE [next] to start turn: ");
         } else {
             out.append(Output.INVALID_INPUT);
         }

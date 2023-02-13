@@ -24,12 +24,12 @@ public enum Commands {
         }
     },
     
-    MOVE_PAWN("move\\s\\d+\\s\\d+") {
+    MOVE_PAWN("move\\s+(\\d+)\\s+(\\d+)") {
         @Override
         public void execute(MatchResult matcher, SpielzugPort spielzugPort) {
-            Field tmpField = ((SpielzugImpl) spielzugPort.spielzug()).getField(42);
-            Pawn tmpPawn = ((SpielzugImpl) spielzugPort.spielzug()).getPawn(42);
-            spielzugPort.spielzug().movePawn(tmpField, tmpPawn);
+            int fieldId = Integer.parseInt(matcher.group(1));
+            int pawnId = Integer.parseInt(matcher.group(2));
+            spielzugPort.spielzug().movePawn(fieldId, pawnId);
         }
     },
     

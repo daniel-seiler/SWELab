@@ -67,10 +67,11 @@ public class Board {
     	for (PlayerImpl player : players) {
     		int offset = player.getStartPosition() * FIELDS_BEWTWEEN + player.getStartPosition();
     		StartField startField = new StartField(offset);
+            player.getPawns().get(0).setCurrentField(startField);
     		gameFields.add(startField);
     		startFields.put(player, startField);
-    		for (int index = offset + 1; index < FIELDS_BEWTWEEN; index++) {
-                gameFields.add(new BoardField(index));
+    		for (int index = 0; index < FIELDS_BEWTWEEN; index++) {
+                gameFields.add(new BoardField(offset + 1 + index));
             }
     	}
         
@@ -87,13 +88,27 @@ public class Board {
     
     @Override
 	public String toString() {
-    	String board = "";
+    	StringBuilder board = new StringBuilder();
     	for (int i = 0; i < FIELDS_TOTAL; i++) {
-    		if (gameFields.get(i).get() == FieldType.StartField) {
-    			board += "Startfield: ";
-    		}
-    		board += gameFields.get(i).getFieldID() + "|";
-    	}
-    	return board;
+            for (PlayerImpl player : players) {
+                /*if (player.getStartPosition() * FIELDS_BEWTWEEN + player.getStartPosition() == i) {
+                    board.append("[S_");
+                    board.append(player.getColour());
+                    board.append("] ");
+                }*/
+                for (int f = 0; f < player.getPawns().size(); f++) {
+                    if (player.getPawns().get(f).getCurrentField() == gameFields.get(i)) {
+                        board.append("(");
+                        board.append(player.getColour());
+                        board.append("-");
+                        board.append(f);
+                        board.append(") ");
+                    }
+                }
+            }
+            board.append(gameFields.get(i).getFieldID()).append("|");
+        }
+        board.append("\n");
+        return board.toString();
     }
 }
