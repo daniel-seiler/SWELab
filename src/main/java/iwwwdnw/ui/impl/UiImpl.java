@@ -39,32 +39,32 @@ public class UiImpl implements Ui, Observer {
     
     void display() {
         StringBuilder out = new StringBuilder();
-        out.append(Output.SEPARATOR);
+        out.append(Output.SEPARATOR)
+                .append(Output.CURRENT_PLAYER)
+                .append(spielPort.spielzugInfo().currentPlayer())
+                .append(Output.NEW_LINE);
         
-        out.append("-----------------------------------\n");
-        out.append("Current player: ");
-        out.append(spielPort.spielzugInfo().currentPlayer());
-        out.append("\n");
         if (State.S.DiceAvailable.equals(currentState)) {
             out.append(Output.TYPE_THROW);
-            out.append("\nTYPE [throw] to throw the dices: ");
-            out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.DiceResult.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getDiceResult());
         } else if (State.S.SelectFigureToMove.equals(currentState)) {
-            out.append(spielPort.spielzugInfo().getMovementResult())
-                    .append(spielPort.spielzugInfo().getBoard())
+            out.append(spielPort.spielzugInfo().getBoard())
+                    .append(spielPort.spielzugInfo().getDiceResult())
+                    .append(Output.NEW_LINE)
+                    .append(spielPort.spielzugInfo().getMovementResult())
+                    .append(Output.NEW_LINE)
                     .append(Output.TYPE_MOVE);
         } else if (State.S.SelectFigureToStartfield.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getBoard())
+                    .append(spielPort.spielzugInfo().getMovementResult())
                     .append(Output.TYPE_MOVE_TO_START);
         } else if (State.S.FinishTurn.equals(currentState)) {
             out.append(spielPort.spielzugInfo().getBoard())
                     .append(Output.FINISHED_TURN)
                     .append(spielPort.spielzugInfo().currentPlayer())
+                    .append(Output.NEW_LINE)
                     .append(Output.TYPE_NEXT);
-            out.append("YOU FINISHED YOUR TURN...\n");
-            out.append("\nTYPE [next] to start turn: ");
         } else {
             out.append(Output.INVALID_INPUT);
         }

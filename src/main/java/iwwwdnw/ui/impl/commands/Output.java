@@ -5,7 +5,7 @@ public enum Output {
     
     TYPE_THROW("Type \"throw\" to throw the dices" + NEW_LINE),
     
-    TYPE_MOVE("Type \"move [pawn_nr] [field_nr]\" to move a pawn" + NEW_LINE),
+    TYPE_MOVE("Type \"move [field_nr] [pawn_nr]\" to move a pawn" + NEW_LINE),
     
     TYPE_MOVE_TO_START("Type \"moveToStart\" to move a pawn to a start field" + NEW_LINE),
     
@@ -18,7 +18,9 @@ public enum Output {
     FINISHED_TURN("You finished your turn..." + NEW_LINE +
                          "Next player is: "),
     
-    ASK_FOR_COMMAND(NEW_LINE + "What do you want to do next?");
+    ASK_FOR_COMMAND(NEW_LINE + "What do you want to do next?"),
+    
+    CURRENT_PLAYER("Current player: ");
     
     private final String output;
     
