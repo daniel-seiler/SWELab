@@ -49,38 +49,36 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 
 	@Override
 	public void movePawn(int fieldId, int pawnId) {
-		Field field = board.getField(fieldId);
-		Pawn pawn = getPawn(pawnId);
-				PlayerImpl duellPlayer = null;
-		if (pawn.getCurrentField().get() == FieldType.HomeField || diceResult.getResult() - getDifference(field, pawn) < 0) {
-			// move not possible, because move is to far, or pawn is still in homefield
-			stateMachine.setState(S.SelectFigureToMove);
-			turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
-			return;
-		}
-		// check for positioning of all pawns of all players
-		for (PlayerImpl player : board.getPlayers()) {
-			if (player.equals(currentPlayer)) {
-				// check if all rules of current player positioning are correct
-				if (checkPawnsOfCurrentPlayer(field, pawn)) {
-					stateMachine.setState(S.SelectFigureToMove);
-					turnInfo = new TurnInfo(false, board, board.getPlayers(), currentPlayer, diceResult, null);
-					return;
-				}
-			} else {
-				//check if pawn will be on other players boardField
-				if (checkPawnsOfOtherPlayer(player, field)) {
-					duellPlayer = player;
-					for (Pawn p : player.getPawns()) {
-						if (p.getCurrentField().equals(field)) {
-							p.setCurrentField(new HomeField());
-						}
-					}
+		//init
+		PlayerImpl duellPlayer = null;
+		boolean success = pawnId < board.getPlayers().size() && fieldId < Board.FIELDS_TOTAL;
+
+		if (success) {
+			// current field and pawn
+			Field field = board.getField(fieldId);
+			Pawn pawn = getPawn(pawnId);
+
+			// check for move to far or pawn in home field
+			success = checkIfMovePossible(pawn, field);
+
+			// check for positioning of all pawns of all players
+			for (int i = 0; i < board.getPlayers().size() && success ; i++) {
+				if (board.getPlayers().get(i).equals(currentPlayer)) {
+					// check if all rules of current player positioning are correct
+					success = checkPawnsOfCurrentPlayer(field, pawn);
+				} else {
+					//check if pawn will be on other players boardField
+					PlayerImpl duel = checkPositioningOfOtherPlayers(board.getPlayers().get(i), field);
+					if (duellPlayer == null && duel != null) duellPlayer = duel;
 				}
 			}
+			if (success) saveMove(pawn, field);
 		}
-		// save this move
-		if ( currentMovements.containsKey(pawn)) {
+		turnInfo = new TurnInfo(success, duellPlayer);
+	}
+
+	void saveMove(Pawn pawn, Field field) {
+		if (currentMovements.containsKey(pawn)) {
 			currentMovements.get(pawn).addAll(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
 		} else {
 			currentMovements.put(pawn, board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
@@ -94,7 +92,28 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 			// User can still move pawns
 			stateMachine.setState(S.SelectFigureToMove);
 		}
-		turnInfo = new TurnInfo(true, board, board.getPlayers(), currentPlayer, diceResult, duellPlayer);
+	}
+
+	boolean checkIfMovePossible(Pawn pawn, Field field) {
+		if (pawn.getCurrentField().get() == FieldType.HomeField || diceResult.getResult() - getDifference(field, pawn) < 0) {
+			// move not possible, because move is to far, or pawn is still in homefield
+			stateMachine.setState(S.SelectFigureToMove);
+			return false;
+		}
+		return true;
+	}
+
+	PlayerImpl checkPositioningOfOtherPlayers(PlayerImpl player, Field field) {
+		PlayerImpl duellPlayer = null;
+		if (checkPawnsOfOtherPlayer(player, field)) {
+			duellPlayer = player;
+			for (Pawn p : player.getPawns()) {
+				if (p.getCurrentField().equals(field)) {
+					p.setCurrentField(new HomeField());
+				}
+			}
+		}
+		return  duellPlayer;
 	}
 	
 	int getDifference(Field field, Pawn pawn) {
@@ -124,17 +143,19 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 				//step onto trail of current pawn
 				if(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().
 						filter(e -> currentMovements.get(pawn).stream().
-								anyMatch(f -> f.equals(e))).collect(Collectors.toSet()).size() > 1) return true;
+								anyMatch(f -> f.equals(e))).collect(Collectors.toSet()).size() > 1) {
+					stateMachine.setState(S.SelectFigureToMove);
+					return false;
+				}
 			} else {
 				//step on to field of own pawn
-				if (p.getCurrentField().equals(field)) return true;
+				if (p.getCurrentField().equals(field)) {
+					stateMachine.setState(S.SelectFigureToMove);
+					return false;
+				}
 			}
 		}
-		return false;
-	}
-	
-	private Boolean checkIfPawnStepsOnField(Field fieldToCheck, Field field, Pawn pawn) {
-		return board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().anyMatch(f -> f.equals(fieldToCheck));
+		return true;
 	}
 
 	@Override
@@ -178,10 +199,6 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		}
 	}
     
-    public Field getField(int id) {
-        return board.getField(id);
-    }
-    
     public Pawn getPawn(int id) {
         return currentPlayer.getPawns().get(id);
     }
@@ -193,7 +210,7 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 
 	@Override
 	public String getMovementResult() {
-		return (turnInfo != null) ? turnInfo.toString() : "Not yet moved";
+		return (turnInfo != null) ? turnInfo.toString(diceResult, currentPlayer, board) : "Not yet moved";
 	}
 
 	@Override

@@ -6,52 +6,34 @@ import iwwwdnw.spielzug.port.Field.FieldType;
 
 public class TurnInfo {
 	
-	private Boolean success;
-	private Board board;
-	private List<PlayerImpl> players;
-	private PlayerImpl currentPlayer;
-	private DiceResult diceResult;
-	private PlayerImpl duellPlayer;
+	private final Boolean success;
+	private final PlayerImpl duellPlayer;
 
-	TurnInfo(PlayerImpl currentPlayer) {
-		this.currentPlayer = currentPlayer;
-	}
-
-
-	TurnInfo(Boolean success, Board board, List<PlayerImpl> players, PlayerImpl currentPlayer, DiceResult diceResult, PlayerImpl duellPlayer) {
+	TurnInfo(Boolean success, PlayerImpl duellPlayer) {
 		this.success = success;
-		this.board = board;
-		this.players = players;
-		this.currentPlayer = currentPlayer;
-		this.diceResult = diceResult;
 		this.duellPlayer = duellPlayer;
 	}
 
-	//uebrige stchritte
-	//duell
-	//positionen
-
-    @Override
-    public String toString() {
+    public String toString(DiceResult diceResult, PlayerImpl currentPlayer, Board board) {
 		String resultString;
 		if (success) {
-			resultString = "Finished turn with success\n";
+			resultString = "---- Finished movement with success ";
 			if (duellPlayer != null) {
-				resultString += currentPlayer.getColour().name() + " won a duel against " + duellPlayer.getColour().name() + "\n";
+				resultString += "(" + currentPlayer.getColour().name() + " won a duel against " + duellPlayer.getColour().name() + ")";
 			}
+			resultString += "-----\n";
 		} else {
-			resultString = "ERROR: movement not allowed\n";
+			resultString = "---- ERROR: movement not allowed\n ----";
 		}
-		return getPostitions(resultString);
+		return getPostitions(resultString, diceResult, currentPlayer, board);
 	}
 
-    private String getPostitions(String resultString) {
-    	resultString +=  currentPlayer.getColour().name() + " is currently playing\n";
+    private String getPostitions(String resultString, DiceResult diceResult, PlayerImpl currentPlayer,  Board board) {
     	if (diceResult != null) {
     		resultString += "Number of possible movements: " + diceResult.getResult() + "\n";
     	}
 		StringBuilder resultStringBuilder = new StringBuilder(resultString);
-		for (PlayerImpl player : players) {
+		for (PlayerImpl player : board.getPlayers()) {
 			resultStringBuilder.append(player.getColour().name()).append(": ");
 			for (int i = 0; i < player.getPawns().size(); i++) {
 				resultStringBuilder.append("(pawn_").append(i).append(": ");
@@ -66,9 +48,4 @@ public class TurnInfo {
 		resultString = resultStringBuilder.toString();
 		return resultString;
     }
-
-    public String getBoard() {
-    	return board.toString();
-    }
-
 }
