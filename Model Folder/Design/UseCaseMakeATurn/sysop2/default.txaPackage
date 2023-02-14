@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<nodeSet  version="1.1">
-	<node uin="-yrgd8ekuv2j372-3bq5sr">
-		<property name="$metaclass" value="SD20_Interaction"/>
-		<property name="$name" value="Interaction"/>
-	</node>
-</nodeSet>

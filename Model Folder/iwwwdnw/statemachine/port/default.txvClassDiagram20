@@ -10,7 +10,7 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.SubjectPort">
-			<property name="bounds" value="353,-4,129,97"/>
+			<property name="bounds" value="353,-4,119,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.Observer">
@@ -18,7 +18,7 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachinePort">
-			<property name="bounds" value="134,-4,200,97"/>
+			<property name="bounds" value="134,-4,199,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.State">
