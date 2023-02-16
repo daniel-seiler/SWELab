@@ -1,11 +1,16 @@
 package iwwwdnw.spielzug.impl;
 
-import iwwwdnw.spielzug.port.Pawn;
-
 import java.util.List;
+
+import iwwwdnw.spielzug.port.Pawn;
 
 
 public class PlayerImpl {
+	
+	
+	/**
+	 * @link aggregation
+	 */
 	
 	private final Colour colour;
     private final String name;

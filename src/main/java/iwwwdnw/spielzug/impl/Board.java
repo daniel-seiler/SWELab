@@ -8,7 +8,22 @@ import iwwwdnw.spielzug.port.Pawn;
 
 public class Board {
 
-    public static final int NUM_PLAYER   = 4;
+
+
+
+	/**
+	* @link composition
+	*/
+	private iwwwdnw.spielzug.impl.HomeField lnkHomeField;
+	/**
+	* @link composition
+	*/
+	private iwwwdnw.spielzug.impl.StartField lnkStartField;
+	/**
+	* @link composition
+	*/
+	private iwwwdnw.spielzug.impl.BoardField lnkBoardField;
+	public static final int NUM_PLAYER   = 4;
     public static final int NUM_PAWNS = 5;
     public static final int FIELDS_BEWTWEEN = 9;
     public static final int FIELDS_TOTAL = NUM_PLAYER * FIELDS_BEWTWEEN + NUM_PLAYER;
