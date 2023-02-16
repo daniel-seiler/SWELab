@@ -7,7 +7,7 @@ import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
-import iwwwdnw.statemachine.port.Subject;
+import iwwwdnw.statemachine.port.StateMachine;
 import iwwwdnw.statemachine.port.SubjectPort;
 
 public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielPort {
@@ -26,7 +26,7 @@ public class LogicFactoryImpl implements LogicFactory, MVCPort, SpielPort {
     }
     
     @Override
-    public Subject subject() {
+    public iwwwdnw.statemachine.port.StateMachine.Subject subject() {
         return this.subjectPort.subject();
     }
     

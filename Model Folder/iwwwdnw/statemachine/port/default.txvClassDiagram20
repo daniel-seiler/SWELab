@@ -25,7 +25,7 @@
 			<property name="bounds" value="134,108,84,97"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.Subject">
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachine.Subject">
 			<property name="bounds" value="372,108,110,117"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>

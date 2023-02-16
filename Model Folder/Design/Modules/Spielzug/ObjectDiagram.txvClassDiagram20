@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhle6wbfxff7prpg">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="ObjectDiagram"/>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.LogicFactoryImpl">
+			<property name="bounds" value="555,1662,200,254"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.logic.LogicFactoryImpl:MVCPort">
+				<property name="sourceAnchor" value="560,1717"/>
+				<property name="targetAnchor" value="370,1576"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.logic.LogicFactoryImpl:LogicFactory">
+				<property name="sourceAnchor" value="280,2004"/>
+				<property name="targetAnchor" value="140,2004"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.LogicFactoryImpl:spielzugPort">
+				<property name="sourceAnchor" value="628,1667"/>
+				<property name="targetAnchor" value="628,1456"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.LogicFactoryImpl:subjectPort">
+				<property name="sourceAnchor" value="585,1667"/>
+				<property name="targetAnchor" value="308,1195"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.Board">
+			<property name="bounds" value="921,215,197,300"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.Board:lnkField">
+				<property name="sourceAnchor" value="998,220"/>
+				<property name="targetAnchor" value="998,157"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.BoardField">
+			<property name="bounds" value="1355,315,160,120"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.impl.BoardField:Field">
+				<property name="sourceAnchor" value="1360,321"/>
+				<property name="targetAnchor" value="1123,150"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.Dice">
+			<property name="bounds" value="535,1055,200,174"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_field:src:iwwwdnw.spielzug.impl.Dice.MAX_ROLL">
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.Dice:lnkDiceResult">
+				<property name="sourceAnchor" value="610,1060"/>
+				<property name="targetAnchor" value="610,814"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.DiceResult">
+			<property name="bounds" value="475,615,200,194"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.HomeField">
+			<property name="bounds" value="1335,-3,200,94"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.spielzug.impl.HomeField.get:get">
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.impl.HomeField:Field">
+				<property name="sourceAnchor" value="1340,49"/>
+				<property name="targetAnchor" value="1123,49"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.PawnImpl">
+			<property name="bounds" value="555,-3,200,154"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.PawnImpl:currentField">
+				<property name="sourceAnchor" value="760,79"/>
+				<property name="targetAnchor" value="923,79"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.PlayerImpl">
+			<property name="bounds" value="1295,655,200,214"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.PlayerImpl:colour">
+				<property name="sourceAnchor" value="1500,767"/>
+				<property name="targetAnchor" value="1660,767"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.SpielzugImpl">
+			<property name="bounds" value="920,615,200,594"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:stateMachine">
+				<property name="sourceAnchor" value="1125,1145"/>
+				<property name="targetAnchor" value="1539,1145"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:currentPlayer">
+				<property name="sourceAnchor" value="1125,862"/>
+				<property name="targetAnchor" value="1300,862"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:dice">
+				<property name="sourceAnchor" value="925,1137"/>
+				<property name="targetAnchor" value="740,1137"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:turnInfo">
+				<property name="sourceAnchor" value="1125,1000"/>
+				<property name="targetAnchor" value="1320,1000"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:lnkPawnImpl">
+				<property name="sourceAnchor" value="925,684"/>
+				<property name="targetAnchor" value="693,156"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:board">
+				<property name="sourceAnchor" value="1024,620"/>
+				<property name="targetAnchor" value="1024,520"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.SpielzugImpl:diceResult">
+				<property name="sourceAnchor" value="925,737"/>
+				<property name="targetAnchor" value="680,737"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.impl.SpielzugImpl:Spielzug">
+				<property name="sourceAnchor" value="860,756"/>
+				<property name="targetAnchor" value="600,756"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.StartField">
+			<property name="bounds" value="1344,135,182,133"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.impl.StartField:Field">
+				<property name="sourceAnchor" value="1349,148"/>
+				<property name="targetAnchor" value="1123,148"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.TurnInfo">
+			<property name="bounds" value="1315,934,160,160"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.TurnInfo:duellPlayer">
+				<property name="sourceAnchor" value="1352,939"/>
+				<property name="targetAnchor" value="1352,874"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.Colour">
+			<property name="bounds" value="1655,655,246,222"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.spielzug.impl.Colour.of:of~I">
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.SpielzugFactoryImpl">
+			<property name="bounds" value="934,1335,200,434"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.SpielzugFactoryImpl:stateMachine">
+				<property name="sourceAnchor" value="1139,1492"/>
+				<property name="targetAnchor" value="1539,1239"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.SpielzugFactoryImpl:SpielzugPort">
+				<property name="sourceAnchor" value="939,1457"/>
+				<property name="targetAnchor" value="759,1457"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.SpielzugFactoryImpl:Spielzug">
+				<property name="sourceAnchor" value="597,1760"/>
+				<property name="targetAnchor" value="597,835"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.SpielzugFactoryImpl:spielzug">
+				<property name="sourceAnchor" value="1052,1340"/>
+				<property name="targetAnchor" value="1052,1214"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.spielzug.SpielzugFactoryImpl:SpielzugFactory">
+				<property name="sourceAnchor" value="679,2174"/>
+				<property name="targetAnchor" value="679,2640"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.SpielzugFactoryImpl:stateMachinePort">
+				<property name="sourceAnchor" value="1030,1774"/>
+				<property name="targetAnchor" value="1030,1920"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.StatemachineFactoryImpl">
+			<property name="bounds" value="1515,1594,180,322"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.statemachine.StatemachineFactoryImpl:stateMachine">
+				<property name="sourceAnchor" value="1700,1675"/>
+				<property name="targetAnchor" value="1960,1433"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.StatemachineFactoryImpl:StateMachinePort">
+				<property name="sourceAnchor" value="1520,1920"/>
+				<property name="targetAnchor" value="1140,1920"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.StatemachineFactoryImpl:Subject">
+				<property name="sourceAnchor" value="1691,2600"/>
+				<property name="targetAnchor" value="1851,2185"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.StatemachineFactoryImpl:StatemachineFactory">
+				<property name="sourceAnchor" value="2030,2460"/>
+				<property name="targetAnchor" value="2030,2357"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.statemachine.StatemachineFactoryImpl.subjectPort:subjectPort">
+			</reference>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.statemachine.StatemachineFactoryImpl.getState:getState">
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.StatemachineFactoryImpl:StateMachine">
+				<property name="sourceAnchor" value="1687,1599"/>
+				<property name="targetAnchor" value="1687,1255"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachine">
+			<property name="bounds" value="1534,1093,200,157"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.MVCPort">
+			<property name="bounds" value="175,1435,200,136"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:iwwwdnw.logic.port.MVCPort:SubjectPort">
+				<property name="sourceAnchor" value="280,1440"/>
+				<property name="targetAnchor" value="280,1195"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Field">
+			<property name="bounds" value="918,-5,200,157"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.SpielzugPort">
+			<property name="bounds" value="555,1335,200,117"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.impl.StateMachineImpl">
+			<property name="bounds" value="1955,1218,200,234"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.statemachine.impl.StateMachineImpl:currentState">
+				<property name="sourceAnchor" value="1440,2112"/>
+				<property name="targetAnchor" value="1759,2154"/>
+			</reference>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.impl.StateMachineImpl:iwwwdnw.statemachine.port.StateMachine.Subject">
+				<property name="sourceAnchor" value="1960,1244"/>
+				<property name="targetAnchor" value="1734,1244"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.StateMachinePort">
+			<property name="bounds" value="935,1915,200,97"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.port.SubjectPort">
+			<property name="bounds" value="175,1093,200,97"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_method:src:iwwwdnw.statemachine.port.SubjectPort.subject:subject">
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

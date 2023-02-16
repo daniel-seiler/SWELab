@@ -4,7 +4,12 @@ import java.util.Random;
 
 public class Dice {
 
-    public static final  int    MAX_ROLL = 6;
+
+	/**
+	* @link composition
+	*/
+	private iwwwdnw.spielzug.impl.DiceResult lnkDiceResult;
+	public static final  int    MAX_ROLL = 6;
     private static final Random random   = new Random();
     private int numThrows = 0;
 

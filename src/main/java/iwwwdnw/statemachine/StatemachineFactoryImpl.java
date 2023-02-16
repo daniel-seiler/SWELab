@@ -2,8 +2,9 @@ package iwwwdnw.statemachine;
 
 import iwwwdnw.statemachine.impl.StateMachineImpl;
 import iwwwdnw.statemachine.port.*;
+import iwwwdnw.statemachine.port.StateMachine;
 
-public class StatemachineFactoryImpl implements StatemachineFactory, SubjectPort, StateMachinePort, StateMachine, Subject {
+public class StatemachineFactoryImpl implements StatemachineFactory, StateMachinePort, StateMachine {
     private StateMachineImpl stateMachine;
     
     private StateMachineImpl getStateMachine() {
@@ -47,7 +48,7 @@ public class StatemachineFactoryImpl implements StatemachineFactory, SubjectPort
     }
     
     @Override
-    public Subject subject() {
+    public iwwwdnw.statemachine.port.StateMachine.Subject subject() {
         return this.getStateMachine();
     }
 }

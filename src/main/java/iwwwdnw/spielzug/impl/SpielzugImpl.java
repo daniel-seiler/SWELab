@@ -1,7 +1,5 @@
-package iwwwdnw.spielzug.impl;
 
-import iwwwdnw.spielzug.port.Pawn;
-import iwwwdnw.spielzug.port.Spielzug;
+package iwwwdnw.spielzug.impl;
 
 import java.util.HashMap;
 import java.util.List;
@@ -10,24 +8,45 @@ import java.util.stream.Collectors;
 
 import iwwwdnw.spielzug.port.Field;
 import iwwwdnw.spielzug.port.Field.FieldType;
+import iwwwdnw.spielzug.port.Pawn;
+import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.spielzug.port.SpielzugInfo;
 import iwwwdnw.statemachine.port.State.S;
 import iwwwdnw.statemachine.port.StateMachine;
 import iwwwdnw.statemachine.port.StateMachinePort;
 
 public class SpielzugImpl implements Spielzug, SpielzugInfo {
-	
+
+	/**
+	* @link aggregation
+	*/
+	private iwwwdnw.spielzug.impl.PawnImpl lnkPawnImpl;
 	private PlayerImpl currentPlayer;
 	private DiceResult diceResult;
+	
+	/**
+	 * @link composition
+	 */
+	
 	private final Board board;
 	private final StateMachine stateMachine;
+	
+	/**
+	 * @link composition
+	 */
+	
 	private Dice dice;
 
+	
+	/**
+	 * @link composition
+	 */
+	
 	private TurnInfo turnInfo;
 	private static final int MAX_THROWS = 3;
 	private static final int MAGIC_NUMBER = 7;
 	private Map<Pawn, List<Field>> currentMovements = new HashMap<>();
-	
+
 	public SpielzugImpl(StateMachinePort stateMachinePort) {
 		this.stateMachine = stateMachinePort.stateMachine();
 		this.board = new Board();
@@ -35,8 +54,13 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		currentPlayer = board.getPlayers().get(0);
 		stateMachine.setState(S.DiceAvailable);
 	}
-	
-	
+
+	int getDifference(Field field, Pawn pawn) {
+			int max = Math.max(pawn.getCurrentField().getFieldID(), field.getFieldID());
+			int min = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID());
+			return Math.min(max - min, min + Board.FIELDS_TOTAL - max);
+		}
+
 	@Override
 	public void finishTurn() {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
@@ -62,24 +86,27 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 			success = checkIfMovePossible(pawn, field);
 
 			// check for positioning of all pawns of all players
-			for (int i = 0; i < board.getPlayers().size() && success ; i++) {
+			for (int i = 0; i < board.getPlayers().size() && success; i++) {
 				if (board.getPlayers().get(i).equals(currentPlayer)) {
 					// check if all rules of current player positioning are correct
 					success = checkPawnsOfCurrentPlayer(field, pawn);
 				} else {
 					//check if pawn will be on other players boardField
 					PlayerImpl duel = checkPositioningOfOtherPlayers(board.getPlayers().get(i), field);
-					if (duellPlayer == null && duel != null) duellPlayer = duel;
+					if (duellPlayer == null && duel != null)
+						duellPlayer = duel;
 				}
 			}
-			if (success) saveMove(pawn, field);
+			if (success)
+				saveMove(pawn, field);
 		}
 		turnInfo = new TurnInfo(success, duellPlayer);
 	}
 
 	void saveMove(Pawn pawn, Field field) {
 		if (currentMovements.containsKey(pawn)) {
-			currentMovements.get(pawn).addAll(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
+			currentMovements.get(pawn)
+					.addAll(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
 		} else {
 			currentMovements.put(pawn, board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
 		}
@@ -95,7 +122,8 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 	}
 
 	boolean checkIfMovePossible(Pawn pawn, Field field) {
-		if (pawn.getCurrentField().get() == FieldType.HomeField || diceResult.getResult() - getDifference(field, pawn) < 0) {
+		if (pawn.getCurrentField().get() == FieldType.HomeField
+				|| diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far, or pawn is still in homefield
 			stateMachine.setState(S.SelectFigureToMove);
 			return false;
@@ -113,37 +141,31 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 				}
 			}
 		}
-		return  duellPlayer;
+		return duellPlayer;
 	}
-	
-	int getDifference(Field field, Pawn pawn) {
-		int max = Math.max(pawn.getCurrentField().getFieldID(), field.getFieldID());
-    	int min = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID());
-    	return Math.min(max - min, min + Board.FIELDS_TOTAL - max);
-	}
-	
+
 	/*
-	 * @return true on duell
-	 */
+	* @return true on duell
+	*/
 	Boolean checkPawnsOfOtherPlayer(PlayerImpl player, Field field) {
 		for (Pawn p : player.getPawns()) {
-			if(p.getCurrentField().equals(field)) {
+			if (p.getCurrentField().equals(field)) {
 				return true;
 			}
 		}
 		return false;
 	}
-	
+
 	/*
-	 * @return true on error
-	 */
+	* @return true on error
+	*/
 	Boolean checkPawnsOfCurrentPlayer(Field field, Pawn pawn) {
 		for (Pawn p : currentPlayer.getPawns()) {
 			if (p.equals(pawn) && currentMovements.containsKey(p)) {
 				//step onto trail of current pawn
-				if(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream().
-						filter(e -> currentMovements.get(pawn).stream().
-								anyMatch(f -> f.equals(e))).collect(Collectors.toSet()).size() > 1) {
+				if (board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()).stream()
+						.filter(e -> currentMovements.get(pawn).stream().anyMatch(f -> f.equals(e)))
+						.collect(Collectors.toSet()).size() > 1) {
 					stateMachine.setState(S.SelectFigureToMove);
 					return false;
 				}
@@ -198,10 +220,10 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 			}
 		}
 	}
-    
-    public Pawn getPawn(int id) {
-        return currentPlayer.getPawns().get(id);
-    }
+
+	public Pawn getPawn(int id) {
+		return currentPlayer.getPawns().get(id);
+	}
 
 	@Override
 	public String getBoard() {
@@ -220,6 +242,6 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 
 	@Override
 	public String currentPlayer() {
-		return  currentPlayer.getName();
+		return currentPlayer.getName();
 	}
 }

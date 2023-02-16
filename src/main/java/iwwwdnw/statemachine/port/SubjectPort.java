@@ -1,5 +1,5 @@
 package iwwwdnw.statemachine.port;
 
 public interface SubjectPort {
-	Subject subject();
+	iwwwdnw.statemachine.port.StateMachine.Subject subject();
 }

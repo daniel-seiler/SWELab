@@ -1,8 +1,8 @@
 package iwwwdnw.spielzug;
 
-import iwwwdnw.spielzug.impl.PawnImpl;
 import iwwwdnw.spielzug.impl.SpielzugImpl;
-import iwwwdnw.spielzug.port.*;
+import iwwwdnw.spielzug.port.Spielzug;
+import iwwwdnw.spielzug.port.SpielzugPort;
 import iwwwdnw.statemachine.StatemachineFactory;
 import iwwwdnw.statemachine.port.State;
 import iwwwdnw.statemachine.port.StateMachine;
@@ -12,6 +12,11 @@ public class SpielzugFactoryImpl implements SpielzugFactory, SpielzugPort, Spiel
     
     private final StateMachinePort stateMachinePort = StatemachineFactory.FACTORY.stateMachinePort();
     private StateMachine stateMachine;
+    
+	/**
+	 * @link composition
+	 */
+	
     private SpielzugImpl spielzug;
     
     private void mkSpielzug() {

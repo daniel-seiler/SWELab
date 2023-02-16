@@ -2,13 +2,13 @@ package iwwwdnw.statemachine.impl;
 
 import iwwwdnw.statemachine.port.State;
 import iwwwdnw.statemachine.port.StateMachine;
-import iwwwdnw.statemachine.port.Subject;
+import iwwwdnw.statemachine.port.StateMachine;
 import iwwwdnw.statemachine.port.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StateMachineImpl implements StateMachine, Subject {
+public class StateMachineImpl implements iwwwdnw.statemachine.port.StateMachine.Subject {
 	private State currentState;
 	private List<Observer> observers = new ArrayList<>();
 	
