@@ -7,7 +7,7 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.SpielzugPort">
-			<property name="bounds" value="275,5,116,80"/>
+			<property name="bounds" value="275,5,181,117"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug">
@@ -21,11 +21,11 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Pawn">
-			<property name="bounds" value="275,203,82,80"/>
+			<property name="bounds" value="275,203,166,117"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Field">
-			<property name="bounds" value="256,295,82,80"/>
+			<property name="bounds" value="256,295,147,157"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Player">
@@ -34,6 +34,10 @@
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.DiceResult">
 			<property name="bounds" value="147,295,102,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.SpielzugInfo">
+			<property name="bounds" value="57,295,191,157"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
