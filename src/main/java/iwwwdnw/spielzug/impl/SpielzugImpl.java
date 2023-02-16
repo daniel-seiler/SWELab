@@ -16,17 +16,45 @@ import iwwwdnw.statemachine.port.StateMachine;
 import iwwwdnw.statemachine.port.StateMachinePort;
 
 public class SpielzugImpl implements Spielzug, SpielzugInfo {
-	
+	/**
+	 * The player who is currently playing
+	 * switches after finishedTurn is called
+	 */
 	private PlayerImpl currentPlayer;
+	/**
+	 * holds the value of the current dice role/ remaining moves
+	 */
 	private DiceResult diceResult;
+	/**
+	 * Saves the structure of the playing field
+	 */
 	private final Board board;
+	/**
+	 * needed to set new states that notifies the controller and view
+	 */
 	private final StateMachine stateMachine;
-	private Dice dice;
 
+	/**
+	 * Presents the rolling dice function and counts the number of throws
+	 */
+	private Dice dice;
+	/**
+	 * Holds information on the outcome of the current move
+	 */
 	private TurnInfo turnInfo;
+	/**
+	 * Max throws to get a seven
+	 */
 	private static final int MAX_THROWS = 3;
+	/**
+	 * Number for moving a new pawn to start field
+	 */
 	private static final int MAGIC_NUMBER = 7;
-	private Map<Pawn, List<Field>> currentMovements = new HashMap<>();
+	/**
+	 * Hold information on the movements in the current turn,
+	 * to prevent pawns walking on their own trail
+	 */
+	private final Map<Pawn, List<Field>> currentMovements = new HashMap<>();
 	
 	public SpielzugImpl(StateMachinePort stateMachinePort) {
 		this.stateMachine = stateMachinePort.stateMachine();
@@ -35,8 +63,12 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		currentPlayer = board.getPlayers().get(0);
 		stateMachine.setState(S.DiceAvailable);
 	}
-	
-	
+
+	/**
+	 * Calculates and sets the new player
+	 * Clears all information of the previous player
+	 * Sets state to DiceAvailable
+	 */
 	@Override
 	public void finishTurn() {
 		currentPlayer = board.getPlayers().get((currentPlayer.getStartPosition() + 1) % Board.NUM_PLAYER);
@@ -47,6 +79,12 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		stateMachine.setState(S.DiceAvailable);
 	}
 
+	/**
+	 * Moves a pawn with @pawnId to a field @fieldId if possible
+	 * Saves outcome in turnInfo and sets state according to new information
+	 * @param fieldId id of field where pawn is moved to
+	 * @param pawnId id of pawn
+	 */
 	@Override
 	public void movePawn(int fieldId, int pawnId) {
 		//init
@@ -77,11 +115,19 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		turnInfo = new TurnInfo(success, duellPlayer);
 	}
 
+	/**
+	 * moves are possible and are here saved in @currentMovements
+	 * diceResult is updated to match the number of remaining moves
+	 * sets the states to finishTurn if remaining moves are 0
+	 * @param pawn pawn to be moved
+	 * @param field field to move to
+	 */
 	void saveMove(Pawn pawn, Field field) {
+		List<Field> movements = board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID());
 		if (currentMovements.containsKey(pawn)) {
-			currentMovements.get(pawn).addAll(board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
+			currentMovements.get(pawn).addAll(movements);
 		} else {
-			currentMovements.put(pawn, board.getFieldsInRange(pawn.getCurrentField().getFieldID(), field.getFieldID()));
+			currentMovements.put(pawn, movements);
 		}
 		diceResult.sub(getDifference(field, pawn));
 		pawn.setCurrentField(field);
@@ -94,6 +140,12 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		}
 	}
 
+	/**
+	 * Check if move is possible by checking if number of possible movements is in range
+	 * @param pawn
+	 * @param field
+	 * @return
+	 */
 	boolean checkIfMovePossible(Pawn pawn, Field field) {
 		if (pawn.getCurrentField().get() == FieldType.HomeField || diceResult.getResult() - getDifference(field, pawn) < 0) {
 			// move not possible, because move is to far, or pawn is still in homefield
@@ -103,27 +155,43 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		return true;
 	}
 
+	/**
+	 * Checks if another @player has a pawn on @field
+	 * @param player other player to check
+	 * @param field field where pawn of currentPlayer is moved to
+	 * @return the duelPlayer if one exists, otherwise null
+	 */
 	PlayerImpl checkPositioningOfOtherPlayers(PlayerImpl player, Field field) {
 		PlayerImpl duellPlayer = null;
 		if (checkPawnsOfOtherPlayer(player, field)) {
 			duellPlayer = player;
 			for (Pawn p : player.getPawns()) {
 				if (p.getCurrentField().equals(field)) {
+					// ------------------------ DDDUELLL --------------------------
 					p.setCurrentField(new HomeField());
 				}
 			}
 		}
 		return  duellPlayer;
 	}
-	
+
+	/**
+	 * Calculates the number of moves to walk between the current field of @pawn and @field
+	 * @param field to move to
+	 * @param pawn current pawn
+	 * @return number of needed moves
+	 */
 	int getDifference(Field field, Pawn pawn) {
 		int max = Math.max(pawn.getCurrentField().getFieldID(), field.getFieldID());
     	int min = Math.min(pawn.getCurrentField().getFieldID(), field.getFieldID());
     	return Math.min(max - min, min + Board.FIELDS_TOTAL - max);
 	}
-	
-	/*
-	 * @return true on duell
+
+	/**
+	 * Checks if a duel is happening with @player
+	 * @param player other player to check
+	 * @param field field where duel could happen
+	 * @return true on duel, false on no duel
 	 */
 	Boolean checkPawnsOfOtherPlayer(PlayerImpl player, Field field) {
 		for (Pawn p : player.getPawns()) {
@@ -133,9 +201,13 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		}
 		return false;
 	}
-	
-	/*
-	 * @return true on error
+
+	/**
+	 * Checks if move of current Player is allows by checking saved movements and
+	 * placing of his own pawns
+	 * @param field to move to
+	 * @param pawn pawn that is moved
+	 * @return true on possible move, false on error
 	 */
 	Boolean checkPawnsOfCurrentPlayer(Field field, Pawn pawn) {
 		for (Pawn p : currentPlayer.getPawns()) {
@@ -158,6 +230,9 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		return true;
 	}
 
+	/**
+	 * Moves a pawn that is currently in a HomeField to the StartField
+	 */
 	@Override
 	public void pawnToStartField() {
 		List<Pawn> pawns = currentPlayer.getPawns();
@@ -171,6 +246,9 @@ public class SpielzugImpl implements Spielzug, SpielzugInfo {
 		}
 	}
 
+	/**
+	 * Rolls a new random dice number and sets state according to result
+	 */
 	@Override
 	public void throwDice() {
 		// get random dice number

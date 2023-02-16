@@ -17,7 +17,7 @@ public class Board {
 
     private final List<PlayerImpl> players = new ArrayList<>();
     private final List<Field> gameFields = new ArrayList<Field>();
-    private final Map<PlayerImpl, StartField> startFields = new HashMap<PlayerImpl, StartField>();
+    private final Map<PlayerImpl, StartField> startFields = new HashMap<>();
 
     Board() {
         players.add(new PlayerImpl(Colour.RED, "Rot", 0, initHome()));
@@ -26,13 +26,6 @@ public class Board {
         players.add(new PlayerImpl(Colour.BLUE, "Blau", 3, initHome()));
 
         initBoardPositions();
-    }
-
-    public static Board getInstance() {
-        if (instance == null) {
-            instance = new Board();
-        }
-        return instance;
     }
 
     public List<PlayerImpl> getPlayers() {
@@ -67,7 +60,6 @@ public class Board {
     	for (PlayerImpl player : players) {
     		int offset = player.getStartPosition() * FIELDS_BEWTWEEN + player.getStartPosition();
     		StartField startField = new StartField(offset);
-            player.getPawns().get(0).setCurrentField(startField);
     		gameFields.add(startField);
     		startFields.put(player, startField);
     		for (int index = 0; index < FIELDS_BEWTWEEN; index++) {
